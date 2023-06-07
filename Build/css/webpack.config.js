@@ -23,6 +23,8 @@ mode: "production",
     ],
 	},
 	plugins: [
-   new MiniCssExtractPlugin(),
+   new MiniCssExtractPlugin({
+   		filename: "turtleui.min.css"
+   }),
   ],
 };
