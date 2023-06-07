@@ -1,0 +1,114 @@
+.accordion {
+	--accordion-header-bg:var(--primary-color);
+	--accordion-header-color:var(--body-color);
+	--accordion-body-bg:var(--body-bg);
+	--accordion-body-color:var(--body-color);
+	--accordion-icon:"V";
+	width: 98%;
+}
+
+.accordion-group {
+	font-size: 1rem;
+	margin: 5px
+}
+
+.accordion-header {
+	cursor: none;
+	padding: 1.5em 1.5em;
+	background-color: var(--accordion-header-bg);
+	color: var(--accordion-header-color);
+	cursor: pointer;
+	font-size: .7em;
+	letter-spacing: .1em;
+	transition: all .3s;
+	text-transform: uppercase;
+}
+
+
+.accordion .accordion {
+	width: 100%;
+}
+
+.accordion-header:hover {
+	position: relative;
+	z-index: 5;
+}
+
+.accordion-body {
+	background: var(--accordion-body-bg);
+	color: var(--accordion-body-color);
+	display: none;
+}
+
+.accordion-content {
+	padding: 1.5em 1.5em;
+	font-size: .85em;
+}
+
+.accordion>.accordion-header:after {
+	content: var(--accordion-icon);
+	font-family: IonIcons;
+	font-size: 1.2em;
+	float: right;
+	position: relative;
+	top: -2px;
+	transition: .3s all;
+	transform: rotate(0deg);
+}
+
+.accordion.active>.accordion-header:after {
+	transform: rotate(-180deg);
+}
+
+.accordion .accordion .accordion-header {
+	background: #f1f1f1;
+	color: #353535;
+}
+
+.accordion.active>.accordion-body {
+	display: block;
+	padding: 16px;
+	-webkit-animation-name: fadeIn;
+	-moz-animation-name: fadeIn;
+	-o-animation-name: fadeIn;
+	animation-name: fadeIn;
+	-webkit-animation-duration: 0.5s;
+	-moz-animation-duration: 0.5s;
+	-o-animation-duration: 0.5s;
+	animation-duration: 0.5s;
+}
+
+.accordion.accordion-info>.accordion-header{
+	--accordion-header-bg: var(--info-color);
+}
+
+.accordion.accordion-success>.accordion-header{
+		--accordion-header-bg: var(--success-color);
+}
+
+.accordion.accordion-warn>.accordion-header{
+		--accordion-header-bg: var(--warn-color);
+}
+
+.accordion.accordion-danger>.accordion-header{
+		--accordion-header-bg: var(--danger-color);
+}
+
+.accordion.accordion-violet>.accordion-header{
+		--accordion-header-bg: var(--violet-color);
+}
+
+.accordion.accordion-purple>.accordion-header{
+		--accordion-header-bg: var(--purple-color);
+}
+
+.accordion.accordion-pink>.accordion-header{
+		--accordion-header-bg: var(--pink-color);
+}
+
+@media screen and (max-width: 1000px) {
+
+	.accordion-group {
+		width: 100%;
+	}
+}

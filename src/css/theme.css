@@ -1,0 +1,14 @@
+:root {
+	--body-bg: white;
+	--body-color: black;
+	--primary-color: #006EFF;
+	--secondary-color:rgba(160, 160, 160, 0.5);
+	--info-color: #00C4FF;
+	--success-color: #00EF6B;
+	--warn-color: #EFD900;
+	--danger-color: red;
+	--purple-color: #880ED4;
+	--pink-color: #FB5FF9;
+	--violet-color: violet;
+
+}

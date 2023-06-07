@@ -1,0 +1,108 @@
+.dot-loader {
+  margin: 5px;
+  display: block;
+  position: relative;
+  height: 50px;
+  width: 50px;
+}
+
+.dot-loader>span {
+  position: absolute;
+  top: 10px;
+  width: 10px;
+  height: 10px;
+  background: black;
+  border-radius: 50%;
+  animation: dotloaderanima 1s infinite ease-in-out;
+}
+
+.dot-loader>span:nth-child(1) {
+  left: 0px;
+  animation-delay: 0.2s;
+}
+
+.dot-loader>span:nth-child(2) {
+  left: 15px;
+  animation-delay: 0.3s;
+}
+
+.dot-loader>span:nth-child(3) {
+  left: 30px;
+  animation-delay: 0.4s;
+}
+
+.dot-loader>span:nth-child(4) {
+  left: 45px;
+  animation-delay: 0.5s;
+}
+
+
+.dot-loader.loader-info>span{
+  background-color: var(--info-color);
+}
+
+.dot-loader.loader-success>span{
+  background-color: var(--success-color);
+}
+
+.dot-loader.loader-warn>span{
+  background-color: var(--warn-color);
+}
+
+.dot-loader.loader-danger>span{
+  background-color: var(--danger-color);
+}
+
+
+@keyframes dotloaderanima {
+  0% {
+    transform: translateY(0px);
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(10px);
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+    transform: translateY(0px);
+  }
+}
+
+
+
+
+.circle-loader {
+  border: 3px solid transparent;
+  border-radius: 50%;
+  width: 3em;
+  height: 3em;
+  border-top-color: black;
+  animation: spin 1s linear infinite;
+}
+
+.circle-loader.loader-info{
+  border-top-color: var(--info-color);
+}
+
+.circle-loader.loader-success{
+  border-top-color: var(--success-color);
+}
+
+.circle-loader.loader-warn{
+  border-top-color: var(--warn-color);
+}
+
+.circle-loader.loader-danger{
+  border-top-color: var(--danger-color);
+}
+
+
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
