@@ -20,6 +20,9 @@
 @import "./Components/avatar.css";
 @import "./Components/note.css";
 @import "./Components/pagination.css";
+@import "./Components/loader.css";
+@import "./Components/alert.css";
+@import "./Components/progress.css";
 @import "./Options/color.css";
 @import "./Options/padding.css";
 @import "./Options/margin.css";

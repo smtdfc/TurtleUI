@@ -35,6 +35,9 @@ export const Actions = {
 		"close-search-box":function(target,args){
 		let searchbox = document.querySelector(args.searchbox)
 		searchbox.classList.remove("open")
+	},
+	"remove-parent":function(target,args){
+		target.parentElement.remove()
 	}
 }
 
