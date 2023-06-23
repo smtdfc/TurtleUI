@@ -28,15 +28,19 @@ export const Actions = {
 		let navbar = new Components.TurtleUINavbar(args.navbar)
 		navbar.setState("toggle")
 	},
-	"open-search-box":function(target,args){
+	"toggle-sidebar": function(target, args) {
+		let sidebar = new Components.TurtleUISidebar(args.sidebar)
+		sidebar.setState("toggle")
+	},
+	"open-search-box": function(target, args) {
 		let searchbox = document.querySelector(args.searchbox)
 		searchbox.classList.add("open")
 	},
-		"close-search-box":function(target,args){
+	"close-search-box": function(target, args) {
 		let searchbox = document.querySelector(args.searchbox)
 		searchbox.classList.remove("open")
 	},
-	"remove-parent":function(target,args){
+	"remove-parent": function(target, args) {
 		target.parentElement.remove()
 	}
 }

@@ -86,139 +86,6 @@ export class TurtleUITab {
 		}
 	}
 }
-
-
-
-export class TurtleUIAccordion extends TurtleUIComponent {
-	constructor(query) {
-		super(query)
-	}
-
-	getState() {
-		return this.component.classList.contains("active") ? "open" : "close"
-	}
-
-	setState(mode) {
-		let state = this.getState()
-
-		switch (mode) {
-			case "open":
-				this.component.classList.add("active")
-				this.triggerEvent("accordion-open", {
-					navbar: this
-				})
-				break
-			case "close":
-				this.component.classList.remove("active")
-				this.triggerEvent("accordion-close", {
-					navbar: this
-				})
-				break
-			case "toggle":
-				if (state == "open") {
-					this.component.classList.remove("active")
-					this.triggerEvent("accordion-close", {
-						navbar: this
-					})
-				} else {
-					this.component.classList.add("active")
-					this.triggerEvent("accordion-open", {
-						navbar: this
-					})
-				}
-		}
-	}
-
-}
-
-export class TurtleUIOffcanvas extends TurtleUIComponent {
-	constructor(query) {
-		super(query)
-	}
-
-	getState() {
-		return this.component.classList.contains("active") ? "open" : "close"
-	}
-
-	setState(mode) {
-		let state = this.getState()
-
-		switch (mode) {
-			case "open":
-				TurtleUIMainOverlay.open()
-				this.component.classList.add("active")
-				this.triggerEvent("offcanvas-open", {
-					navbar: this
-				})
-				break
-			case "close":
-				TurtleUIMainOverlay.close()
-				this.component.classList.remove("active")
-				this.triggerEvent("offcanvas-close", {
-					navbar: this
-				})
-				break
-			case "toggle":
-				if (state == "open") {
-					TurtleUIMainOverlay.close()
-					this.component.classList.remove("active")
-					this.triggerEvent("offcanvas-close", {
-						navbar: this
-					})
-				} else {
-
-					TurtleUIMainOverlay.open()
-					this.component.classList.add("active")
-					this.triggerEvent("offcanvas-open", {
-						navbar: this
-					})
-				}
-		}
-	}
-
-}
-export class TurtleUIOverlay extends TurtleUIComponent {
-	constructor(query) {
-		super(query)
-	}
-
-	getState() {
-		return this.component.classList.contains("active") ? "open" : "close"
-	}
-
-	setState(mode) {
-		let state = this.getState()
-
-		switch (mode) {
-			case "open":
-				this.component.classList.add("active")
-				this.triggerEvent("overlay-open", {
-					navbar: this
-				})
-				break
-			case "close":
-				this.component.classList.remove("active")
-				this.triggerEvent("overlay-close", {
-					navbar: this
-				})
-				break
-			case "toggle":
-				if (state == "open") {
-					this.component.classList.remove("active")
-					this.triggerEvent("overlay-close", {
-						navbar: this
-					})
-				} else {
-					this.component.classList.add("active")
-					this.triggerEvent("overlay-open", {
-						navbar: this
-					})
-				}
-		}
-	}
-
-}
-
 export class TurtleUINavbar extends TurtleUIComponent {
 	constructor(query) {
 		super(query)
@@ -260,6 +127,186 @@ export class TurtleUINavbar extends TurtleUIComponent {
 	}
 }
 
+
+export class TurtleUISidebar extends TurtleUIComponent {
+	constructor(query) {
+		super(query)
+	}
+
+	getState() {
+		return this.component.classList.contains("active") ? "open" : "close"
+	}
+
+	setState(mode) {
+		let state = this.getState()
+
+		switch (mode) {
+			case "open":
+				//TurtleUIMainOverlay.open()
+				this.component.classList.add("active")
+				this.triggerEvent("sidebar-open", {
+					sidebar: this
+				})
+				break
+			case "close":
+				//TurtleUIMainOverlay.close()
+				this.component.classList.remove("active")
+				this.triggerEvent("sidebar-close", {
+					sidebar: this
+				})
+				break
+			case "toggle":
+				if (state == "open") {
+					//TurtleUIMainOverlay.close()
+					this.component.classList.remove("active")
+					this.triggerEvent("sidebar-close", {
+						sidebar: this
+					})
+				} else {
+
+					//TurtleUIMainOverlay.open()
+					this.component.classList.add("active")
+					this.triggerEvent("sidebar-open", {
+						sidebar: this
+					})
+				}
+		}
+	}
+
+}
+
+
+export class TurtleUIAccordion extends TurtleUIComponent {
+	constructor(query) {
+		super(query)
+	}
+
+	getState() {
+		return this.component.classList.contains("active") ? "open" : "close"
+	}
+
+	setState(mode) {
+		let state = this.getState()
+
+		switch (mode) {
+			case "open":
+				this.component.classList.add("active")
+				this.triggerEvent("accordion-open", {
+					accordion: this
+				})
+				break
+			case "close":
+				this.component.classList.remove("active")
+				this.triggerEvent("accordion-close", {
+					accordion: this
+				})
+				break
+			case "toggle":
+				if (state == "open") {
+					this.component.classList.remove("active")
+					this.triggerEvent("accordion-close", {
+						accordion: this
+					})
+				} else {
+					this.component.classList.add("active")
+					this.triggerEvent("accordion-open", {
+						accordion: this
+					})
+				}
+		}
+	}
+
+}
+
+export class TurtleUIOffcanvas extends TurtleUIComponent {
+	constructor(query) {
+		super(query)
+	}
+
+	getState() {
+		return this.component.classList.contains("active") ? "open" : "close"
+	}
+
+	setState(mode) {
+		let state = this.getState()
+
+		switch (mode) {
+			case "open":
+				TurtleUIMainOverlay.open()
+				this.component.classList.add("active")
+				this.triggerEvent("offcanvas-open", {
+					offcanvas: this
+				})
+				break
+			case "close":
+				TurtleUIMainOverlay.close()
+				this.component.classList.remove("active")
+				this.triggerEvent("offcanvas-close", {
+					offcanvas: this
+				})
+				break
+			case "toggle":
+				if (state == "open") {
+					TurtleUIMainOverlay.close()
+					this.component.classList.remove("active")
+					this.triggerEvent("offcanvas-close", {
+						offcanvas: this
+					})
+				} else {
+
+					TurtleUIMainOverlay.open()
+					this.component.classList.add("active")
+					this.triggerEvent("offcanvas-open", {
+						offcanvas: this
+					})
+				}
+		}
+	}
+
+}
+export class TurtleUIOverlay extends TurtleUIComponent {
+	constructor(query) {
+		super(query)
+	}
+
+	getState() {
+		return this.component.classList.contains("active") ? "open" : "close"
+	}
+
+	setState(mode) {
+		let state = this.getState()
+
+		switch (mode) {
+			case "open":
+				this.component.classList.add("active")
+				this.triggerEvent("overlay-open", {
+					overlay: this
+				})
+				break
+			case "close":
+				this.component.classList.remove("active")
+				this.triggerEvent("overlay-close", {
+					overlay: this
+				})
+				break
+			case "toggle":
+				if (state == "open") {
+					this.component.classList.remove("active")
+					this.triggerEvent("overlay-close", {
+						overlay: this
+					})
+				} else {
+					this.component.classList.add("active")
+					this.triggerEvent("overlay-open", {
+						overlay: this
+					})
+				}
+		}
+	}
+
+}
+
+
 export class TurtleUIModal extends TurtleUIComponent {
 	constructor(query) {
 		super(query)
@@ -276,28 +323,27 @@ export class TurtleUIModal extends TurtleUIComponent {
 			case "open":
 				this.component.classList.add("active")
 				this.triggerEvent("modal-open", {
-					navbar: this
+					modal: this
 				})
 				break
 			case "close":
 				this.component.classList.remove("active")
 				this.triggerEvent("modal-close", {
-					navbar: this
+					modal: this
 				})
 				break
 			case "toggle":
 				if (state == "open") {
 					this.component.classList.remove("active")
 					this.triggerEvent("modal-close", {
-						navbar: this
+						modal: this
 					})
 				} else {
 					this.component.classList.add("active")
 					this.triggerEvent("modal-open", {
-						navbar: this
+						modal: this
 					})
 				}
 		}
 	}
 }
-

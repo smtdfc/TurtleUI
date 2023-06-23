@@ -23,6 +23,7 @@
 @import "./Components/loader.css";
 @import "./Components/alert.css";
 @import "./Components/progress.css";
+@import "./Components/sidebar.css";
 @import "./Options/color.css";
 @import "./Options/padding.css";
 @import "./Options/margin.css";
@@ -40,4 +41,9 @@ html{
 body{
 	background: var(--body-bg);
 	color:var(--body-color);
+}
+
+hr{
+	border: solid;
+	border-width: 0.2px;
 }
