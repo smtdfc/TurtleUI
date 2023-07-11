@@ -38,49 +38,49 @@ button.btn:disabled,
 
 .btn-primary {
 	--btn-bg: var(--primary-color);
-	--btn-color: var(--body-color);
+	--btn-color: black;
 	--btn-border-color: var(--primary-color);
 }
 
 .btn-info {
 	--btn-bg: var(--info-color);
-	--btn-color: var(--body-color);
+	--btn-color: black;
 	--btn-border-color: var(--info-color);
 }
 
 .btn-success {
 	--btn-bg: var(--success-color);
-	--btn-color: var(--body-color);
+	--btn-color: black;
 	--btn-border-color: var(--success-color);
 }
 
 .btn-warn {
 	--btn-bg: var(--warn-color);
-	--btn-color: var(--body-color);
+	--btn-color: black;
 	--btn-border-color: var(--warn-color);
 }
 
 .btn-danger {
 	--btn-bg: var(--danger-color);
-	--btn-color: var(--body-color);
+	--btn-color: black;
 	--btn-border-color: var(--danger-color);
 }
 
 .btn-purple {
 	--btn-bg: var(--purple-color);
-	--btn-color: var(--body-color);
+	--btn-color: black;
 	--btn-border-color: var(--purple-color);
 }
 
 .btn-pink {
 	--btn-bg: var(--pink-color);
-	--btn-color: var(--body-color);
+	--btn-color: black;
 	--btn-border-color: var(--pink-color);
 }
 
 .btn-violet {
 	--btn-bg: var(--violet-color);
-	--btn-color: var(--body-color);
+	--btn-color: black;
 	--btn-border-color: var(--violet-color);
 }
 
@@ -92,7 +92,7 @@ button.btn:disabled,
 	--btn-color: var(--primary-color);
 	--btn-border-color: var(--primary-color);
 	--btn-hover-bg: var(--primary-color);
-	--btn-hover-color: var(--body-color);
+	--btn-hover-color: black;
 }
 
 .btn-outline-info {
@@ -100,7 +100,7 @@ button.btn:disabled,
 	--btn-color: var(--info-color);
 	--btn-border-color: var(--info-color);
 	--btn-hover-bg: var(--info-color);
-	--btn-hover-color: var(--body-color);
+	--btn-hover-color: black;
 }
 
 .btn-outline-success {
@@ -108,7 +108,7 @@ button.btn:disabled,
 	--btn-color: var(--success-color);
 	--btn-border-color: var(--success-color);
 	--btn-hover-bg: var(--success-color);
-	--btn-hover-color: var(--body-color);
+	--btn-hover-color: black;
 }
 
 .btn-outline-warn {
@@ -116,7 +116,7 @@ button.btn:disabled,
 	--btn-color: var(--warn-color);
 	--btn-border-color: var(--warn-color);
 	--btn-hover-bg: var(--warn-color);
-	--btn-hover-color: var(--body-color);
+	--btn-hover-color: black;
 }
 
 .btn-outline-danger {
@@ -124,7 +124,7 @@ button.btn:disabled,
 	--btn-color: var(--danger-color);
 	--btn-border-color: var(--danger-color);
 	--btn-hover-bg: var(--danger-color);
-	--btn-hover-color: var(--body-color);
+	--btn-hover-color: black;
 }
 
 .btn-outline-purple {
@@ -132,7 +132,7 @@ button.btn:disabled,
 	--btn-color: var(--purple-color);
 	--btn-border-color: var(--purple-color);
 	--btn-hover-bg: var(--purple-color);
-	--btn-hover-color: var(--body-color);
+	--btn-hover-color: black;
 }
 
 
@@ -141,7 +141,7 @@ button.btn:disabled,
 	--btn-color: var(--pink-color);
 	--btn-border-color: var(--pink-color);
 	--btn-hover-bg: var(--pink-color);
-	--btn-hover-color: var(--body-color);
+	--btn-hover-color: black;
 }
 
 .btn-outline-violet {
@@ -149,7 +149,7 @@ button.btn:disabled,
 	--btn-color: var(--violet-color);
 	--btn-border-color: var(--violet-color);
 	--btn-hover-bg: var(--violet-color);
-	--btn-hover-color: var(--body-color);
+	--btn-hover-color: black;
 }
 
 .btn-sm {

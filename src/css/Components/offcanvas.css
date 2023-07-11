@@ -113,7 +113,8 @@
 .offcanvas-nav>li>a {
 	transition: 0.4s;
 	transition-property: background;
-	padding: 15px;
+	border-radius: 5px;
+	padding: 10px;
 	display: flex;
 	color: var(--offcanvas-nav-item-color);
 }
