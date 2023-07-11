@@ -156,13 +156,22 @@
 	}
 }
 
-.line-loader.loader-info>.bar::after,.bar::before{
+.line-loader.loader-info>.bar::before {
 	background-color: var(--info-color);
 }
 
-.line-loader.loader-success>.bar::after,.bar::before{
+.line-loader.loader-info>.bar::after{
+	background-color: var(--info-color);
+}
+
+.line-loader.loader-success>.bar::before {
 	background-color: var(--success-color);
 }
+
+.line-loader.loader-success>.bar::after {
+	background-color: var(--success-color);
+}
+
 @keyframes spin {
 	to {
 		transform: rotate(360deg);
