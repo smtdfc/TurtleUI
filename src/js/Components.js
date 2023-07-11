@@ -47,12 +47,13 @@ export class TurtleUITab {
 	}
 	
 	open(index){
-		this.tabItems.classList.forEach(tabItem=>{
+		this.tabItems.list.forEach(tabItem=>{
+			
 			tabItem.classList.remove("active")
 		})
 
 		let element = this.tabItems.get(index)
-		if(!element.element){
+		if(!element.HTMLElement){
 			throw "Invalid tab item index"
 		}else{
 			element.classList.add("active")
@@ -62,8 +63,8 @@ export class TurtleUITab {
 			tabContent.classList.remove("active")
 		})
 		
-		element = this.tabContents.list[index]
-		if (!element) {
+		element = this.tabContents.get(index)
+		if (!element.HTMLElement) {
 			throw "Invalid tab content index"
 		} else {
 			element.classList.add("active")
@@ -72,14 +73,14 @@ export class TurtleUITab {
 	
 	close(index) {
 		let element = this.tabItems.get(index)
-		if (!element.element) {
+		if (!element.HTMLElement) {
 			throw "Invalid tab item index"
 		} else {
 			element.classList.remove("active")
 		}
 	
 		element = this.tabContent.get(index)
-		if (!element.element) {
+		if (!element.HTMLElement) {
 			throw "Invalid tab content index"
 		} else {
 			element.classList.remove("active")
