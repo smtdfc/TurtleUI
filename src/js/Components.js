@@ -40,7 +40,7 @@ export class TurtleUIComponent {
 
 export class TurtleUITab {
 	constructor(query){
-		this.selector = new window.Turtle.Selector()
+		this.selector = new window.Turtle.TurtleSelector()
 		this.tab = this.selector.byQuery(query)
 		this.tabItems = this.tab.selectAll(".tab-items>*")
 		this.tabContents = this.tab.selectAll(".tab-contents>*")
