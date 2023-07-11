@@ -1,4 +1,4 @@
-const selector = new window.Turtle.Selector()
+const selector = new window.Turtle.TurtleSelector()
 let count = 0
 let MainOverlayElement = document.createElement("div")
 MainOverlayElement.classList.add("overlay")
@@ -47,22 +47,22 @@ export class TurtleUITab {
 	}
 	
 	open(index){
-		this.tabItems.elements.forEach(tabItem=>{
+		this.tabItems.classList.forEach(tabItem=>{
 			tabItem.classList.remove("active")
 		})
 
-		let element = this.tabItems.index(index)
+		let element = this.tabItems.get(index)
 		if(!element.element){
 			throw "Invalid tab item index"
 		}else{
 			element.classList.add("active")
 		}
 		
-		this.tabContents.elements.forEach(tabContent => {
+		this.tabContents.list.forEach(tabContent => {
 			tabContent.classList.remove("active")
 		})
 		
-		element = this.tabContents.elements[index]
+		element = this.tabContents.list[index]
 		if (!element) {
 			throw "Invalid tab content index"
 		} else {
@@ -71,14 +71,14 @@ export class TurtleUITab {
 	}
 	
 	close(index) {
-		let element = this.tabItems.index(index)
+		let element = this.tabItems.get(index)
 		if (!element.element) {
 			throw "Invalid tab item index"
 		} else {
 			element.classList.remove("active")
 		}
 	
-		element = this.tabContent.index(index)
+		element = this.tabContent.get(index)
 		if (!element.element) {
 			throw "Invalid tab content index"
 		} else {
