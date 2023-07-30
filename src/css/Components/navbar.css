@@ -1,0 +1,248 @@
+.navbar {
+	--nav-bg: var(--body-bg);
+	--nav-items-hover-bg: rgba(0, 0, 0, 0.1);
+	--nav-items-color: var(--body-color);
+	position: fixed;
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	background: var(--nav-bg);
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	z-index: 1001;
+
+}
+
+.nav-blur-effect {
+	backdrop-filter: blur(8px);
+	background: transparent;
+}
+
+.nav-brand {
+	margin: 0;
+	display: flex;
+	justify-items: center;
+	align-items: center;
+	padding: 10px;
+}
+
+.nav-brand>h1 {
+	margin: 0;
+	padding: 0;
+	font-size: 25px;
+}
+
+.nav-btn {
+	margin: 0;
+	background: transparent;
+	border: none;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.nav-avatar {
+	margin: 0;
+	margin-right: 10px;
+	padding: 5px;
+}
+
+.nav-avatar>img {
+
+	width: 45px;
+	height: 45px;
+	border-radius: 5px;
+}
+
+.nav-content {
+	display: none;
+	margin: 0;
+	padding: 15px;
+	display: flex;
+	flex-flow: row;
+}
+
+.nav-items {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+}
+
+.nav-items>li {
+	margin: 0px 5px;
+	padding: 0px;
+}
+
+.nav-items li {
+	list-style: none;
+}
+
+
+.nav-items a {
+	text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+	.navbar {
+		justify-content: space-between;
+	}
+
+	.nav-content {
+		position: fixed;
+		top: 0;
+		left: -100%;
+		height: 100%;
+		display: block;
+		background: var(--nav-bg);
+		width: 80%;
+		transition: 0.5s;
+	}
+
+	.navbar.active>.nav-content {
+		left: 0;
+	}
+
+	.nav-content>.nav-btn {
+		margin: 10px;
+		font-size: 20px;
+	}
+
+	.nav-content>.nav-items {
+		display: flex;
+		flex-flow: column;
+	}
+
+	.nav-content>.nav-items>li {
+		margin: 2px;
+	}
+
+	.nav-content>.nav-items>li>a {
+		display: flex;
+		align-items: center;
+		padding: 8px;
+		border-radius: 5px;
+		color: var(--nav-items-color);
+		transition: 0.2s ease-in-out;
+		cursor: none;
+	}
+
+	.nav-content>.nav-items>li:hover>a {
+		background: var(--nav-items-hover-bg);
+	}
+
+	.nav-content>.nav-items>li.active>a {
+		color: var(--primary-color);
+		background: var(--nav-items-hover-bg);
+	}
+
+	.nav-content>.nav-items>li>ul {
+		display: none;
+		border-left: solid;
+		border-left-color: grey;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		margin-left: 15px;
+		padding-left: 10px;
+	}
+
+	.nav-content>.nav-items>li>ul>li {
+		margin: 2px;
+	}
+
+	.nav-content>.nav-items>li>ul>li>a {
+		display: flex;
+		align-items: center;
+		padding: 8px;
+		border-radius: 5px;
+		color: var(--nav-items-color);
+	}
+
+	.nav-content>.nav-items>li>ul>li:hover>a {
+		background: var(--nav-items-hover-bg);
+	}
+
+	.nav-content>.nav-items>li>ul>li.active>a {
+		color: var(--primary-color);
+	}
+
+	.nav-content>.nav-items>li.active>ul {
+		display: block;
+	}
+
+	.nav-content>.nav-items>li:hover>ul {
+		display: block;
+	}
+}
+
+@media only screen and (min-width: 600px) {
+	.navbar {
+		justify-content: space-around;
+	}
+
+	.nav-content {
+		display: flex;
+	}
+
+	.nav-btn {
+		display: none;
+	}
+
+	.nav-content>.nav-items {
+		display: flex;
+		align-items: center;
+		flex-flow: row;
+	}
+
+	.nav-content>.nav-items>li {
+		margin: 5px;
+	}
+
+	.nav-content>.nav-items>li>a {
+		display: flex;
+		align-items: center;
+		color: var(--nav-items-color);
+		cursor: none;
+		transition: 0.2s ease-in-out;
+	}
+
+	.nav-content>.nav-items>li:hover>a {
+		color: var(--primary-color);
+	}
+
+	.nav-content>.nav-items>li>ul {
+		display: none;
+		margin-top: 10px;
+		position: absolute;
+		background: var(--nav-bg);
+		min-height: 20px;
+		padding: 0;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		border-radius: 5px;
+		box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+
+	}
+
+	.nav-content>.nav-items>li>ul>li>a {
+		display: flex;
+		align-items: center;
+		padding: 10px;
+		color: var(--nav-items-color);
+	}
+
+	.nav-content>.nav-items>li>ul>li:hover>a {
+		background: var(--nav-items-hover-bg);
+	}
+
+	.nav-content>.nav-items>li>ul>li.active>a {
+		color: var(--primary-color);
+	}
+
+	.nav-content>.nav-items>li:hover>ul {
+		display: block;
+	}
+}

@@ -49,12 +49,14 @@ window.addEventListener("click", function(event) {
 	let target = event.target
 	let data = target.dataset
 	try {
-		if (target.parentElement.classList.contains("navbar-item") || target.parentElement.classList.contains("nav-item")) {
-			target.parentElement.classList.contains("active-subitem") ?
-				target.parentElement.classList.remove("active-subitem") :
-				target.parentElement.classList.add("active-subitem")
-		}
-
+		
+let parent = e.target.parentElement
+if (parent) {
+  let p = parent.parentElement
+  if (p && p.classList.contains("sidebar-nav-items")) {
+    parent.classList.toggle("open")
+  }
+}
 
 	} catch (e) {}
 	if (data.action) {
