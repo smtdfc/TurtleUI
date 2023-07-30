@@ -24,6 +24,7 @@
 @import "./Components/alert.css";
 @import "./Components/progress.css";
 @import "./Components/sidebar.css";
+@import "./Components/footer.css";
 @import "./Options/color.css";
 @import "./Options/padding.css";
 @import "./Options/margin.css";
@@ -47,3 +48,19 @@ hr{
 	border: solid;
 	border-width: 0.2px;
 }
+
+body::-webkit-scrollbar {
+	  width: 5px;
+	}
+
+body::-webkit-scrollbar-track {
+	  background: #f1f1f1;
+	}
+
+body::-webkit-scrollbar-thumb {
+	  background: #888;
+	}
+
+body::-webkit-scrollbar-thumb:hover {
+	  background: #555;
+	}

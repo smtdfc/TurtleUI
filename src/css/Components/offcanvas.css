@@ -1,5 +1,8 @@
 .offcanvas {
 	--offcanvas-bg: var(--body-bg);
+		--offcanvas-nav-items-hover-bg: rgba(0, 0, 0, 0.1);
+	--offcanvas-nav-items-color: var(--body-color);
+
 	position: fixed;
 	background: var(--offcanvas-bg);
 	box-sizing: border-box;
@@ -25,6 +28,107 @@
 .offcanvas.offcanvas-bottom {
 	bottom: -200%;
 	left: 0;
+}
+
+.offcanvas-header{
+  display: flex;
+  align-items: center;
+  flex-flow: row;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.offcanvas-title{
+  margin: 0;
+}
+
+.offcanvas-close-btn{
+  background: none;
+  border: none;
+  font-size: 20px;
+  margin: 10px;
+  padding: 5px;
+}
+
+.offcanvas-body{
+  margin: 0;
+  padding: 10px;
+}
+
+.offcanvas-nav-items {
+	display: flex;
+	flex-flow: column;
+	margin: 0;
+	padding: 0;
+}
+
+.offcanvas-nav-items li{
+  list-style: none;
+}
+
+.offcanvas-nav-items a{
+  text-decoration: none;
+}
+
+.offcanvas-nav-items>li {
+	margin: 2px;
+}
+
+.offcanvas-nav-items>li>a {
+	display: flex;
+	align-items: center;
+	padding: 8px;
+	border-radius: 5px;
+	color: var(--offcanvas-nav-items-color);
+	transition: 0.2s ease-in-out;
+	cursor: none;
+}
+
+.offcanvas-nav-items>li:hover>a {
+	background: var(--offcanvas-nav-items-hover-bg);
+}
+
+.offcanvas-nav-items>li.active>a {
+	color: var(--primary-color);
+	background: var(--offcanvas-nav-items-hover-bg);
+}
+
+.offcanvas-nav-items>li>ul {
+	display: none;
+	border-left: solid;
+	border-left-color: grey;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 15px;
+	padding-left: 10px;
+}
+
+.offcanvas-nav-items>li>ul>li {
+	margin: 2px;
+}
+
+.offcanvas-nav-items>li>ul>li>a {
+	display: flex;
+	align-items: center;
+	padding: 8px;
+	border-radius: 5px;
+	color: var(--offcanvas-nav-items-color);
+}
+
+.offcanvas-nav-items>li>ul>li:hover>a {
+	background: var(--offcanvas-nav-items-hover-bg);
+}
+
+.offcanvas-nav-items>li>ul>li.active>a {
+	color: var(--primary-color);
+}
+
+.offcanvas-nav-items>li.active>ul {
+	display: block;
+}
+
+.offcanvas-nav-items>li.open>ul {
+	display: block;
 }
 
 @media only screen and (max-width: 600px) {

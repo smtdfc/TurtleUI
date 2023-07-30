@@ -18,3 +18,7 @@
 .overlay.active{
 	display: block;
 }
+.overlay.main.active{
+  z-index: 1000;
+	display: block;
+}

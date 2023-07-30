@@ -1,6 +1,7 @@
 .btn {
 	--btn-bg: none;
 	--btn-color: var(--body-color);
+	--btn-hover-bg:var(--btn-bg);
 	margin: 5px;
 	padding: 8px;
 	background: var(--btn-bg);

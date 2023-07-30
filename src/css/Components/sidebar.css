@@ -26,7 +26,7 @@
 }
 
 .sidebar.sidebar.sidebar-icon .sidebar-nav-items .icon {
-	font-size: 40px;
+	font-size: 25px;
 }
 
 .sidebar.sidebar.sidebar-icon .sidebar-nav-items .icon~span {
@@ -102,7 +102,7 @@
 }
 
 
-.sidebar-toggle-btn{
+.sidebar-close-btn{
 	background: none;
 	border: none;
 	font-size: 20px;
@@ -142,6 +142,9 @@
 		.sidebar-toggle-btn {
 			display: block;
 		}
+				.sidebar-close-btn {
+				  display: block;
+				}
 }
 
 @media only screen and (min-width: 600px) {
@@ -149,7 +152,7 @@
 		display: none;
 	}
 	.sidebar.sidebar.sidebar-icon .sidebar-nav-items .icon {
-		font-size: 40px;
+		font-size: 25px;
 		padding: 5px;
 	}
 
@@ -165,7 +168,7 @@
 	}
 
 	.sidebar-container>.sidebar.sidebar.sidebar-icon {
-		flex: 35%;
+		flex: 30%;
 		min-height: 75vh;
 		max-height: 75vh;
 		overflow-y: scroll;
@@ -214,4 +217,7 @@
 	.sidebar.active {
 		left: 0;
 	}
+			.sidebar-close-btn {
+			  display: none;
+			}
 }

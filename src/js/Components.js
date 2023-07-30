@@ -7,7 +7,6 @@ document.body.append(MainOverlayElement)
 
 export class TurtleUIMainOverlay {
 	static open() {
-
 		count++
 		MainOverlayElement.classList.add("active")
 	}
@@ -101,12 +100,14 @@ export class TurtleUINavbar extends TurtleUIComponent {
 
 		switch (mode) {
 			case "open":
+			  TurtleUIMainOverlay.open()
 				this.component.classList.add("active")
 				this.triggerEvent("navbar-open", {
 					navbar: this
 				})
 				break
 			case "close":
+			  TurtleUIMainOverlay.close()
 				this.component.classList.remove("active")
 				this.triggerEvent("navbar-close", {
 					navbar: this
@@ -114,11 +115,13 @@ export class TurtleUINavbar extends TurtleUIComponent {
 				break
 			case "toggle":
 				if (state == "open") {
+				  TurtleUIMainOverlay.close()
 					this.component.classList.remove("active")
 					this.triggerEvent("navbar-close", {
 						navbar: this
 					})
 				} else {
+				  TurtleUIMainOverlay.open()
 					this.component.classList.add("active")
 					this.triggerEvent("navbar-open", {
 						navbar: this

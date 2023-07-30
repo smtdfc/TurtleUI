@@ -51,6 +51,7 @@
 	padding: 12px;
 	text-decoration: none;
 	display: block;
+	float: left;
 }
 
 .dropdown-content *:hover {

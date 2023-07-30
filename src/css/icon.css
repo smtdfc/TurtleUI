@@ -22,6 +22,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon{
+  padding-right: 16px;
+  font-size: 25px;
+}
 .icon-search:before {
   content: "\e986";
 }
