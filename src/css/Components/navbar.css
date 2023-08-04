@@ -99,7 +99,7 @@
 		display: block;
 		background: var(--nav-bg);
 		width: 90%;
-		transition: 0.5s;
+		transition:left 0.5s;
 	}
 
 	.navbar.active>.nav-content {
@@ -126,12 +126,13 @@
 		padding: 8px;
 		border-radius: 5px;
 		color: var(--nav-items-color);
-		transition: 0.2s ease-in-out;
+		
 		cursor: none;
 	}
 
 	.nav-content>.nav-items>li:hover>a {
 		background: var(--nav-items-hover-bg);
+		transition: background 0.5s
 	}
 
 	.nav-content>.nav-items>li.active>a {
@@ -208,11 +209,13 @@
 		align-items: center;
 		color: var(--nav-items-color);
 		cursor: none;
-		transition: 0.2s ease-in-out;
+		
 	}
 
 	.nav-content>.nav-items>li:hover>a {
 		color: var(--primary-color);
+		transition:color 0.2s;
+		
 	}
 
 	.nav-content>.nav-items>li>ul {
