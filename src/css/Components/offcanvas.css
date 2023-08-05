@@ -2,13 +2,11 @@
   --offcanvas-bg: var(--body-bg);
   --offcanvas-nav-items-hover-bg: rgba(0, 0, 0, 0.1);
   --offcanvas-nav-items-color: var(--body-color);
-  --anmi-name:none;
-  top:0;
+  --anmi-name: none;
+  top: 0;
   left: 0;
   bottom: 0;
   position: fixed;
-  display: flex;
-  flex-direction: column;
   background: var(--offcanvas-bg);
   box-sizing: border-box;
   transition: transform 0.2s ease-in-out;
@@ -16,7 +14,7 @@
   z-index: 1004;
   background-clip: padding-box;
   outline-width: 0px;
-  max-width:100%;
+  max-width: 100%;
 }
 
 .offcanvas.offcanvas-left {
@@ -136,10 +134,12 @@
 .offcanvas-nav-items>li.open>ul {
   display: block;
 }
-  .offcanvas.active {
-    visibility: visible;
-    transform: none;
-  }
+
+.offcanvas.active {
+  visibility: visible;
+  transform: none;
+}
+
 @media only screen and (max-width: 600px) {
 
   .offcanvas-left,
@@ -153,7 +153,8 @@
     width: 100%;
     height: 55%;
   }
-/*
+
+  /*
   .offcanvas.offcanvas-left.active {
     transform: none;
   }
@@ -186,7 +187,8 @@
     width: 100%;
     height: 20%;
   }
-/*
+
+  /*
   .offcanvas.offcanvas-left.active {
     transform: translateX(0%);
   }
