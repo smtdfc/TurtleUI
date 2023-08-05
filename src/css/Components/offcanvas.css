@@ -141,8 +141,6 @@
   .offcanvas-right {
     width: 100%;
     height: 100%;
-
-
   }
 
   .offcanvas-top,
@@ -153,20 +151,24 @@
 
   .offcanvas.offcanvas-left.active {
     /*left: 0;*/
+    transition: transform 0.3s;
     transform: translateX(0%);
   }
 
   .offcanvas.offcanvas-right.active {
     /*right: 0;*/
+    transition: transform 0.3s;
     transform: translateX(0%);
   }
 
   .offcanvas.offcanvas-top.active {
     transform: translateY(0%);
+    transition: transform 0.3s;
   }
 
   .offcanvas.offcanvas-bottom.active {
     transform: translateY(0%);
+    transition: transform 0.3s;
   }
 }
 
