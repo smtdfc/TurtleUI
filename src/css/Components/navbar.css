@@ -94,16 +94,17 @@
 	.nav-content {
 		position: fixed;
 		top: 0;
-		left: -100%;
+		left: 0;
 		height: 100%;
 		display: block;
 		background: var(--nav-bg);
 		width: 90%;
-		transition:left 0.5s;
+		transition:transform 0.3s;
+		transform: translateX(-100%);
 	}
 
 	.navbar.active>.nav-content {
-		left: 0;
+		transform: translateX(0%);
 	}
 
 	.nav-content>.nav-btn {
