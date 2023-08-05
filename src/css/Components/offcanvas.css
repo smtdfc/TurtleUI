@@ -3,9 +3,7 @@
   --offcanvas-nav-items-hover-bg: rgba(0, 0, 0, 0.1);
   --offcanvas-nav-items-color: var(--body-color);
   --anmi-name: none;
-  top: 0;
-  left: 0;
-  bottom: 0;
+  
   position: fixed;
   background: var(--offcanvas-bg);
   box-sizing: border-box;
@@ -13,24 +11,32 @@
   transition-delay: 0s;
   z-index: 1004;
   background-clip: padding-box;
+  transition: all 0.1s;
   outline-width: 0px;
   max-width: 100%;
 }
 
 .offcanvas.offcanvas-left {
-
+top:0;
+left: 0;
   transform: translateX(-100%);
 }
 
 .offcanvas.offcanvas-right {
+  top: 0;
+  right: 0;
   transform: translateX(100%);
 }
 
 .offcanvas.offcanvas-top {
+  top: 0;
+  left: 0;
   transform: translateY(-100%);
 }
 
 .offcanvas.offcanvas-bottom {
+  bottom: 0;
+  right: 0;
   transform: translateY(100%);
 }
 
