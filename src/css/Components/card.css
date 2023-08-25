@@ -1,0 +1,30 @@
+.card-group {
+  max-width: 90%;
+  overflow: auto;
+  margin: 5px;
+  white-space: nowrap;
+}
+
+.card {
+  margin: 5px;
+  display: inline-block;
+  flex-direction: column;
+  border: solid;
+  border-width: 1px;
+  border-color: darkgray;
+  border-radius: 5px;
+  min-width: 150px;
+}
+
+.card-img-top {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  vertical-align: top;
+  width: 100%;
+  margin-bottom: 1px;
+}
+
+.card-body {
+  padding: 16px;
+  margin: 5px 0px;
+}
