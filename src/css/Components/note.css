@@ -1,0 +1,26 @@
+.note{
+  display: none;
+  padding: 16px;
+  margin:10px 5px;
+  
+}
+
+.note.active{
+  display: flex;
+}
+
+.note-info{
+  background: #7BDBFF8F;
+}
+
+.note-success{
+  background: #7BFFA78F;
+}
+
+.note-warn{
+  background: #FFF07B8F;
+}
+
+.note-danger{
+  background: #FF7B7B8F;
+}

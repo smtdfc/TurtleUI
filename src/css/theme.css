@@ -7,8 +7,7 @@
 	--success-color: #00D102;
 	--warn-color: #EFD900;
 	--danger-color: red;
-	--purple-color: #880ED4;
-	--pink-color: #FB5FF9;
-	--violet-color: violet;
-	--sidebar-width:50px;
+	--on-primary:black;
+	--on-info:black;
+	--on-success:black;
 }
