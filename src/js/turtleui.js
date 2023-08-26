@@ -29,7 +29,7 @@ function hasClasses(element, classes = []) {
   return passed
 }
 
-const Actions = {
+export const Actions = {
   "toggle": function(args) {
     let component = document.querySelector(args.toggle)
     component.classList.toggle("active")
@@ -77,3 +77,9 @@ window.addEventListener("click", function(e) {
     Actions.opentab(args, e.target)
   }
 })
+
+window.TURTLE.TURTLE_UI ={
+  Actions,
+  openMainOverlay,
+  closeMainOverlay
+}
