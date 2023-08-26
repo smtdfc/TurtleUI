@@ -1,0 +1,64 @@
+.alert {
+  margin: 5px;
+  --alert-bg: var(--primary-color);
+  padding: 16px;
+  background-color: var(--alert-bg);
+  color: var(--body-color);
+  word-break: break-all;
+  -webkit-animation-name: fadeIn;
+  -moz-animation-name: fadeIn;
+  -o-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 0.5s;
+  -moz-animation-duration: 0.5s;
+  -o-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  border-radius: 5px;
+}
+
+
+.alert-close-btn {
+  margin-left: 15px;
+  background: transparent;
+  border: none;
+  color: var(--body-color);
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.alert-info{
+  --alert-bg:#7BDBFF8F;
+}
+
+.alert-success {
+  --alert-bg: #7BFFA78F;
+}
+
+.alert-warn {
+  --alert-bg: #FFF07B8F;
+}
+
+.alert-danger {
+  --alert-bg: #FF7B7B8F;
+}
+
+.alert-group {
+  position: fixed;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  z-index: 1006;
+}
+
+.alert-group-top {
+  top: 0;
+}
+
+.alert-group-bottom {
+  bottom: 0;
+}

@@ -2,9 +2,22 @@
   display: none;
   padding: 16px;
   margin:10px 5px;
-  
+  border-radius: 5px;
 }
 
+.note-header{
+  font-size: 23px;
+  font-weight: bold;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
+
+.note-header > *{
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0px;
+}
 .note.active{
   display: flex;
 }

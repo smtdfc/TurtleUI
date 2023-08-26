@@ -1,0 +1,38 @@
+table,th,td,tr{
+  border: solid;
+  border-width:0.8px;
+}
+.table{
+  margin: 5px;
+}
+
+.table.table-border {
+  border-collapse: collapse;
+}
+
+.table.table-border th, td ,tr{
+  padding: 15px;
+  text-align: left;
+}
+
+th.table-header-success{
+  background-color: #45FA97;
+  color: white;
+
+}
+
+th.table-header-danger{
+  background-color: red;
+  color: white;
+}
+
+th.table-header-warn {
+  background-color:#DAE100 ;
+  color: white;
+}
+
+.table.table-triped tr:nth-child(even) {background-color: #f2f2f2;}
+.table-responsive{
+  max-width: 98%;
+  overflow-x: auto;
+}
