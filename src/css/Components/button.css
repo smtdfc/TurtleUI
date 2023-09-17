@@ -1,0 +1,117 @@
+.btn {
+  margin: 5px;
+  padding: 10px;
+  background: none;
+  border: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  transition: all 0.2s;
+}
+
+.btn-sm {
+  padding: 5px;
+}
+
+.btn-md {
+  padding: 13px;
+}
+
+.btn-lg {
+  padding: 16px;
+}
+
+.btn-primary {
+  border-color: rgb(var(--primary-color));
+  background: rgb(var(--primary-color));
+  color: var(--on-primary);
+}
+
+.btn-info {
+  border-color: rgb(var(--info-color));
+  background: rgb(var(--info-color));
+  color: var(--on-info);
+}
+
+.btn-success {
+  border-color: rgb(var(--success-color));
+  background: rgb(var(--success-color));
+  color: var(--on-success);
+}
+
+.btn-warn {
+  border-color: rgb(var(--warn-color));
+  background: rgb(var(--warn-color));
+  color: var(--on-warn);
+}
+
+.btn-danger {
+  border-color: rgb(var(--danger-color));
+  background: rgb(var(--danger-color));
+  color: var(--on-danger);
+}
+
+.btn-outline-primary {
+  border-color: rgb(var(--primary-color));
+  color: rgb(var(--primary-color));
+}
+
+.btn-outline-primary:hover {
+  border-color: rgb(var(--primary-color));
+  background: rgb(var(--primary-color));
+  color: var(--on-primary);
+}
+
+
+.btn-outline-info {
+  border-color: rgb(var(--info-color));
+  color: rgb(var(--info-color));
+}
+
+.btn-outline-info:hover {
+  border-color: rgb(var(--info-color));
+  background: rgb(var(--info-color));
+  color: var(--on-info);
+}
+
+.btn-outline-success {
+  border-color: rgb(var(--success-color));
+  color: rgb(var(--success-color));
+}
+
+.btn-outline-success:hover {
+  border-color: rgb(var(--success-color));
+  background: rgb(var(--success-color));
+  color: var(--on-success);
+}
+
+.btn-outline-warn {
+  border-color: rgb(var(--warn-color));
+  color: rgb(var(--warn-color));
+}
+
+.btn-outline-warn:hover {
+  border-color: rgb(var(--warn-color));
+  background: rgb(var(--warn-color));
+  color: var(--on-warn);
+}
+
+.btn-outline-danger {
+  border-color: rgb(var(--danger-color));
+  color: rgb(var(--danger-color));
+}
+
+.btn-outline-danger:hover {
+  border-color: rgb(var(--danger-color));
+  background: rgb(var(--danger-color));
+  color: var(--on-danger);
+}
+
+
+.btn:disabled {
+  border: none;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.btn-rounded {
+  border-radius: 30px;
+}

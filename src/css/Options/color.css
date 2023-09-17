@@ -1,0 +1,21 @@
+.bg-transparent{
+  background-color: transparent;
+}
+.bg-white{
+  background-color: white;
+}
+
+.bg-dark{
+  background-color: none;
+}
+
+.bg-primary{
+  background: var(--primary-color);
+}
+
+.text-color-white{
+  color: white;
+}
+.text-color-white > *{
+  color: white;
+}

@@ -1,0 +1,37 @@
+.breadcrumb{
+  --breadcrumb-divider:">";
+  display: flex;
+  align-items: center;
+  margin: 8px;
+  max-width: 90%;
+  overflow-x:scroll;
+}
+
+.breadcrumb li{
+  list-style: none;
+}
+
+.breadcrumb a{
+  text-decoration: none;
+}
+
+.breadcrumb > li {
+  padding: 5px 0px;
+}
+
+.breadcrumb > li>a{
+  color: rgb(var(--info-color));
+}
+
+.breadcrumb > li::after{
+  content: var(--breadcrumb-divider);
+  padding: 0px 5px;
+}
+
+.breadcrumb > li:last-child::after{
+  display: none;
+}
+
+.breadcrumb > li.current > a{
+  color: rgba(0, 0, 0, 0.3);
+}
