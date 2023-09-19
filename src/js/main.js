@@ -54,7 +54,7 @@ const Actions = {
       tabContents.children[i].classList.remove("active")
       if (i == idx) tabContents.children[i].classList.add("active")
     }
-    
+
   }
 }
 
@@ -84,11 +84,7 @@ export class TurtleUIModule {
     this.app = app
     this.actions = Actions
     this.mainOverlaySetup = mainOverlaySetup
+    this.app.ui = this
   }
-
-  init() {
-
-  }
-
-
+  init() {}
 }

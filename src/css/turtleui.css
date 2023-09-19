@@ -13,8 +13,17 @@
 @import "./Components/breadcrumb.css";
 @import "./Components/accordion.css";
 @import "./Components/card.css";
+@import "./Components/table.css";
+@import "./Components/badge.css";
+
 @import "./Options/color.css";
 @import "./Options/effect.css";
+@import "./Options/border.css";
+@import "./Options/flex.css";
+@import "./Options/overflow.css";
+@import "./Options/position.css";
+@import "./Options/text.css";
+@import "./Options/display.css";
 
 * {
   font-family: Arial, Helvetica, sans-serif;
@@ -39,4 +48,10 @@
 
 .icon {
   margin: 0px 5px;
+}
+
+.clearfix::after{
+  display: block;
+  clear: both;
+  content: "";
 }

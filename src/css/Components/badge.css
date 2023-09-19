@@ -1,0 +1,34 @@
+.badge {
+  --badge-bg: rgb(var(--primary-color));
+  --badge-color: var(--on-primary);
+  background-color: var(--badge-bg);
+  color: var(--badge-color);
+  display: block;
+  padding: 5px;
+  margin: 0;
+  border-radius: 5px;
+}
+
+.badge.badge-rounded{
+  border-radius:20px;
+}
+
+.badge-info {
+  --badge-color: var(--on-info);
+  --badge-bg: rgb(var(--info-color));
+}
+
+.badge-success {
+  --badge-color: var(--on-success);
+  --badge-bg: rgb(var(--success-color));
+}
+
+.badge-warn {
+  --badge-color: var(--on-warn);
+  --badge-bg: rgb(var(--warn-color));
+}
+
+.badge-danger {
+  --badge-color: var(--on-danger);
+  --badge-bg: rgb(var(--danger-color));
+}
