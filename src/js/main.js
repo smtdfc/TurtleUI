@@ -1,24 +1,36 @@
 let count = 0
-let mainOverlay = null
-let mainOverlaySetup = {
-  blurEffect: false,
-  background: "rgba(0,0,0,0.4)"
+let special_components = {}
+
+function genrateKey(prefix = "_") {
+  return `${prefix}${(Math.floor(Math.random()*10000)*Date.now()).toString(16)}`
 }
 
-function openMainOverlay() {
-  count++
-  if (count > 1) return
-  mainOverlay = document.createElement("div")
-  mainOverlay.style.setProperty("--overlay-bg", mainOverlaySetup.background)
-  mainOverlay.className = `overlay ${mainOverlaySetup.blurEffect ? "blur" : ""} active `
-  document.body.appendChild(mainOverlay)
-}
+special_components.mainOverlay = document.createElement("div")
+special_components.mainOverlay.className = "overlay"
+special_components.mainOverlay.id = genrateKey()
 
-function closeMainOverlay() {
-  count--
-  if (count > 0) return
-  if (count < 0) count = 0
-  mainOverlay.remove()
+special_components.mainToasts = document.createElement("div")
+special_components.mainToasts.className = "toasts toasts-bottom"
+special_components.mainToasts.id = genrateKey()
+
+
+Object.keys(special_components).forEach(name => {
+  document.body.appendChild(special_components[name])
+})
+
+class TurtleUIMainOverlayController {
+  static openMainOverlay() {
+    count++
+    if (count > 1) return
+    special_components.classList.add("active")
+  }
+
+  static closeMainOverlay() {
+    count--
+    if (count > 0) return
+    if (count < 0) count = 0
+    special_components.classList.remove("active")
+  }
 }
 
 const Actions = {
@@ -83,8 +95,28 @@ export class TurtleUIModule {
   constructor(app) {
     this.app = app
     this.actions = Actions
-    this.mainOverlaySetup = mainOverlaySetup
+    this.mainOverlay = TurtleUIMainOverlayController
     this.app.ui = this
   }
+  
+  addMsg(msg,level="info",timeout=1500){
+    if(level =="error") level = "danger"
+    let toast = document.createElement("div")
+    toast.className =`toast toast-${level}`
+    toast.id = genrateKey("toast_")
+    toast.innerHTML  = `
+      <div class="toast-contents">${msg}</div>
+    `
+    special_components.mainToasts.appendChild(toast)
+    setTimeout(()=>{
+      toast.remove()
+    },timeout)
+    return toast
+  }
+  
   init() {}
 }
+
+new TurtleUIModule({
+  
+})

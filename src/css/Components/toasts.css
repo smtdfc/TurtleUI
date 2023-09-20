@@ -17,9 +17,9 @@
 }
 
 .toast {
-  --toast-bg: rgba(var(--primary-color), 0.9);
+  --toast-bg: rgba(var(--primary-color), 0.5);
   --toast-color: var(--on-primary);
-  margin: 10px 0px;
+  margin: 5px 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -36,6 +36,7 @@
   animation-duration: 0.2s;
   box-sizing: border-box;
   flex-direction: row;
+  border-radius:5px;
 }
 
 .toast-contents {
@@ -51,7 +52,7 @@
   margin: 5px 5px;
   transition: all 0.3s;
   padding: 5px;
-
+  color: var(--toast-color);
 }
 
 .toast-close-btn:hover {
@@ -59,37 +60,39 @@
 }
 
 .toast-info {
-  --toast-bg: rgba(var(--info-color), 0.9);
+  --toast-bg: rgba(var(--info-color), 0.5);
   --toast-color: var(--on-info);
 }
 
 .toast-success {
-  --toast-bg: rgba(var(--success-color), 0.9);
+  --toast-bg: rgba(var(--success-color), 0.5);
   --toast-color: var(--on-success);
 }
 
 .toast-warn {
-  --toast-bg: rgba(var(--warn-color), 0.9);
+  --toast-bg: rgba(var(--warn-color), 0.5);
   --toast-color: var(--on-warn);
 }
 
 .toast-danger {
-  --toast-bg: rgba(var(--danger-color), 0.9);
+  --toast-bg: rgba(var(--danger-color), 0.5);
   --toast-color: var(--on-danger);
 }
 
 .toast-danger {
-  --toast-bg: rgba(var(--danger-color), 0.9);
+  --toast-bg: rgba(var(--danger-color), 0.5);
   --toast-color: var(--on-danger);
 }
 
 
 @keyframes show {
   from {
+    
     transform: scale(0.01);
   }
 
   to {
+    
     transform: scale(1);
   }
 }
