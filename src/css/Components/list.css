@@ -1,21 +1,21 @@
 .list {
-  --list-border-radius: 5px;
+  --list-border-radius: 0.3125rem;
   --list-border-color: rgba(0, 0, 0, 0.1);
   --list-hover-bg: rgba(0, 0, 0, 0.1);
   --list-hover-color: currentColor;
   text-decoration: none;
   list-style: none;
   padding: 0;
-  margin: 5px;
+  margin: 0.3125rem;
 
 }
 
 .list-item {
   display: flex;
   align-content: center;
-  padding: 16px;
+  padding: 1rem;
   border: solid;
-  border-width: 1px;
+  border-width: 0.0625rem;
   border-color: var(--list-border-color);
   border-bottom: none;
 }
@@ -29,7 +29,7 @@
   border-bottom-left-radius: var(--list-border-radius);
   border-bottom-right-radius: var(--list-border-radius);
   border-bottom: solid;
-  border-width: 1px;
+  border-width: 0.0625rem;
   border-color: var(--list-border-color);
 }
 

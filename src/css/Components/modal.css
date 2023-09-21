@@ -19,11 +19,11 @@
 
 .modal-contents{
   margin:auto;
-  margin-top:16px;
+  margin-top:1rem;
   background: var(--modal-bg);
   display: block;
   width:95vw;
-  border-radius: 5px;
+  border-radius: 0.3125rem;
   -webkit-animation-name: show;
   -moz-animation-name: show;
   -o-animation-name: show;
@@ -40,11 +40,11 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 10px;
+  padding: 0.625rem;
 }
 
 .modal-toggle-btn{
-  padding: 10px;
+  padding: 0.625rem;
   margin: 0;
   background: transparent;
   color:var(--modal-color);
@@ -59,7 +59,7 @@
 
 .modal-body{
   height: 100%;
-  padding: 16px;
+  padding: 1rem;
   max-height: 90vh;
   overflow-y: scroll;
   box-sizing: border-box;
@@ -68,12 +68,12 @@
 .modal-fullscreen > .modal-contents{
   width: 100vw;
   height: 100vh;
-  border-radius:0px;
-  margin: 0px;
+  border-radius:0;
+  margin: 0;
 }
 
 
-@media (min-width:768px){
+@media (min-width:48rem){
   .modal-contents{
     width: 40vw;
     max-width: 50ww;

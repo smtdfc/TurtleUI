@@ -19,7 +19,7 @@
 .toast {
   --toast-bg: rgba(var(--primary-color), 0.5);
   --toast-color: var(--on-primary);
-  margin: 5px 0px;
+  margin: 0.3125rem 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -36,11 +36,11 @@
   animation-duration: 0.2s;
   box-sizing: border-box;
   flex-direction: row;
-  border-radius:5px;
+  border-radius:0.3125rem;
 }
 
 .toast-contents {
-  padding: 16px;
+  padding: 1rem;
   color: var(--toast-color);
 }
 
@@ -48,10 +48,10 @@
   background: transparent;
   border: none;
   border-radius: 50%;
-  font-size: 18px;
-  margin: 5px 5px;
+  font-size: 1.125rem;
+  margin: 0.3125rem 0.3125rem;
   transition: all 0.3s;
-  padding: 5px;
+  padding: 0.3125rem;
   color: var(--toast-color);
 }
 

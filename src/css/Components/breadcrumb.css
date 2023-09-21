@@ -2,7 +2,7 @@
   --breadcrumb-divider:">";
   display: flex;
   align-items: center;
-  margin: 8px;
+  margin: 0.5rem;
   max-width: 90%;
   overflow-x:scroll;
 }
@@ -16,7 +16,7 @@
 }
 
 .breadcrumb > li {
-  padding: 5px 0px;
+  padding: 0.3125rem 0;
 }
 
 .breadcrumb > li>a{
@@ -25,7 +25,7 @@
 
 .breadcrumb > li::after{
   content: var(--breadcrumb-divider);
-  padding: 0px 5px;
+  padding: 0 0.3125rem;
 }
 
 .breadcrumb > li:last-child::after{

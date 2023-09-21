@@ -6,21 +6,21 @@
 
 .table thead > tr > th{
     font-weight: bold;
-  padding: 10px 16px;
+  padding: 0.625rem 1rem;
   text-align: center;
   border-left: solid ;
   border-bottom:solid;
   border-color:rgba(0, 0, 0, 0.3);
-  border-width:1px;
+  border-width:0.0625rem;
   
 }
 
 .table tbody>tr>td {
-  padding: 16px;
+  padding: 1rem;
   text-align: center;
   border-bottom:solid;
   border-color:rgba(0, 0, 0, 0.3);
-  border-width:1px;
+  border-width:0.0625rem;
   white-space: pre-wrap;
 }
 
@@ -35,7 +35,7 @@
   border-collapse: collapse;
   border:solid;
   border-color:rgba(0, 0, 0, 0.3);
-  border-width:1px;
+  border-width:0.0625rem;
 }
 
 .table.table-hover tbody> tr:hover{

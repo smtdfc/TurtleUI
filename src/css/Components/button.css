@@ -1,23 +1,23 @@
 .btn {
-  margin: 5px;
-  padding: 10px;
+  margin: 0.3125rem;
+  padding: 0.625rem;
   background: none;
   border: solid;
-  border-width: 1px;
-  border-radius: 5px;
+  border-width: 0.0625rem;
+  border-radius: 0.3125rem;
   transition: all 0.2s;
 }
 
 .btn-sm {
-  padding: 5px;
+  padding: 0.3125rem;
 }
 
 .btn-md {
-  padding: 13px;
+  padding: 0.8125rem;
 }
 
 .btn-lg {
-  padding: 16px;
+  padding: 1rem;
 }
 
 .btn-primary {
@@ -113,5 +113,5 @@
 }
 
 .btn-rounded {
-  border-radius: 30px;
+  border-radius: 1.875rem;
 }

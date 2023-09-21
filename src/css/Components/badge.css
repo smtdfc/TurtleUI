@@ -4,13 +4,13 @@
   background-color: var(--badge-bg);
   color: var(--badge-color);
   display: block;
-  padding: 5px;
+  padding: 0.3125rem;
   margin: 0;
-  border-radius: 5px;
+  border-radius: 0.3125rem;
 }
 
 .badge.badge-rounded{
-  border-radius:20px;
+  border-radius:1.25rem;
 }
 
 .badge-info {

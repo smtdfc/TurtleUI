@@ -3,5 +3,5 @@
 }
 
 .blur {
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(0.3125rem);
 }

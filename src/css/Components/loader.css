@@ -2,7 +2,7 @@
   --loader-bg:rgba(0, 0, 0, 0);
   --loader-color:rgb(var(--primary-color));
   width: 100%;
-  height: 5px;
+  height: 0.3125rem;
   background-color: var(--loader-bg);
   position: relative;
   overflow: hidden;
@@ -57,42 +57,42 @@
 }
 
 .line-loader.loader-sm{
-  height: 3px;
+  height: 0.1875rem;
 }
 
 .line-loader.loader-md {
-  height: 7px;
+  height: 0.4375rem;
 }
 
 .line-loader.loader-lg {
-  height: 10px;
+  height: 0.625rem;
 }
 
 .circle-loader {
   --loader-color:var(--primary-color);
-  border: 4px solid rgba(0, 0, 0, 0);
-  border-top: 4px solid var(--loader-color);
-  border-left: 4px solid var(--loader-color);
-  border-bottom: 4px solid var(--loader-color);
+  border: 0.25rem solid rgba(0, 0, 0, 0);
+  border-top: 0.25rem solid var(--loader-color);
+  border-left: 0.25rem solid var(--loader-color);
+  border-bottom: 0.25rem solid var(--loader-color);
   border-radius: 50%;
-  width: 35px;
-  height: 35px;
+  width: 2.1875rem;
+  height: 2.1875rem;
   animation: spin 1s linear infinite;
 }
 
 .circle-loader.loader-sm{
-  width: 30px;
-  height: 30px;
+  width: 1.875rem;
+  height: 1.875rem;
 }
 
 .circle-loader.loader-md {
-  width: 40px;
-  height: 40px;
+  width: 2.5rem;
+  height: 2.5rem;
 }
 
 .circle-loader.loader-lg {
-  width: 50px;
-  height: 50px;
+  width: 3.125rem;
+  height: 3.125rem;
 }
 
 .loader-info {
