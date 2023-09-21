@@ -42,7 +42,6 @@ const Actions = {
     let toggle = data["toggle"]
     let element = document.querySelector(data[toggle])
     let state = element.classList.contains("active")
-
     element.classList.toggle("active")
     if (["offcanvas"].includes(toggle)) {
       if (state) closeMainOverlay()
@@ -116,7 +115,3 @@ export class TurtleUIModule {
   
   init() {}
 }
-
-new TurtleUIModule({
-  
-})
