@@ -1,0 +1,26 @@
+import terser from '@rollup/plugin-terser';
+import postcss from 'rollup-plugin-postcss';
+export default {
+  input: "./src/turtleui.js",
+  output: [
+    {
+      file: './dist/turtleui.min.cjs',
+      format: 'cjs'
+      },
+    {
+      file: './dist/turtleui.min.js',
+      format: 'umd',
+      name: "TurtleUI"
+      },
+    {
+      file: './dist/turtleui.min.mjs',
+      format: 'esm'
+      },
+    ],
+  plugins: [
+    postcss({
+      extensions: ['.css'],
+    }),
+    terser(),
+  ]
+};
