@@ -1,5 +1,6 @@
 import terser from '@rollup/plugin-terser';
 import postcss from 'rollup-plugin-postcss';
+import postcssImport from 'postcss-import';
 
 export default {
   input: "./src/turtleui.js",
@@ -21,6 +22,7 @@ export default {
   plugins: [
     postcss({
       extensions: ['.css'],
+      plugins:[postcssImport()]
     }),
     terser(),
   ]
