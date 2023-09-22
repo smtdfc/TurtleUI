@@ -1,3 +1,4 @@
+@import "./Libraries/normalize.css";
 @import "./Libraries/animate.min.css";
 
 @import "./Components/avatar.css";
@@ -28,8 +29,10 @@
 @import "./Options/text.css";
 @import "./Options/display.css";
 @import "./Options/animations.css";
+@import "./Options/margin.css";
+@import "./Options/padding.css";
 
-@import "./Libraries/normalize.css";
+
 
 * {
   font-family: Arial, Helvetica, sans-serif;
