@@ -11,7 +11,7 @@
 }
 
 .p-3{
-  padding: 1px;
+  padding: 1rem;
 }
 
 .p-4{
@@ -43,7 +43,7 @@
 }
 
 .pl-3 {
-  padding-left: 1px;
+  padding-left: 1rem;
 }
 
 .pl-4 {
@@ -71,7 +71,7 @@
 }
 
 .pr-3 {
-  padding-right: 1px;
+  padding-right: 1rem;
 }
 
 .pr-4 {
@@ -99,7 +99,7 @@
 }
 
 .pt-3 {
-  padding-top: 1px;
+  padding-top: 1rem;
 }
 
 .pt-4 {
@@ -127,7 +127,7 @@
 }
 
 .pb-3 {
-  padding-bottom: 1px;
+  padding-bottom: 1rem;
 }
 
 .pb-4 {
