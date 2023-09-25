@@ -44,8 +44,8 @@ const Actions = {
     let state = element.classList.contains("active")
     element.classList.toggle("active")
     if (["offcanvas"].includes(toggle)) {
-      if (state) closeMainOverlay()
-      else openMainOverlay()
+      if (state) TurtleUIMainOverlayController.closeMainOverlay()
+      else TurtleUIMainOverlayController.openMainOverlay()
     }
   },
   openTab: function(target, data) {
