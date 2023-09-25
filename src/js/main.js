@@ -22,14 +22,14 @@ class TurtleUIMainOverlayController {
   static openMainOverlay() {
     count++
     if (count > 1) return
-    special_components.classList.add("active")
+    special_components.mainOverlay.classList.add("active")
   }
 
   static closeMainOverlay() {
     count--
     if (count > 0) return
     if (count < 0) count = 0
-    special_components.classList.remove("active")
+    special_components.mainOverlay.classList.remove("active")
   }
 }
 
