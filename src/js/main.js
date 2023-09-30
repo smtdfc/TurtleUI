@@ -54,6 +54,7 @@ const buildIn = {
 		init: function() {
 			this.element.className = "toasts toasts-bottom"
 			this.element.id = generateKey()
+			document.body.appendChild(this.element)
 		}
 	},
 	"mainOverlay": {
@@ -62,6 +63,8 @@ const buildIn = {
 		init: function() {
 			this.element.id = generateKey()
 			this.element.className = `overlay `
+			document.body.appendChild(this.element)
+
 		},
 		open: function() {
 			if (this._count == 0) this.element.classList.add("active")
@@ -78,6 +81,7 @@ const buildIn = {
 
 }
 
+Object.keys(buildIn).forEach(name=>buildIn[name].init())
 window.addEventListener("click", function(e) {
 	try {
 		let target = e.target
