@@ -4,8 +4,8 @@ const component_names = {
 	"navbar": components.NavbarComponent,
 	"offcanvas": components.OffcanvasComponent,
 	"accordion": components.AccordionComponent,
-	"sidebar":components.SidebarComponent,
-	"modal":components.ModalComponent,
+	"sidebar": components.SidebarComponent,
+	"modal": components.ModalComponent,
 }
 
 const Actions = {
@@ -21,29 +21,6 @@ const Actions = {
 	},
 	removeparent: function(data, t) {
 		t.parentElement.remove()
-	},
-
-}
-
-const buildIn = {
-	"mainOverlay": {
-		element: document.createElement("div"),
-		_count: 0,
-		init: function() {
-			this.element.id = generateKey()
-			this.element.className = `overlay `
-		},
-		open: function() {
-			if (this._count == 0) this.element.classList.add("active")
-			this._count++
-		},
-		close: function() {
-			this._count--
-			if (this._count <= 0) {
-				this._count = 0
-				this.element.classList.add("active")
-			}
-		}
 	},
 	openTab: function(data, target) {
 		let tab = document.querySelector(data["opentab"])
@@ -64,6 +41,36 @@ const buildIn = {
 		}
 
 	}
+}
+
+const buildIn = {
+	"mainToasts": {
+		element: document.createElement("div"),
+		init: function() {
+			this.element.className = "toasts toasts-bottom"
+			this.element.id = generateKey()
+		}
+	},
+	"mainOverlay": {
+		element: document.createElement("div"),
+		_count: 0,
+		init: function() {
+			this.element.id = generateKey()
+			this.element.className = `overlay `
+		},
+		open: function() {
+			if (this._count == 0) this.element.classList.add("active")
+			this._count++
+		},
+		close: function() {
+			this._count--
+			if (this._count <= 0) {
+				this._count = 0
+				this.element.classList.add("active")
+			}
+		}
+	},
+
 }
 
 window.addEventListener("click", function(e) {
@@ -92,7 +99,21 @@ export class TurtleUIModule {
 		this.actions = Actions
 		this.generateKey = generateKey
 	}
-	init(){}
+	init() {}
+	addMsg(msg, level = "info", timeout = 1500) {
+		if (level == "error") level = "danger"
+		let toast = document.createElement("div")
+		toast.className = `toast toast-${level}`
+		toast.id = genrateKey("toast_")
+		toast.innerHTML = `
+	      <div class="toast-contents">${msg}</div>
+	    `
+		buildIn.mainToasts.element.appendChild(toast)
+		setTimeout(() => {
+			toast.remove()
+		}, timeout)
+		return toast
+	}
 }
 
 export function generateKey(prefix = "_") {
