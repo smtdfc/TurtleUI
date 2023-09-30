@@ -1,0 +1,36 @@
+
+.badge {
+	--badge-bg: var(--primary-color);
+	--badge-color: var(--on-primary);
+
+	each(@colors, {
+		&-@{value} {
+			--badge-bg:~"var(--@{value}-color)";
+			--badge-color:~"var(--on-@{value})";
+		}
+	});
+	
+	&-sm {
+		padding: 0.125rem;
+	}
+	
+	&-md {
+		padding: 0.375rem;
+	}
+	
+	&-lg {
+		padding: 0.625rem;
+	}
+	
+	&-rounded {
+		border-radius: 1.25rem;
+	}
+	
+	background-color: var(--badge-bg);
+	color: var(--badge-color);
+	display: flex;
+	align-items: center;
+	padding: 0.313rem;
+	margin: 0 0.125rem;
+	border-radius: 0.3125rem;
+}

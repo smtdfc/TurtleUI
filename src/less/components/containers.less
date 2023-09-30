@@ -1,0 +1,122 @@
+.image-container {
+	img {
+		width: 100%;
+		height: 100%;
+	}
+
+	.image-contents-over {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		display: grid;
+		place-content: center;
+	}
+
+	.image-description{
+		&.full-height{
+			height: 100%;
+		}
+		
+		padding: 0.5rem;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		background: transparent;
+		backdrop-filter: blur(9px);
+		transform: translateY(100%);
+		transition: 0.3s all;
+		text-align:center;
+		-webkit-animation-name: fadeInUp;
+		-moz-animation-name: fadeInUp;
+		-o-animation-name: fadeInUp;
+		animation-name: fadeInUp;
+		-webkit-animation-duration: 0.3s;
+		-moz-animation-duration: 0.3s;
+		-o-animation-duration: 0.3s;
+		animation-duration: 0.3s;
+		display: none;
+		transform: translateY(0%);
+	}
+	
+	&:hover{
+		.image-description{
+			display: block;
+		}
+	}
+	
+	position: relative;
+	padding: 0;
+	margin: 0;
+}
+
+.sidebar-container {
+	display: flex;
+	flex-direction: row;
+}
+
+.main-container {
+	max-width: 99vw;
+	padding: 1rem;
+	margin: 0;
+}
+
+@media (max-width: 48rem) {
+	.sidebar-container {
+		display: block;
+
+		.contents {
+			flex: 99%;
+			min-height: 91vh;
+		}
+
+		.sidebar {
+			min-height: 1vh;
+			position: fixed;
+			top: 0;
+			left: 0;
+			background: white;
+			width: 100%;
+			height: 100%;
+			padding-top: 1rem;
+			transform: translateX(-100%);
+			transition: all 0.3s;
+		}
+
+		.sidebar.active {
+			transform: translateX(0%);
+		}
+
+		.sidebar-toggle-btn {
+			display: block;
+		}
+
+		.sidebar .sidebar-menu {
+			margin-top: 1.875rem;
+		}
+	}
+}
+
+@media (min-width: 48rem) {
+	.sidebar-container {
+		.contents {
+			flex: 99%;
+			min-height: 91vh;
+		}
+
+		.sidebar-toggle-btn {
+			display: none;
+		}
+
+		.sidebar {
+			flex: 15.625rem;
+			min-width: 15.625rem;
+			border-right: solid;
+			border-color: rgba(0, 0, 0, 0.2);
+		}
+
+		display: flex;
+	}
+}

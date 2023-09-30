@@ -1,0 +1,44 @@
+.table {
+	border-collapse: collapse;
+	width: 100%;
+	position: relative;
+}
+
+.table thead>tr>th {
+	font-weight: bold;
+	padding: 0.625rem 1rem;
+	text-align: center;
+	border-left: solid;
+	border-bottom: solid;
+	border-color: rgba(0, 0, 0, 0.3);
+	border-width: 0.0625rem;
+
+}
+
+.table tbody>tr>td {
+	padding: 1rem;
+	text-align: center;
+	border-bottom: solid;
+	border-color: rgba(0, 0, 0, 0.3);
+	border-width: 0.0625rem;
+	white-space: pre-wrap;
+}
+
+.table-responsive {
+	max-width: 98%;
+	overflow-x: scroll;
+}
+
+.table-bordered tr,
+.table-bordered td,
+.table-bordered th {
+	border-collapse: collapse;
+	border: solid;
+	border-color: rgba(0, 0, 0, 0.3);
+	border-width: 0.0625rem;
+}
+
+.table.table-hover tbody>tr:hover {
+	transition: 0.3s all;
+	background-color: rgba(0, 0, 0, 0.05);
+}

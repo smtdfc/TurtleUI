@@ -1,0 +1,59 @@
+.card-group {
+	padding: 0.3125rem 0;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	max-width: 100%;
+	overflow-x: scroll;
+	scroll-padding: 0 1%;
+	scroll-snap-type: x mandatory;
+
+	&::-webkit-scrollbar {
+		width: 0.625rem;
+	}
+
+	&::-webkit-scrollbar-track {
+		background: #f1f1f1;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background: #888;
+	}
+
+	&::-webkit-scrollbar-thumb:hover {
+		background: #555;
+	}
+
+}
+
+.card {
+	--card-bg: transparent;
+	--card-color: var(--body-color);
+
+	.card-body {
+		padding: 1rem;
+		width: 100%;
+		color:var(--card-color);
+	}
+
+	.card-img {
+		vertical-align: middle;
+		width: 100%;
+		height: 100%;
+		transition: 0.2s all;
+	}
+
+	.card-img:hover {
+		transform: scale(1.02);
+	}
+
+	scroll-snap-align: center;
+	margin-left:0.3125rem;
+	margin-right: 0.3125rem;
+	display: flex;
+	flex-flow: column;
+	float: left;
+	border:solid;
+	border-width: 0.0625rem;
+	border-color: rgba(0, 0, 0, 0.3);
+}

@@ -1,0 +1,44 @@
+@vals : 0, 0.25rem, 0.5rem, 1rem, 1.5rem, 3rem;
+
+each(@vals, {
+	.p-@{index} {
+		padding: @value;
+	}
+
+	.pt-@{index} {
+		padding-top: @value;
+	}
+
+	.pb-@{index} {
+		padding-bottom: @value;
+	}
+
+	.pl-@{index} {
+		padding-left: @value;
+	}
+
+	.pr-@{index} {
+		padding-right: @value;
+	}
+
+	.px-@{index} {
+		padding: 0 @value;
+	}
+
+	.py-@{index} {
+		padding: @value 0;
+	}
+
+});
+
+.p-auto {
+	padding: auto;
+}
+
+.px-auto {
+	padding: 0 auto;
+}
+
+.py-auto {
+	padding: auto 0;
+}

@@ -1,0 +1,44 @@
+@vals : 0, 0.25rem, 0.5rem, 1rem, 1.5rem, 3rem;
+
+each(@vals, {
+	.m-@{index} {
+		margin: @value;
+	}
+
+	.mt-@{index} {
+		margin-top: @value;
+	}
+
+	.mb-@{index} {
+		margin-bottom: @value;
+	}
+
+	.ml-@{index} {
+		margin-left: @value;
+	}
+
+	.mr-@{index} {
+		margin-right: @value;
+	}
+
+	.mx-@{index} {
+		margin: 0 @value;
+	}
+
+	.my-@{index} {
+		margin: @value 0;
+	}
+	
+});
+
+.m-auto {
+	margin: auto;
+}
+
+.mx-auto {
+	margin: 0 auto;
+}
+
+.my-auto {
+	margin: auto 0;
+}

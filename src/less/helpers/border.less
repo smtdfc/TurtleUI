@@ -1,0 +1,42 @@
+.border-none {
+	border: none;
+}
+
+.border-top {
+	border-top: solid;
+}
+
+.border-left {
+	border-top: left;
+}
+
+.border-bottom {
+	border-top: bottom;
+}
+
+.border-right {
+	border-top: right;
+}
+
+.border-white {
+	border-color: white;
+}
+
+.border-black {
+	border-color: black;
+}
+
+each(@colors, {
+	.border-@{value} {
+		border-color: ~"var(--@{value}-color)";
+	}
+
+});
+
+.rounded {
+	border-radius: 0.3125rem;
+}
+
+.rounded-circle {
+	border-radius: 50%;
+}

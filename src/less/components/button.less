@@ -1,0 +1,70 @@
+.btn {
+	--btn-bg: transparent;
+	--btn-color: none;
+	--btn-border-color: var(--btn-bg);
+	--btn-hover-bg: transparent;
+	--btn-hover-color: none;
+	--btn-hover-border-color: var(--btn-bg);
+
+	each(@colors, {
+		&-@{value} {
+			--btn-color:~"var(--on-@{value})";
+			--btn-border-color:~"var(--@{value}-color)";
+			--btn-bg:~"var(--@{value}-color)";
+			--btn-hover-bg:var(--btn-bg);
+			--btn-hover-color:var(--btn-color);
+			--btn-hover-border-color:var(--btn-border-color);
+		}
+
+		&-outline-@{value} {
+			--btn-color:~"var(--@{value}-color)";
+			--btn-border-color:~"var(--@{value}-color)";
+			--btn-bg: transparent;
+			--btn-hover-color:~"var(--on-@{value})";
+			--btn-hover-border-color:~"var(--@{value}-color)";
+			--btn-hover-bg:~"var(--@{value}-color)";
+		}
+
+	});
+
+	&-sm {
+		padding: 0.4rem;
+	}
+	
+	&-md {
+		padding: 0.7rem;
+	}
+	
+	&-lg {
+		padding: 0.9rem;
+	}
+	
+	&-rounded {
+		border-radius: 2rem;
+	}
+	
+	&:disabled {
+		--btn-bg: transparent;
+		--btn-color: rgba(0, 0, 0, 0.5);
+		--btn-border-color: rgba(0, 0, 0, 0.1);
+		--btn-hover-bg: var(--btn-bg);
+		--btn-hover-color: var(--btn-color);
+		--btn-hover-border-color: var(--btn-border-color);
+	}
+	
+	&:hover {
+		background-color: var(--btn-hover-bg);
+		color: var(--btn-hover-color);
+		border-color: var(--btn-hover-border-color);
+	}
+	
+	margin: 0.313rem;
+	padding: 0.6rem;
+	border: solid;
+	border-width: 1px;
+	border-radius: 5px;
+	background-color: var(--btn-bg);
+	color: var(--btn-color);
+	border-color: var(--btn-border-color);
+	transition: 0.3s all;
+}

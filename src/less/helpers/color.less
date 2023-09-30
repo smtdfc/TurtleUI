@@ -1,0 +1,37 @@
+.bg-transparent {
+	background-color: transparent;
+}
+
+.bg-white {
+	background-color: white;
+}
+
+.bg-black {
+	background-color: black;
+}
+
+.bg-none {
+	background-color: none;
+}
+
+
+each(@colors, {
+	.bg-@{value} {
+		background-color: ~"var(--@{value}-color)";
+	}
+
+});
+
+.color-white {
+	color: white;
+}
+
+.color-black {
+	color: black;
+}
+
+each(@colors, {
+	.color-@{value} {
+		color: ~"var(--@{value}-color)";
+	}
+});
