@@ -21,7 +21,7 @@ export default {
     ],
   plugins: [
     postcss({
-      extensions: ['.css'],
+      extensions: ['.css','.less'],
       plugins:[postcssImport()]
     }),
     terser(),
