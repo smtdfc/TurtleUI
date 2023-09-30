@@ -1,5 +1,10 @@
 import * as components from "./Components.js"
 
+export function generateKey(prefix = "_") {
+	return `${prefix}${(Math.floor(Math.random()*100000)*Date.now()).toString(16)}`
+}
+
+
 const component_names = {
 	"navbar": components.NavbarComponent,
 	"offcanvas": components.OffcanvasComponent,
@@ -104,7 +109,7 @@ export class TurtleUIModule {
 		if (level == "error") level = "danger"
 		let toast = document.createElement("div")
 		toast.className = `toast toast-${level}`
-		toast.id = genrateKey("toast_")
+		toast.id = generateKey("toast_")
 		toast.innerHTML = `
 	      <div class="toast-contents">${msg}</div>
 	    `
@@ -116,8 +121,5 @@ export class TurtleUIModule {
 	}
 }
 
-export function generateKey(prefix = "_") {
-	return `${prefix}${(Math.floor(Math.random()*100000)*Date.now()).toString(16)}`
-}
 
 export * as components from "./Components.js"
