@@ -17,7 +17,7 @@
 }
 
 .toast {
-	--toast-bg: rgba(var(--primary-color), 0.5);
+	--toast-bg: var(--primary-color);
 	--toast-color: var(--on-primary);
 	margin: 0.3125rem 0;
 	display: flex;
@@ -59,31 +59,12 @@
 	background-color: rgba(0, 0, 0, 0.1);
 }
 
-.toast-info {
-	--toast-bg: rgba(var(--info-color), 0.5);
-	--toast-color: var(--on-info);
-}
-
-.toast-success {
-	--toast-bg: rgba(var(--success-color), 0.5);
-	--toast-color: var(--on-success);
-}
-
-.toast-warn {
-	--toast-bg: rgba(var(--warn-color), 0.5);
-	--toast-color: var(--on-warn);
-}
-
-.toast-danger {
-	--toast-bg: rgba(var(--danger-color), 0.5);
-	--toast-color: var(--on-danger);
-}
-
-.toast-danger {
-	--toast-bg: rgba(var(--danger-color), 0.5);
-	--toast-color: var(--on-danger);
-}
-
+each(@colors,{
+	-toast-@{value}{
+		--toast-bg:~"var(--@{value}-color)";
+		--toast-color:~"var(--on-@{value})";
+	}
+})
 
 @keyframes showtoast {
 	from {
