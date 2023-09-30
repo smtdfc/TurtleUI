@@ -92,6 +92,7 @@ export class TurtleUIModule {
 		this.actions = Actions
 		this.generateKey = generateKey
 	}
+	init(){}
 }
 
 export function generateKey(prefix = "_") {
