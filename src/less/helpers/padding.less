@@ -1,4 +1,4 @@
-@vals : 0, 0.25rem, 0.5rem, 1rem, 1.5rem, 3rem;
+@vals : 0.25rem, 0.5rem, 1rem, 1.5rem, 3rem;
 
 each(@vals, {
 	.p-@{index} {
@@ -30,6 +30,36 @@ each(@vals, {
 	}
 
 });
+
+.p-0{
+	padding: 0;
+}
+
+.pr-0 {
+	padding-right: 0;
+}
+
+.pl-0 {
+	padding-left: 0;
+}
+
+.pt-0 {
+	padding-top: 0;
+}
+
+.pb-0{
+	padding-bottom: 0;
+}
+
+.px-0{
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.py-0{
+	padding-top: 0;
+	padding-bottom:0;
+}
 
 .p-auto {
 	padding: auto;

@@ -1,4 +1,4 @@
-@vals : 0, 0.25rem, 0.5rem, 1rem, 1.5rem, 3rem;
+@vals : 0.25rem, 0.5rem, 1rem, 1.5rem, 3rem;
 
 each(@vals, {
 	.m-@{index} {
@@ -28,8 +28,38 @@ each(@vals, {
 	.my-@{index} {
 		margin: @value 0;
 	}
-	
+
 });
+
+.m-0 {
+	margin: 0;
+}
+
+.mr-0 {
+	margin-right: 0;
+}
+
+.ml-0 {
+	margin-left: 0;
+}
+
+.mt-0 {
+	margin-top: 0;
+}
+
+.mb-0 {
+	margin-bottom: 0;
+}
+
+.mx-0 {
+	margin-right: 0;
+	margin-left: 0;
+}
+
+.my-0 {
+	margin-top: 0;
+	margin-bottom: 0;
+}
 
 .m-auto {
 	margin: auto;
