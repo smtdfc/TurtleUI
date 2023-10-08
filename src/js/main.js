@@ -21,8 +21,18 @@ const Actions = {
 		if (!Component) {
 			throw `This action unsupported component '${toggle}' !`
 		}
+
+
+
 		let $component = new Component(target)
 		$component.toggle()
+		if (["offcanvas"].includes(toggle)) {
+			if ($component.states.active) {
+				buildIn.mainOverlay.open()
+			} else {
+				buildIn.mainOverlay.close()
+			}
+		}
 	},
 	removeparent: function(data, t) {
 		t.parentElement.remove()
@@ -74,14 +84,14 @@ const buildIn = {
 			this._count--
 			if (this._count <= 0) {
 				this._count = 0
-				this.element.classList.add("active")
+				this.element.classList.remove("active")
 			}
 		}
 	},
 
 }
 
-Object.keys(buildIn).forEach(name=>buildIn[name].init())
+Object.keys(buildIn).forEach(name => buildIn[name].init())
 window.addEventListener("click", function(e) {
 	try {
 		let target = e.target
