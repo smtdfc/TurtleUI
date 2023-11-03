@@ -24,6 +24,7 @@
 	justify-content: space-between;
 	align-items: center;
 	background: var(--toast-bg);
+	color:var(--toast-color);
 	width: 98vw;
 	max-width: 98vw;
 	-webkit-animation-name:showtoast;
@@ -37,6 +38,13 @@
 	box-sizing: border-box;
 	flex-direction: row;
 	border-radius: 0.3125rem;
+	
+	each(@colors, {
+		&-@{value} {
+			--toast-bg:~"var(--@{value}-color-subtle)";
+			--toast-color:~"var(--@{value}-text-emphasis)";
+		}
+	});
 }
 
 .toast-contents {
@@ -59,13 +67,6 @@
 	background-color: rgba(0, 0, 0, 0.1);
 }
 
-each(@colors,{
-	-toast-@{value}{
-		--toast-bg:~"var(--@{value}-color)";
-		--toast-color:~"var(--on-@{value})";
-	}
-})
-
 @keyframes showtoast {
 	from {
 		transform: scale(0.09);
@@ -73,6 +74,5 @@ each(@colors,{
 
 	to {
 		transform: scale(1);
-
 	}
 }
