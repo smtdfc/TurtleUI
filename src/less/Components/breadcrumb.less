@@ -1,15 +1,21 @@
 .breadcrumb {
-
-	--breadcrumb-divider: ">";
-	--breadcrumb-item-color: var(--info-color);
-	--breadcrumb-item-hover-bg: rgba(0, 0, 0, 0.1);
+	--breadcrumb-item-color: var(--body-color);
 	--breadcrumb-item-hover-color: var(--primary-color);
+	--breadcrumb-item-active-color: var(--breadcrumb-item-hover-color);
+	--breadcrumb-divider: "/";
 
+	padding: 0;
+	margin: 0.2rem;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	max-width: 99.9999999999999%;
+	overflow-y: scroll;
 	>li {
 		a {
 			display: flex;
 			border-radius: 40px;
-			padding: 0.5rem 1rem;
+			padding: 0.5rem 0.5rem;
 			text-decoration: none;
 			color: var(--breadcrumb-item-color);
 		}
@@ -28,18 +34,10 @@
 
 		&:after {
 			content: var(--breadcrumb-divider);
-			padding: 0 0.3125rem;
 		}
-
+		
 		display: flex;
 		align-items: center;
 		list-style: none;
 	}
-
-
-	display: flex;
-	align-items: center;
-	margin: 0.5rem;
-	max-width: 90%;
-	overflow-x:scroll;
 }

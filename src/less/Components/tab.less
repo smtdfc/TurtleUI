@@ -21,8 +21,9 @@
 		display: flex;
 		align-items: center;
 		transition: all 0.3s;
-		padding: 1rem;
+		padding: 0.8rem 0.5rem;
 		white-space: nowrap;
+		margin-left:0.1rem;
 		border-bottom: solid;
 		border-bottom-width: 0.0625rem;
 		border-bottom-color: rgba(0, 0, 0, 0);
@@ -39,10 +40,18 @@
 	}
 }
 
-.tab-contents>* {
+.tab-contents {
 	display: none;
+	-webkit-animation-name:fadeInRight ;
+	-moz-animation-name: fadeInRight;
+	-o-animation-name: fadeInRight;
+	animation-name: fadeInRight;
+	-webkit-animation-duration: 0.3s;
+	-moz-animation-duration: 0.3s;
+	-o-animation-duration: 0.3s;
+	animation-duration: 0.3s;
 }
 
-.tab-contents>*.active {
+.tab-contents.active {
 	display: block;
 }

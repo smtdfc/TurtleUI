@@ -1,0 +1,38 @@
+.badge {
+	--badge-bg: var(--primary-color-subtle);
+	--badge-color: var(--primary-text-emphasis);
+	background: var(--badge-bg);
+	color: var(--badge-color);
+	margin: 0.2rem;
+	padding: 0.3rem 0.5rem;
+	display: flex;
+	align-items: center;
+	border-radius: 10px;
+	text-align: center;
+
+	&-badge-hover {
+		&:hover {
+			transform: scale(1.2);
+			transition: transform  0.5s ease;
+		}
+	}
+
+	each(@colors, {
+		&-@{value} {
+			--badge-bg:~"var(--@{value}-color-subtle)";
+			--badge-color:~"var(--@{value}-text-emphasis)";
+		}
+	});
+}
+
+.badge-group {
+	display: inline-flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	
+	&.badge-group-horizontal{
+		flex-wrap: nowrap;
+		max-width: 99.99999999%;
+		overflow-y: scroll;
+	}
+}

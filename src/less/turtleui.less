@@ -1,45 +1,46 @@
+@import (inline)"./Libraries/animate.min.css";
+@import (inline)"./Libraries/normalize.css";
+
 @colors : primary, info, success, warn, danger;
 
 :root,
 :root[data-theme="light"] {
-  --primary-color: #0d6efd;
-  --info-color: #0DC6FD;
-  --success-color: #198754;
-  --warn-color: #FFC107;
-  --danger-color: #dc3545;
+	--primary-color: #0d6efd;
+	--info-color: #0DC6FD;
+	--success-color: #198754;
+	--warn-color: #FFC107;
+	--danger-color: #dc3545;
 
-  --primary-color-subtle: #0067FF7A;
-  --info-color-subtle: #01C5FF8C;
-  --success-color-subtle: #2DFF1D80;
-  --warn-color-subtle: #FFBF0069;
-  --danger-color-subtle: #FF00168F;
+	--primary-color-subtle: #0067FF7A;
+	--info-color-subtle: rgba(217, 237, 247, 0.8);
+	--success-color-subtle: rgba(227, 253, 235, 0.8);
+	--warn-color-subtle:rgba(255, 218, 108, 0.3);
+	--danger-color-subtle: rgba(248, 215, 218, 1);
 
-  --primary-text-emphasis: #0D3B7F;
-  --info-text-emphasis: #00536C;
-  --success-text-emphasis: #004D2A;
-  --warn-text-emphasis: #5D4500;
-  --danger-text-emphasis: #88000C;
+	--primary-text-emphasis: #0D3B7F;
+	--info-text-emphasis: rgba(21, 184, 216, 1);
+	--success-text-emphasis: rgba(38, 179, 3, 1);
+	--warn-text-emphasis:  rgba(144, 114, 50, 1);
+	--danger-text-emphasis: rgba(220, 53, 69, 1);
 
-  --on-primary: white;
-  --on-info: white;
-  --on-success: white;
-  --on-warn: black;
-  --on-danger: white;
+	--on-primary: white;
+	--on-info: white;
+	--on-success: white;
+	--on-warn: black;
+	--on-danger: white;
 }
 
 
-@import (inline) "./libraries/normalize.css";
-@import (inline) "./libraries/animate.min.css";
-
-@import "./components/alert.less";
-@import "./components/accordion.less";
-@import "./components/badge.less";
-@import "./components/breadcrumb.less";
-@import "./components/button.less";
-@import "./components/containers.less";
+@import "./Components/accordion.less";
+@import "./Components/alert.less";
+@import "./Components/badge.less";
+@import "./Components/breadcrumb.less";
+@import "./Components/button.less";
+@import "./Components/card.less";
+@import "./Components/containers.less";
+@import "./Components/navbar.less";
 @import "./components/form.less";
 @import "./components/list.less";
-@import "./components/navbar.less";
 @import "./components/offcanvas.less";
 @import "./components/overlay.less";
 @import "./components/sidebar.less";
@@ -48,20 +49,21 @@
 @import "./components/loader.less";
 @import "./components/modal.less";
 @import "./components/table.less";
+@import "./Components/carousel.less";
 
-@import "./helpers/animations";
-@import "./helpers/border";
-@import "./helpers/color";
-@import "./helpers/display";
-@import "./helpers/effect";
-@import "./helpers/flex";
-@import "./helpers/margin";
-@import "./helpers/overflow";
-@import "./helpers/padding";
-@import "./helpers/position";
-@import "./helpers/text";
+@import "./Helpers/animations";
+@import "./Helpers/border";
+@import "./Helpers/color";
+@import "./Helpers/display";
+@import "./Helpers/effect";
+@import "./Helpers/flex";
+@import "./Helpers/margin";
+@import "./Helpers/overflow";
+@import "./Helpers/padding";
+@import "./Helpers/position";
+@import "./Helpers/text";
 
-*{
+* {
 	font-family: Arial, Helvetica, sans-serif;
 }
 

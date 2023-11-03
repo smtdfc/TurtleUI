@@ -4,24 +4,28 @@
 
 	&.active {
 		display: block;
+
+		>.modal-contents {
+			-webkit-animation-name: fadeInDown;
+			-moz-animation-name: fadeInDown;
+			-o-animation-name: fadeInDown;
+			animation-name: fadeInDown;
+			-webkit-animation-duration: 0.5s;
+			-moz-animation-duration: 0.5s;
+			-o-animation-duration: 0.5s;
+			animation-duration: 0.5s;
+			
+		}
 	}
 
 	.modal-contents {
 		margin: auto;
 		margin-top: 1rem;
 		background: var(--modal-bg);
-		display: block;
 		width: 95vw;
 		border-radius: 0.3125rem;
-		-webkit-animation-name: showModal;
-		-moz-animation-name: showModal;
-		-o-animation-name: showModal;
-		animation-name: showModal;
-		-webkit-animation-duration: 0.3s;
-		-moz-animation-duration: 0.3s;
-		-o-animation-duration: 0.3s;
-		animation-duration: 0.3s;
 		box-sizing: border-box;
+		transition: height 0.3s ease;
 	}
 
 	.modal-header {
@@ -54,8 +58,8 @@
 		box-sizing: border-box;
 	}
 
-	.modal-fullscreen {
-		.modal-contents{
+	&-fullscreen {
+		.modal-contents {
 			width: 100vw;
 			height: 100vh;
 			border-radius: 0;
@@ -73,12 +77,30 @@
 	place-content: center;
 	z-index: 1006;
 	box-sizing: border-box;
+	-webkit-animation-name: fadeIn;
+	-moz-animation-name: fadeIn;
+	-o-animation-name: fadeIn;
+	animation-name: fadeIn;
+	-webkit-animation-duration: 0.5s;
+	-moz-animation-duration: 0.5s;
+	-o-animation-duration: 0.5s;
+	animation-duration: 0.5s;
 }
 
+.modal-title{
+	margin: 0;
+	padding: 0.4rem;
+	font-size: 20px;
+	font-weight: normal;
+}
+
+
 @media (min-width:48rem) {
-	.modal-contents {
-		width: 40vw;
-		max-width: 50ww;
+	.modal:not(.modal-fullscreen) {
+		.modal-contents {
+			width: 40vw !important;
+			max-width: 60ww;
+		}
 	}
 }
 

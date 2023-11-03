@@ -3,6 +3,7 @@
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+
 	max-width: 100%;
 	overflow-x: scroll;
 	scroll-padding: 0 1%;
@@ -31,9 +32,8 @@
 	--card-color: var(--body-color);
 
 	.card-body {
-		padding: 1rem;
-		width: 100%;
-		color:var(--card-color);
+		padding: 0.5rem;
+		color: var(--card-color);
 	}
 
 	.card-img {
@@ -48,10 +48,11 @@
 	}
 
 	scroll-snap-align: center;
-	margin-left:0.3125rem;
-	margin-right: 0.3125rem;
+	margin-left:0.5rem;
+	margin-right: 0.5rem;
 	display: flex;
 	flex-flow: column;
+	box-sizing: border-box;
 	float: left;
 	border:solid;
 	border-width: 0.0625rem;

@@ -1,2 +1,2 @@
 import "./less/turtleui.less"
-export * from "./js/main.js"
+export * from "./js/turtleui.js"

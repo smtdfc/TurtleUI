@@ -8,7 +8,7 @@
 	height: 90vh;
 	max-height: 99vh;
 	overflow-y: scroll;
-
+	z-index: 1003;
 }
 
 .sidebar li {
@@ -24,6 +24,7 @@
 	max-height: 100vh;
 	overflow-y: scroll;
 	margin-bottom: 1.875rem;
+	width: 100%;
 
 	li>a {
 		display: flex;
@@ -35,7 +36,6 @@
 	}
 
 	li:hover>a {
-
 		background-color: var(--sidebar-items-hover-bg);
 		color: var(--sidebar-items-hover-color);
 	}
@@ -88,6 +88,55 @@
 	li.open>ul {
 		display: block;
 	}
+}
+
+
+.sidebar-icon {
+	@media (min-width: 48rem) {
+		&.sidebar-left {
+			.sidebar-menu>li>a>span:nth-child(2) {
+				left: 5rem;
+			}
+		}
+
+		&.sidebar-right {
+			.sidebar-menu>li>a>span:nth-child(2) {
+				right: 5rem;
+			}
+		}
+
+		.sidebar-menu>li>a {
+			padding: 1rem 1.5rem;
+			justify-content: center;
+			box-sizing: border-box;
+		}
+
+		.sidebar-menu>li>a>span:nth-child(2) {
+			padding: 0;
+			display: none;
+			font-size: 17px;
+		}
+
+		.sidebar-menu>li:hover>a>span:nth-child(2) {
+			display: block;
+			position: absolute;
+			background: black;
+			padding: 8px;
+			border-radius: 10px;
+			color: white;
+			transition: 0.3s all;
+			-webkit-animation-name: fadeIn;
+			-moz-animation-name: fadeIn;
+			-o-animation-name: fadeIn;
+			animation-name: fadeIn;
+			-webkit-animation-duration: 0.3s;
+			-moz-animation-duration: 0.3s;
+			-o-animation-duration: 0.3s;
+			animation-duration: 0.3s;
+		}
+	}
+
+
 }
 
 .sidebar-toggle-btn {
