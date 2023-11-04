@@ -6,6 +6,11 @@ export class Offcanvas{
 	static supportedActions =["tToggle"]
 
 	toggle(){
+		if(this.component.classList.contains("active")){
+			TURTLE_UI.buildIn.mainOverlay.close()
+		}else{
+			TURTLE_UI.buildIn.mainOverlay.open()
+		}
 		this.component.classList.toggle("active")
 	}
 }

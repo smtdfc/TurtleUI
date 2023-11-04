@@ -8,6 +8,7 @@ export class Navbar {
 	static supportedActions = ["tToggle"]
 
 	toggle() {
+		
 		this.component.classList.toggle("active")
 	}
 

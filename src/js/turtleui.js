@@ -5,9 +5,7 @@ export function generateKey(prefix = "_") {
 	return `${prefix}${(Math.floor(Math.random()*100000)*Date.now()).toString(16)}`
 }
 
-window.TURTLE_UI = {
-	navbars_auto_hide: []
-}
+
 
 document.querySelectorAll(`[data-autohide=true]`).forEach((nav)=>{
 	let navbar = components.Navbar.create(nav)
@@ -51,7 +49,10 @@ const buildIn = {
 }
 
 Object.keys(buildIn).forEach(name => buildIn[name].init())
-
+window.TURTLE_UI = {
+	navbars_auto_hide: [],
+	buildIn:buildIn
+}
 export class TurtleUIModule {
 	constructor(app) {
 		this.app = app
