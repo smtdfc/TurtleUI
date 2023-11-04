@@ -11,7 +11,7 @@ const COMPONENT_NAMES = {
 	"carousel":components.Carousel,
 }
 
-const ACTIONS ={
+export const ACTIONS ={
 	"tToggle":function(target,data){
 		let component_name = data.tToggle
 		if (!component_name) {
