@@ -78,4 +78,5 @@ export class TurtleUIModule {
 }
 
 
-export * as components from "./Components/index.js"
+export * from "./Components/index.js"
+export * from "./Actions.js"
