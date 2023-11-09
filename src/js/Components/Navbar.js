@@ -1,14 +1,15 @@
+import {getElement} from "../utils.js"
+
 export class Navbar {
-	constructor(selector) {
-		this.selector = selector
-		if (selector) this.component = document.querySelector(selector)
-		else this.component = document.createElement("div")
+
+	constructor(element) {
+		this.component = getElement(element)
 		this.autoHideActiveClassName = !null
 	}
+	
 	static supportedActions = ["tToggle"]
 
 	toggle() {
-		
 		this.component.classList.toggle("active")
 	}
 

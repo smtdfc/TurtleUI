@@ -1,7 +1,8 @@
+import {getElement} from "../utils.js"
+
 export class Accordion{
-	constructor(selector){
-		this.selector = selector
-		this.component= document.querySelector(selector)
+	constructor(element){
+		this.component= getElement(element)
 	}
 	
 	static supportedActions =["tToggle"]

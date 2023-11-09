@@ -1,8 +1,9 @@
+import {getElement} from "../utils.js"
+
 export class Carousel {
-	constructor(selector) {
-		this.selector = selector
+	constructor(element) {
+		this.component = getElement(element)
 		this.count = 0
-		this.component = document.querySelector(selector)
 		this.items = this.component.querySelector(".carousel-items") || document.createElement("div")
 	}
 
