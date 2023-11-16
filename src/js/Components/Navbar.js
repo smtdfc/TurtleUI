@@ -1,25 +1,27 @@
-import {getElement} from "../utils.js"
+import {generateKey,getElement} from "../utils.js"
 
-export class Navbar {
-
-	constructor(element) {
+export class Navbar{
+	constructor(element){
 		this.component = getElement(element)
-		this.autoHideActiveClassName = !null
+		this.id = generateKey("navbar_")
 	}
 	
-	static supportedActions = ["tToggle"]
-
-	toggle() {
+	static actions ={
+		"tToggle":function(target,data){
+			let navbar = new Navbar(data.tTarget)
+			navbar.toggle()
+		}
+	}
+	
+	open(){
+		this.componentu.classList.add("active")
+	}
+	
+	close(){
+		this.component.classList.remove("active")
+	}
+	
+	toggle(){
 		this.component.classList.toggle("active")
-	}
-
-	enableAutoHide() {
-		window.TURTLE_UI.navbars_auto_hide.push(this)
-	}
-
-	static create(element) {
-		let navbar = new Navbar(null)
-		navbar.component = element
-		return navbar
 	}
 }

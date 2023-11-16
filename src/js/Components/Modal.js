@@ -1,31 +1,38 @@
-import {getElement} from "../utils.js"
-
+import { generateKey, getElement } from "../utils.js"
 
 export class Modal {
 	constructor(element) {
-		
 		this.component = getElement(element)
+		this.id = generateKey("accrodion_")
 	}
-	
-	static supportedActions = ["tToggle"]
 
-	getState() {
-		return this.component.classList.contains("active") ? "open" : "close"
+	static actions = {
+		"tToggle": function(target, data) {
+			let modal = new Modal(data.tTarget)
+			modal.toggle()
+		}
 	}
-	
+
+	open() {
+		this.component.style.display = "block"
+		this.component.classList.add("active")
+	}
+
+	close() {
+		this.component.classList.remove("active")
+		this.component.classList.add("out")
+
+		setTimeout(() => {
+			this.component.style.display = "none"
+			this.component.classList.remove("out")
+		}, 300)
+	}
+
 	toggle() {
-		if(this.getState() == "open"){
-			this.component.classList.remove("active")
-			
-			this.component.classList.add("out")
-			setTimeout(()=>{
-				this.component.classList.remove("out")
-				this.component.style.display = "none"
-			},300)
-		}else{
-			
-			this.component.style.display="block"
-			this.component.classList.add("active")
+		if (this.component.classList.contains("active")) {
+			this.close()
+		} else {
+			this.open()
 		}
 	}
 }

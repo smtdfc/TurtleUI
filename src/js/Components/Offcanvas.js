@@ -1,16 +1,33 @@
-import {getElement} from "../utils.js"
+import { generateKey, getElement } from "../utils.js"
 
-export class Offcanvas{
-	constructor(element){
-		this.component= getElement(element)
+export class Offcanvas {
+	constructor(element) {
+		this.component = getElement(element)
+		this.id = generateKey("accrodion_")
 	}
-	static supportedActions =["tToggle"]
 
-	toggle(){
+	static actions = {
+		"tToggle": function(target, data) {
+			let offcanvas = new Offcanvas(data.tTarget)
+			offcanvas.toggle()
+		}
+	}
+
+	open() {
+		window.TurtleUI_BuildIn.main_overlay.open()
+		this.component.classList.add("active")
+	}
+
+	close() {
+		window.TurtleUI_BuildIn.main_overlay.close()
+		this.component.classList.remove("active")
+	}
+
+	toggle() {
 		if(this.component.classList.contains("active")){
-			TURTLE_UI.buildIn.mainOverlay.close()
+			window.TurtleUI_BuildIn.main_overlay.close()
 		}else{
-			TURTLE_UI.buildIn.mainOverlay.open()
+			window.TurtleUI_BuildIn.main_overlay.open()
 		}
 		this.component.classList.toggle("active")
 	}
