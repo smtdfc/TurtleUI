@@ -4,6 +4,7 @@ window.TurtleUI_BuildIn = {}
 const COMPONENTS = {
 	"accordion": components.Accordion,
 	"navbar": components.Navbar,
+	"navbarContainer": components.NavbarContainer,
 	"offcanvas": components.Offcanvas,
 	"sidebar": components.Sidebar,
 	"modal": components.Modal,

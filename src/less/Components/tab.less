@@ -23,14 +23,17 @@
 		transition: all 0.3s;
 		padding: 0.8rem 0.5rem;
 		white-space: nowrap;
-		margin-left:0.1rem;
+		margin-left: 0.2rem;
 		border-bottom: solid;
 		border-bottom-width: 0.0625rem;
 		border-bottom-color: rgba(0, 0, 0, 0);
 	}
 
 	li:hover {
-		border-bottom-color: var(--tab-items-active-color);
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+		background-color: rgba(0, 0, 0, 0.1);
+		//border-bottom-color: var(--tab-items-active-color);
 		color: var(--tab-items-active-color);
 	}
 
@@ -42,7 +45,7 @@
 
 .tab-contents {
 	display: none;
-	-webkit-animation-name:fadeInRight ;
+	-webkit-animation-name: fadeInRight;
 	-moz-animation-name: fadeInRight;
 	-o-animation-name: fadeInRight;
 	animation-name: fadeInRight;

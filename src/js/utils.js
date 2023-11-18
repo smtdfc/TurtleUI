@@ -1,4 +1,4 @@
-export function getElement(d) {
+export function getElement(d,r = document.body) {
 	if (d instanceof HTMLElement) {
 		return d
 	}
@@ -8,10 +8,17 @@ export function getElement(d) {
 	}
 
 	if (typeof d=="string") {
-		return document.querySelector(d)
+		return r.querySelector(d)
 	}
 
 	return null
+}
+
+export function createElement(tag="div",className=null,id=null){
+	let element = document.createElement(tag)
+	element.id = id
+	element.className = className
+	return element
 }
 
 export function generateKey(prefix = "_") {

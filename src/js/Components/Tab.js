@@ -1,12 +1,18 @@
-import { generateKey, getElement } from "../utils.js"
+import { generateKey, getElement ,createElement} from "../utils.js"
 
 export class Tab {
 	constructor(element) {
 		this.component = getElement(element)
 		this.id = generateKey("accrodion_")
-		this.tabItems = this.component.querySelector(".tab-items") || document.createElement("div")
+		this.tabItems = this.component.querySelector(".tab-items") || createElement("ul","tab-items")
 	}
 
+	static generate() {
+		let id = generateKey("_tab")
+		let element = createElement("div", `tab`, id)
+		element.innerHTML = `<ul class="tab-items" ></ul><div></div>`
+		return new Tab(element)
+	}
 	static actions = {
 		"tOpen": function(target, data) {
 			let tab = new Tab(data.tTarget)
