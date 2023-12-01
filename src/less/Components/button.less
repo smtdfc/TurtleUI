@@ -68,3 +68,26 @@
 	border-color: var(--btn-border-color);
 	transition: 0.3s all;
 }
+
+.btn-icon{
+  --btn-icon-bg: transparent;
+  --btn-icon-color:var(--body-color);
+  --btn-icon-hovet-bg:rgba(0,0,0,0.05);
+  --btn-icon-hover-color:var(--body-color);
+  background: var(--btn-icon-bg);
+  color:var(--btn-icon-color);
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0.8rem;
+  margin: 0.2rem;
+  transition: 0.5s;
+  border-radius: 50%;
+}
+
+.btn-icon:hover{
+  background: var(--btn-icon-hovet-bg);
+  color:var(--btn-icon-hover-color);
+}
