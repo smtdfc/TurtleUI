@@ -18,11 +18,15 @@ export default {
       file: './dist/turtleui.min.mjs',
       format: 'esm'
       },
+    {
+      file: './dist/turtleui.min.ejs',
+      format: 'es'
+      }
     ],
   plugins: [
     postcss({
-      extensions: ['.css','.less'],
-      plugins:[postcssImport()]
+      extensions: ['.css', '.less'],
+      plugins: [postcssImport()]
     }),
     terser(),
   ]
