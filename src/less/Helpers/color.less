@@ -1,37 +1,48 @@
 .bg-transparent {
-	background-color: transparent;
+  background-color: transparent;
 }
 
 .bg-white {
-	background-color: white;
+  background-color: white;
 }
 
 .bg-black {
-	background-color: black;
+  background-color: black;
 }
 
 .bg-none {
-	background-color: none;
+  background-color: none;
 }
 
 
 each(@colors, {
-	.bg-@{value} {
-		background-color: ~"var(--@{value}-color)";
-	}
+  .bg-@{value} {
+    background-color: ~"var(--@{value}-color)";
+  }
 
+  .bg-@{value}-hover {
+    &:hover {
+      background-color:~"var(--@{value}-color)";
+    }
+  }
 });
 
 .color-white {
-	color: white;
+  color: white;
 }
 
 .color-black {
-	color: black;
+  color: black;
 }
 
 each(@colors, {
-	.color-@{value} {
-		color: ~"var(--@{value}-color)";
-	}
+  .color-@{value} {
+    color: ~"var(--@{value}-color)";
+  }
+
+  .color-@{value}-hover {
+    &:hover {
+      color:~"var(--@{value}-color)";
+    }
+  }
 });
