@@ -113,10 +113,13 @@
 }
 
 .chat-message>.chat-contents {
-   display: block;
+   display: flex;
+   flex-direction: column;
 }
 
 .chat-contents>.text {
+   display: flex;
+   word-wrap: break-word;
    padding: 1rem;
    background: #95F7FE;
    border-radius: 15px;
