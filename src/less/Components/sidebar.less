@@ -226,13 +226,9 @@
    }
 
    .sidebar-icon.active {
-
-
       width: 30vw;
-
       .sidebar-header {
          justify-content: space-between;
-
          .sidebar-open-btn {
             display: none;
          }
@@ -278,10 +274,8 @@
 
 .sidebar-container {
    display: flex;
-
    .contents {
       flex: 50%;
-      
    }
 }
 
@@ -293,5 +287,15 @@
          overflow-y: scroll;
       }
    }
+
+}
+
+@media (max-width:48rem) {
+  .sidebar-container {
+    .contents {
+      height: auto;
+      overflow-y: scroll;
+    }
+  }
 
 }
