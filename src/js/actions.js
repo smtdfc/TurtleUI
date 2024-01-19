@@ -8,7 +8,8 @@ const COMPONENTS = {
 	"offcanvas": components.Offcanvas,
 	"sidebar": components.Sidebar,
 	"modal": components.Modal,
-	"tab": components.Tab
+	"tab": components.Tab,
+	"bottomSheet": components.BottomSheet
 
 }
 

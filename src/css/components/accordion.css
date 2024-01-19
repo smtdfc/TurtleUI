@@ -1,0 +1,61 @@
+.accordion {
+	 --accordion-bg: var(--main-bg);
+	 --accordion-header-color: var(--main-color);
+	 --accordion-header-active-color: var(--primary-color);
+	 --accordion-body-color: var(--body-color);
+	 --accordion-icon: "+";
+	 border-bottom: solid;
+	 border-color: rgba(0,0,0,0.2);
+}
+ .accordion-body {
+	 display: none;
+	 padding: 0.8rem;
+	 margin: 0;
+	 -webkit-animation-name: fadeIn;
+	 -moz-animation-name: fadeIn;
+	 -o-animation-name: fadeIn;
+	 animation-name: fadeIn;
+	 -webkit-animation-duration: 0.5s;
+	 -moz-animation-duration: 0.5s;
+	 -o-animation-duration: 0.5s;
+	 animation-duration: 0.5s;
+}
+ .active .accordion-body {
+	 display: block;
+}
+ .accordion-header {
+	 display: flex;
+	 flex-direction: row;
+	 align-items: center;
+	 justify-content: space-between;
+	 margin: 0;
+	 padding: 0.8rem;
+	 transition: 0.3s;
+}
+ .active .accordion-header {
+	 color: var(--accordion-header-active-color);
+}
+ .active .accordion-header::after {
+	 rotate: 225deg;
+}
+ .hide-icon .accordion-header::after {
+	 display: none;
+}
+ .accordion-header::after {
+	 float: left;
+	 content: var(--accordion-icon);
+	 font-size: 2rem;
+	 font-weight: bold;
+	 transition: 0.3s;
+}
+ .accordion-header * {
+	 margin: 0;
+}
+ .accordion-group >.accordion {
+	 border-bottom: none;
+}
+ .accordion-group >.accordion:last-child {
+	 border-bottom-color: rgba(0,0,0,0.2) !important;
+	 border-bottom: solid;
+}
+ 

@@ -1,0 +1,106 @@
+@import "./libraries/normalize.css";
+@import "./libraries/animate.min.css";
+@import "./components/sidebar.css";
+@import "./components/navbar.css";
+@import "./components/offcanvas.css";
+@import "./components/form.css";
+@import "./components/badge.css";
+@import "./components/accordion.css";
+@import "./components/list.css";
+@import "./components/toast.css";
+@import "./components/alert.css";
+@import "./components/card.css";
+@import "./components/loader.css";
+@import "./components/tab.css";
+@import "./components/modal.css";
+@import "./components/overlay.css";
+@import "./components/table.css";
+@import "./components/bottomsheet.css";
+@import "./components/button.css";
+
+@import "./helper/animations.css";
+@import "./helper/border.css";
+@import "./helper/color.css";
+@import "./helper/display.css";
+@import "./helper/effect.css";
+@import "./helper/flex.css";
+@import "./helper/margin.css";
+@import "./helper/overflow.css";
+@import "./helper/padding.css";
+@import "./helper/position.css";
+@import "./helper/text.css";
+
+
+body[data-theme="light"] {
+  --main-bg: white;
+  --main-color: black;
+  --primary-color: #0d6efd;
+  --secondary-color: rgba(0,0,0,0.05);
+  --info-color: #0DC6FD;
+  --success-color: #198754;
+  --warn-color: #FFC107;
+  --danger-color: #dc3545;
+
+  --primary-color-subtle: #0067FF7A;
+  --info-color-subtle: rgba(217, 237, 247, 0.8);
+  --success-color-subtle: rgba(227, 253, 235, 0.8);
+  --warn-color-subtle: rgba(255, 218, 108, 0.3);
+  --danger-color-subtle: rgba(248, 215, 218, 1);
+
+  --primary-text-emphasis: #0D3B7F;
+  --info-text-emphasis: rgba(21, 184, 216, 1);
+  --success-text-emphasis: rgba(38, 179, 3, 1);
+  --warn-text-emphasis: rgba(144, 114, 50, 1);
+  --danger-text-emphasis: rgba(220, 53, 69, 1);
+
+  --on-primary: white;
+  --on-info: white;
+  --on-success: white;
+  --on-warn: black;
+  --on-danger: white;
+
+}
+
+
+body[data-theme="dark"] {
+  --main-bg: #1a1a1a;
+  --main-color: white;
+  --primary-color: #0d6efd;
+  --secondary-color:#E6E6E63D;
+  --info-color: #0DC6FD;
+  --success-color: #198754;
+  --warn-color: #FFC107;
+  --danger-color: #dc3545;
+
+  --primary-color-subtle: #0067FF7A;
+  --info-color-subtle: rgba(217, 237, 247, 0.8);
+  --success-color-subtle: rgba(227, 253, 235, 0.8);
+  --warn-color-subtle: rgba(255, 218, 108, 0.3);
+  --danger-color-subtle: rgba(248, 215, 218, 1);
+
+  --primary-text-emphasis: #0D3B7F;
+  --info-text-emphasis: rgba(21, 184, 216, 1);
+  --success-text-emphasis: rgba(38, 179, 3, 1);
+  --warn-text-emphasis: rgba(144, 114, 50, 1);
+  --danger-text-emphasis: rgba(220, 53, 69, 1);
+
+  --on-primary: white;
+  --on-info: white;
+  --on-success: white;
+  --on-warn: black;
+  --on-danger: white;
+  
+}
+
+html,
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  
+  
+}
+
+body {
+  background-color: var(--main-bg);
+  color: var(--main-color);
+transition: background 0.5s;
+}

@@ -1,0 +1,181 @@
+.line-wobble-loader {
+  --loader-size: 80px;
+  --loader-speed: 1.75s;
+  --loader-color: var(--main-color);
+  --loader-line-weight: 5px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--loader-line-weight);
+  width: var(--loader-size);
+  border-radius: calc(var(--loader-line-weight) / 2);
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+}
+
+.line-wobble-loader::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--loader-color);
+  opacity: 0.1;
+}
+
+.line-wobble-loader::after {
+  content: '';
+  height: 100%;
+  width: 100%;
+  border-radius: calc(var(--loader-line-weight) / 2);
+  animation: wobble var(--loader-speed) ease-in-out infinite;
+  transform: translateX(-95%);
+  background-color: var(--loader-color);
+}
+
+@keyframes bounce-loader {
+  to {
+    opacity: 0.1;
+    transform: translateY(-1rem);
+  }
+}
+
+.bounce-loader {
+  --loader-speed: .6s;
+  --loader-color: var(--main-color);
+  display: flex;
+  justify-content: center;
+}
+
+.bounce-loader>div {
+  width: 1rem;
+  height: 1rem;
+  margin: 0 0.5rem;
+  background: var(--loader-color);
+  border-radius: 50%;
+  animation: bounce-loader var(--loader-speed) infinite alternate;
+}
+
+.bounce-loader>div:nth-child(2) {
+  animation-delay: 0.15s;
+}
+
+.bounce-loader>div:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.bounce-loader>div:last-child {
+  animation-delay: 0.45s;
+}
+
+
+.fade-loader {
+  --loader-speed: .7s;
+  --loader-color: var(--main-color);
+  width: 20px;
+  height: 20px;
+  background-color: var(--loader-color);
+  border-radius: 100rem;
+  margin: 10px auto;
+  position: relative;
+}
+
+.fade-loader:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  background-color: inherit;
+  animation: fade var(--loader-speed) forwards infinite linear;
+}
+
+.line-loader {
+  --loader-speed: 0.8s;
+  --loader-color: var(--main-color);
+  width: 100%;
+  height: 5px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.line-loader:before {
+  content: "";
+  position: absolute;
+  right: auto;
+  left: 0;
+  height: 100%;
+  background-color: var(--loader-color);
+  animation: lineloader var(--loader-speed) forwards infinite linear;
+}
+
+.circle-loader {
+  --loader-speed: 1s;
+  --loader-color: var(--main-color);
+
+  width: 50px;
+  height: 50px;
+  border-radius: 99rem;
+  position: relative;
+  margin: 0 auto;
+}
+
+.circle-loader:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  border: 4px solid transparent;
+  border-right-color: var(--loader-color);
+  border-bottom-color: var(--loader-color);
+  animation: circleloader var(--loader-speed) forwards infinite linear;
+}
+
+@keyframes circleloader {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes lineloader {
+  0% {
+    right: 100%;
+  }
+
+  50% {
+    right: 0;
+    left: 0;
+  }
+
+  100% {
+    right: 0;
+    left: 100%;
+  }
+}
+
+@keyframes fade {
+  to {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+
+@keyframes wobble {
+
+  0%,
+  100% {
+    transform: translateX(-95%);
+  }
+
+  50% {
+    transform: translateX(95%);
+  }
+}

@@ -3,7 +3,7 @@ import { generateKey, getElement ,createElement} from "../utils.js"
 export class Tab {
 	constructor(element) {
 		this.component = getElement(element)
-		this.id = generateKey("accrodion_")
+		this.id = generateKey("tab_")
 		this.tabItems = this.component.querySelector(".tab-items") || createElement("ul","tab-items")
 	}
 
@@ -17,6 +17,7 @@ export class Tab {
 		"tOpen": function(target, data) {
 			let tab = new Tab(data.tTarget)
 			//tab.reset()
+			
 			let idx = tab.getItemIndex(target)
 			
 			tab.open(idx)

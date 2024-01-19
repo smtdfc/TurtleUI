@@ -1,0 +1,49 @@
+.alert {
+  --alert-bg: var(--main-bg);
+  --alert-color: var(--main-color);
+  margin: 0.1rem;
+  border: solid;
+  border-width: 1px;
+  border-color: var(--alert-color);
+  border-radius: 0.3rem;
+  background: var(--alert-bg);
+  color: var(--alert-color);
+}
+
+.alert-primary{
+    --alert-bg: var(--primary-color-subtle);
+  --alert-color: var(--on-primary-text-emphasis);
+}
+
+.alert-info {
+  --alert-bg: var(--info-color-subtle);
+  --alert-color: var(--on-info-text-emphasis);
+}
+
+.alert-success{
+  --alert-bg: var(--success-color-subtle);
+  --alert-color: var(--on-success-text-emphasis);
+}
+
+.alert-warn {
+  --alert-bg: var(--warn-color-subtle);
+  --alert-color: var(--on-warn-text-emphasis);
+}
+
+.alert-danger {
+  --alert-bg: var(--danger-color-subtle);
+  --alert-color: var(--on-danger-text-emphasis);
+}
+
+
+.alert-body {
+  padding: 0.5rem;
+}
+
+.alert-header {
+  color: var(--alert-color);
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 !important;
+  padding: 0.6rem 0.7rem;
+}
