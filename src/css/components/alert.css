@@ -12,27 +12,27 @@
 
 .alert-primary{
     --alert-bg: var(--primary-color-subtle);
-  --alert-color: var(--on-primary-text-emphasis);
+  --alert-color: var(--primary-text-emphasis);
 }
 
 .alert-info {
   --alert-bg: var(--info-color-subtle);
-  --alert-color: var(--on-info-text-emphasis);
+  --alert-color: var(--info-text-emphasis);
 }
 
 .alert-success{
   --alert-bg: var(--success-color-subtle);
-  --alert-color: var(--on-success-text-emphasis);
+  --alert-color: var(--success-text-emphasis);
 }
 
 .alert-warn {
   --alert-bg: var(--warn-color-subtle);
-  --alert-color: var(--on-warn-text-emphasis);
+  --alert-color: var(--warn-text-emphasis);
 }
 
 .alert-danger {
   --alert-bg: var(--danger-color-subtle);
-  --alert-color: var(--on-danger-text-emphasis);
+  --alert-color: var(--danger-text-emphasis);
 }
 
 
