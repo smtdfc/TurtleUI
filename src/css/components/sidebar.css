@@ -162,6 +162,11 @@
   .sidebar:not(.sidebar-icon) {
     width: 30vw;
   }
+  
+  .sidebar-body{
+    max-height: 99.999%;
+    overflow-y: scroll;
+  }
 }
 
 @media (max-width:48rem) {

@@ -115,6 +115,7 @@
   .modal:not(.modal-fullscreen) .modal-contents {
     width: 40vw !important;
     max-width: 60ww;
+    
   }
 }
 
