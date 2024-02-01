@@ -159,11 +159,15 @@
     display: none !important;
   }
 
+  .sidebar-icon.active .sidebar>li>.text {
+    display: block !important;
+  }
+
   .sidebar:not(.sidebar-icon) {
     width: 30vw;
   }
-  
-  .sidebar-body{
+
+  .sidebar-body {
     max-height: 99.999%;
     overflow-y: scroll;
   }
