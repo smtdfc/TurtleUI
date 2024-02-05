@@ -40,24 +40,24 @@
   border-radius: 0.3125rem;
 }
 
-.toast-info{
-    --toast-bg: var(--info-color-subtle);
-  --toast-color: var(--on-text-emphasis);
+.toast-info {
+  --toast-bg: var(--info-color-subtle);
+  --toast-color: var(--info-text-emphasis);
 }
 
 .toast-success {
   --toast-bg: var(--success-color-subtle);
-  --toast-color: var(--on-text-emphasis);
+  --toast-color: var(--success-text-emphasis);
 }
 
 .toast-warn {
   --toast-bg: var(--warn-color-subtle);
-  --toast-color: var(--on-text-emphasis);
+  --toast-color: var(--warn-text-emphasis);
 }
 
 .toast-danger {
   --toast-bg: var(--danger-color-subtle);
-  --toast-color: var(--on-text-emphasis);
+  --toast-color: var(--danger-text-emphasis);
 }
 
 .toast-body {

@@ -17,7 +17,7 @@
   animation-duration: 0.3s;
   display: none;
   flex-flow: column;
-   justify-content: flex-end;
+  justify-content: flex-end;
   background-color: rgba(0, 0, 0, 0.5);
   
 }
@@ -43,6 +43,6 @@
   transition:  transform 0.5s ease;
 }
 
-.bottom-sheet-contents.active{
+.bottom-sheet.active .bottom-sheet-contents{
   transform: translateY(0%);
 }

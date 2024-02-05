@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UI Base</title>
+  <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css" />
+  <link rel="stylesheet" href="./src/css/turtleui.css">
+</head>
+
+<body data-theme="light">
+  <style>
+
+  </style>
+  <div class="offcanvas offcanvas-right" id="main-offcanvas">
+    <div class="offcanvas-header">
+      <h4 class="offcanvas-title">Settings</h4>
+      <button data-t-toggle="offcanvas" data-t-target="#main-offcanvas" class="offcanvas-btn-toggle ms-Icon ms-Icon--Cancel"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="offcanvas-nav">
+        <li class="offcanvas-nav-item"><a href="#"><i class="icon ms-Icon ms-Icon--Home"></i><span class="text">Home</span></a></li>
+        <li class="offcanvas-nav-item"><a href="#"><i class="icon ms-Icon ms-Icon--ChatInviteFriend"></i><span class="text">Chat with friends</span></a> </li>
+        <li class="offcanvas-nav-item"><a data-t-toggle="bottom_sheet" data-t-target="#main-sheet" href="#"><i class="icon ms-Icon ms-Icon--Education"></i><span class="text">Practice</span></a></li>
+        <li class="offcanvas-nav-item"><a href="#"><i class="icon ms-Icon ms-Icon--OfficeChat"></i><span class="text">Forum</span></a></li>
+        <li class="offcanvas-nav-item"><a href="#"><i class="icon ms-Icon ms-Icon--Group"></i><span class="text">Group study</span></a></li>
+        <li class="offcanvas-nav-item"><a href="#"><i class="icon ms-Icon ms-Icon--TimeSheet"></i><span class="text">Schedule management </span></a></li>
+        <li class="offcanvas-nav-item"><a href="#"><i class="icon ms-Icon ms-Icon--Toolbox"></i><span class="text"> Learning support tools </span></a></li>
+        <li class="offcanvas-nav-item"><a href="#"><i class="icon ms-Icon ms-Icon--Toolbox"></i><span class="text"> Learning support tools </span></a></li>
+        <li class="offcanvas-nav-item"><a href="#"><i class="icon ms-Icon ms-Icon--Toolbox"></i><span class="text"> Learning support tools </span></a></li>
+      </ul>
+
+    </div>
+  </div>
+  <div class="sidebar-container">
+    <!--  <div class="navbar" id="main-navbar">
+      <div class="navbar-brand">
+        <button  data-t-toggle="navbar" data-t-target="#main-navbar" class="navbar-btn-toggle icon ms-Icon ms-Icon--GlobalNavButton"></button>
+        <img class="navbar-brand-img" src="https://smtdfc.netlify.app/assets/logo.png" alt="logo" />
+        <h4 class="navbar-brand-text">Hello</h4>
+      </div>
+      <div class="navbar-contents">
+        <div class="navbar-menu">
+          <button data-t-toggle="navbar" data-t-target="#main-navbar"  class="navbar-btn-toggle icon ms-Icon ms-Icon--Cancel"></button>
+          <ul>
+            <li class="navbar-menu-item"><a href="#">Home</a></li>
+            <li class="navbar-menu-item">
+              <a href="#">Products</a>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Home</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </div> -->
+    <div class="navbar" style=" position: fixed; top:0; left:0; width: 100%; z-index: 1003;">
+      <div class="navbar-brand">
+        <i data-t-toggle="sidebar" data-t-target="#main-sidebar" class="navbar-btn-toggle i  ms-Icon ms-Icon--GlobalNavButton"></i>
+        <img class="navbar-brand-img" src="https://smtdfc.netlify.app/assets/logo.png" alt="logo" />
+        <h4 class="navbar-brand-text">Study</h4>
+      </div>
+      <div class="navbar-contents">
+        <button data-t-toggle="modal" data-t-target="#main-modal" class="btn-icon ms-Icon ms-Icon--PresenceChickletVideo"></button>
+        <button data-t-toggle="offcanvas" data-t-target="#main-offcanvas" class="btn-icon ms-Icon ms-Icon--Settings"></button>
+        <button class="btn-icon ms-Icon ms-Icon--SignOut"></button>
+      </div>
+    </div>
+
+    <div class="bottom-sheet" id="main-sheet">
+      <div class="bottom-sheet-contents">
+        djjss
+      </div>
+    </div>
+    <div class="modal" id="main-modal">
+      <div class="modal-contents">
+        <div class="modal-header">
+          <h4 class="modal-title">Your group study room</h4>
+          <button data-t-toggle="modal" data-t-target="#main-modal" class="modal-btn-toggle ms-Icon ms-Icon--Cancel "></button>
+        </div>
+        <div class="modal-body">
+          <h3>Join group study</h3>
+          <input type="text" class="form-input" style="width: 90%;" placeholder="Room ID">
+          <div class="p-2 d-flex align-items-center " >
+            <button class="btn btn-sm btn-primary">Join now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar sidebar-icon" id="main-sidebar">
+      <div class="sidebar-header">
+        <button data-t-toggle="sidebar" data-t-target="#main-sidebar" class="sidebar-btn-toggle sidebar-btn-open ms-Icon ms-Icon--GlobalNavButton"></button>
+        <h4 class="sidebar-brand-text"></h4>
+        <button data-t-toggle="sidebar" data-t-target="#main-sidebar" class="sidebar-btn-toggle sidebar-btn-close ms-Icon ms-Icon--Cancel"></button>
+      </div>
+      <div class="sidebar-body">
+        <ul class="sidebar-nav">
+          <li class="sidebar-nav-item"><a href="#"><i class="icon ms-Icon ms-Icon--Home"></i><span class="text">Home</span></a></li>
+          <li class="sidebar-nav-item"><a href="#"><i class="icon ms-Icon ms-Icon--ChatInviteFriend"></i><span class="text">Chat with friends</span></a> </li>
+          <li class="sidebar-nav-item"><a href="#"><i class="icon ms-Icon ms-Icon--Education"></i><span class="text">Practice</span></a></li>
+          <li class="sidebar-nav-item"><a href="#"><i class="icon ms-Icon ms-Icon--OfficeChat"></i><span class="text">Forum</span></a></li>
+          <li class="sidebar-nav-item"><a href="#"><i class="icon ms-Icon ms-Icon--Group"></i><span class="text">Group study</span></a></li>
+          <li class="sidebar-nav-item"><a href="#"><i class="icon ms-Icon ms-Icon--TimeSheet"></i><span class="text">Schedule management </span></a></li>
+          <li class="sidebar-nav-item"><a href="#"><i class="icon ms-Icon ms-Icon--Toolbox"></i><span class="text"> Learning support tools </span></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="contents" style="position:relative;">
+      <div class="p-3" id="main-contents" style="padding-top: 5rem;">
+        <div class="tab" id="main-tab">
+          <ul class="tab-items">
+            <li class="tab-item" data-t-open="tab" data-t-target="#main-tab" data-t-bind="#a1">Profile</li>
+            <li class="tab-item">Points</li>
+            <li class="tab-item">Contribution</li>
+            <li class="tab-item">Comments </li>
+            <li class="tab-item">Friends</li>
+          </ul>
+          <div class="tab-contents" id="a1">bshshsh</div>
+        </div>
+        Suspendisse interdum consectetur libero id. Felis donec et odio pellentesque diam volutpat commodo sed. Tellus mauris a diam maecenas. Scelerisque eleifend donec pretium vulputate sapien. Amet porttitor eget dolor morbi non arcu risus quis. Donec ac odio tempor orci dapibus ultrices in iaculis. Et sollicitudin ac orci phasellus egestas tellus. Magna fermentum iaculis eu non diam. Tempor nec feugiat nisl pretium fusce id. Dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras. Mollis nunc sed id semper risus in hendrerit. Nec ullamcorper sit amet risus nullam eget. Quis ipsum suspendisse ultrices gravida dictum fusce. Amet aliquam id diam maecenas. Congue mauris rhoncus aenean vel elit scelerisque mauris pellentesque. Odio aenean sed adipiscing diam donec adipiscing tristique. Scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam. Egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. Nullam ac tortor vitae purus faucibus ornare.
+      </div>
+    </div>
+  </div>
+  <script type="module" src="/src/js/turtleui.js"></script>
+</body>
+
+</html>

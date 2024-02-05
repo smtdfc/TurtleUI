@@ -69,12 +69,15 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 0.625rem;
+  padding: 0.5rem;
+  border-bottom:solid;
+  border-color:rgba(0,0,0,0.07);
 }
 
-.modal .modal-toggle-btn {
+.modal .modal-btn-toggle {
   padding: 0.625rem;
   margin: 0;
+  font-size: 23px;
   background: var(--modal-toggle-btn-bg);
   color: var(--modal-toggle-btn-color);
   border: none;
@@ -82,18 +85,20 @@
   transition: all 0.3s;
 }
 
-.modal .modal-toggle-btn:hover {
+.modal .modal-btn-toggle:hover {
   background: var(--modal-toggle-btn-hover-bg);
   color: var(--modal-toggle-btn-hover-color);
 }
 
 .modal .modal-body {
+  width: 100%;
+  overflow-x: hidden;
   height: 100%;
-  padding: 0.5rem;
+  padding: 0.6rem;
   max-height: 90vh;
   overflow-y: scroll;
-  overflow-x: none;
   box-sizing: border-box;
+  
 }
 
 .modal-fullscreen .modal-contents {
@@ -106,8 +111,8 @@
 .modal-title {
   margin: 0;
   padding: 0.4rem;
-  font-size: 20px;
-  font-weight: normal;
+  font-size: 22px;
+  font-weight: 350;
   color: var(--modal-title-color);
 }
 
@@ -115,7 +120,6 @@
   .modal:not(.modal-fullscreen) .modal-contents {
     width: 40vw !important;
     max-width: 60ww;
-    
   }
 }
 

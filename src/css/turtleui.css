@@ -1,5 +1,5 @@
-@import "./libraries/normalize.css";
 @import "./libraries/animate.min.css";
+@import "./libraries/normalize.css";
 @import "./components/sidebar.css";
 @import "./components/navbar.css";
 @import "./components/offcanvas.css";
@@ -17,25 +17,26 @@
 @import "./components/table.css";
 @import "./components/bottomsheet.css";
 @import "./components/button.css";
+@import "./components/avatar.css";
 
-@import "./helper/animations.css";
-@import "./helper/border.css";
-@import "./helper/color.css";
-@import "./helper/display.css";
-@import "./helper/effect.css";
-@import "./helper/flex.css";
-@import "./helper/margin.css";
-@import "./helper/overflow.css";
-@import "./helper/padding.css";
-@import "./helper/position.css";
-@import "./helper/text.css";
+@import "./helpers/animations.css";
+@import "./helpers/border.css";
+@import "./helpers/color.css";
+@import "./helpers/display.css";
+@import "./helpers/effect.css";
+@import "./helpers/flex.css";
+@import "./helpers/margin.css";
+@import "./helpers/overflow.css";
+@import "./helpers/padding.css";
+@import "./helpers/position.css";
+@import "./helpers/text.css";
 
 
 body[data-theme="light"] {
   --main-bg: white;
   --main-color: black;
   --primary-color: #0d6efd;
-  --secondary-color: rgba(0,0,0,0.05);
+  --secondary-color: rgba(0, 0, 0, 0.05);
   --info-color: #0DC6FD;
   --success-color: #198754;
   --warn-color: #FFC107;
@@ -66,7 +67,7 @@ body[data-theme="dark"] {
   --main-bg: #1a1a1a;
   --main-color: white;
   --primary-color: #0d6efd;
-  --secondary-color:#E6E6E63D;
+  --secondary-color: #E6E6E63D;
   --info-color: #0DC6FD;
   --success-color: #198754;
   --warn-color: #FFC107;
@@ -89,18 +90,18 @@ body[data-theme="dark"] {
   --on-success: white;
   --on-warn: black;
   --on-danger: white;
-  
+
 }
 
 html,
 * {
   font-family: Arial, Helvetica, sans-serif;
-  
-  
+
+
 }
 
 body {
   background-color: var(--main-bg);
   color: var(--main-color);
-transition: background 0.5s;
+  
 }

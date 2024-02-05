@@ -1,37 +1,40 @@
-import * as components from "./Components/index.js"
+import * as components from "./components/index.js"
 
-window.TurtleUI_BuildIn = {}
-const COMPONENTS = {
-	"accordion": components.Accordion,
-	"navbar": components.Navbar,
-	"navbarContainer": components.NavbarContainer,
-	"offcanvas": components.Offcanvas,
-	"sidebar": components.Sidebar,
-	"modal": components.Modal,
-	"tab": components.Tab,
-	"bottomSheet": components.BottomSheet
+const COMPONENTS = [
+  components.TurtleUINavbar,
+  components.TurtleUISidebar,
+  components.TurtleUIOffcanvas,
+  components.TurtleUIModal,
+  components.TurtleUIBottomSheet,
+  components.TurtleUIAccordion,
+  components.TurtleUITab
+]
 
-}
-
-const ACT_EVENTS = {
-	"click": ["tToggle", "tOpen"]
-}
-
-function triggerAction(act_name, target, data) {
-	let component_type = data[act_name]
-	if (!COMPONENTS[component_type]) return
-	if (!COMPONENTS[component_type].actions[`${act_name}`]) return
-	COMPONENTS[component_type].actions[`${act_name}`](target, data)
-}
-
-Object.keys(ACT_EVENTS).forEach(e => {
-	window.addEventListener(e, function(event) {
-		let target = event.target
-		let data = target.dataset
-
-		ACT_EVENTS[e].forEach((act_name) => {
-			if (!data[act_name]) return
-			triggerAction(act_name, target, data)
-		})
-	})
-})
+window.addEventListener("click",function(event){
+// event.stopPropagation()
+  if (event.target) {
+    
+    let target = event.target
+    if(target.dataset.tToggle){
+      
+      let toggleType = target.dataset.tToggle
+      let toggleTarget = document.querySelector(target.dataset.tTarget)
+      COMPONENTS.forEach(component=>{
+        if(component.actions.toggle && component.actions.toggle[toggleType]){
+          component.actions.toggle[toggleType](toggleTarget)
+        }
+      })
+    }
+    
+    if (target.dataset.tOpen) {
+      
+      let component_ = target.dataset.tOpen
+      let target_ = document.querySelector(target.dataset.tTarget)
+      COMPONENTS.forEach(component => {
+        if (component.actions.open && component.actions.open[component_]) {
+          component.actions.open[component_](target_,target,target.dataset)
+        }
+      })
+    }
+  }
+},{capture:true})

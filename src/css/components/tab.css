@@ -5,6 +5,7 @@
 }
 
 .tab-items {
+  max-width: 90vw;
   display: flex;
   overflow-x: scroll;
   scroll-behavior: smooth;

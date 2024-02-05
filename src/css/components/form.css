@@ -161,7 +161,7 @@ input[type="checkbox"]:checked::before {
   --form-input-focus-border-color: var(--primary-color);
   border: solid;
   border-radius: 0.313rem;
-  border-width: 1px;
+  border-width: 0.8px;
   border-color: var(--form-input-border-color);
   padding: 0.9rem 0.9rem;
   font-size: 0.9rem;
@@ -179,7 +179,7 @@ input[type="checkbox"]:checked::before {
   --form-select-focus-border-color: var(--primary-color);
   border: solid;
   border-radius: 0.313rem;
-  border-width: 1px;
+  border-width: 0.8px;
   background-color: transparent;
   border-color: var(--form-select-border-color);
   padding: 0.9rem 0.9rem;
