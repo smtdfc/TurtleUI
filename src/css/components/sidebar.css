@@ -108,9 +108,6 @@
   flex: 25rem;
 }
 
-.sidebar-container .contents {
-  flex: 100%;
-}
 
 @media (max-width: 48rem) {
   .sidebar {
@@ -129,6 +126,11 @@
 }
 
 @media (min-width:48rem) {
+  .sidebar-container .contents {
+    flex: 100%;
+  }
+
+
   .sidebar-container .contents {
     height: 100vh;
     max-height: 100%;
@@ -194,9 +196,7 @@
 
 .sidebar .sidebar-btn-close {
   display: none;
-  
+
 }
 
-.contents{
-  
-}
+.contents {}
