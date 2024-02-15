@@ -169,6 +169,7 @@ input[type="checkbox"]:checked::before {
 }
 
 .form-input:focus {
+  color:var(--main-color);
   outline: none;
   border-color: var(--form-input-focus-border-color);
 }
