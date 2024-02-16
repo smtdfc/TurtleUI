@@ -107,8 +107,8 @@
 
 .btn:disabled {
   --btn-bg: transparent;
-  --btn-color: rgba(0, 0, 0, 0.5);
-  --btn-border-color: rgba(0, 0, 0, 0.1);
+  --btn-color: gray;
+  --btn-border-color: gray;
   --btn-hover-bg: var(--btn-bg);
   --btn-hover-color: var(--btn-color);
   --btn-hover-border-color: var(--btn-border-color)

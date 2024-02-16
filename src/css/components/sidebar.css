@@ -70,7 +70,7 @@
 }
 
 .sidebar-nav>li>a:hover {
-    background-color: var(--main-selection-color);
+    background-color: var(--main-selection-bg);
   color: var(--sidebar-nav-items-hover-color);
 }
 
@@ -96,7 +96,7 @@
 }
 
 .sidebar-nav>li>ul>li>a:hover {
-    background-color: var(--main-selection-color);
+    background-color: var(--main-selection-bg);
   color: var(--sidebar-nav-items-hover-color);
 }
 

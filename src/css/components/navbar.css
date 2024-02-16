@@ -4,8 +4,6 @@
   --navbar-brand-text-color: var(--main-color);
   --navbar-menu-items-color: var(--main-color);
   --navbar-menu-items-hover-color: var(--primary-color);
-  border: solid;
-  border-color: var(--main-border-color);
   border-width: 0.5px;
   display: flex;
   align-items: center;
