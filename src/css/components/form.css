@@ -157,7 +157,7 @@ input[type="checkbox"]:checked::before {
 
 .form-input {
   --form-input-color: var(--body-color);
-  --form-input-border-color: rgba(0, 0, 0, 0.25);
+  --form-input-border-color: var(--main-border-color);
   --form-input-focus-border-color: var(--primary-color);
   border: solid;
   border-radius: 0.313rem;
