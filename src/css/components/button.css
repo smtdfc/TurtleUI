@@ -123,7 +123,7 @@
 .btn-icon {
   --btn-icon-bg: transparent;
   --btn-icon-color: var(--body-color);
-  --btn-icon-hovet-bg: rgba(0, 0, 0, 0.05);
+  --btn-icon-hovet-bg:var(--main-selection-bg);
   --btn-icon-hover-color: var(--body-color);
   background: var(--btn-icon-bg);
   color: var(--btn-icon-color);

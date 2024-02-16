@@ -4,7 +4,7 @@
   --modal-title-color: var(--modal-color);
   --modal-toggle-btn-bg: transparent;
   --modal-toggle-btn-color: var(--modal-color);
-  --modal-toggle-btn-hover-bg: rbga(0, 0, 0, 0.05);
+  --modal-toggle-btn-hover-bg: var(--main-selection-bg);
   --modal-toggle-btn-hover-color: var(--modal-color);
   position: fixed;
   top: 0;
@@ -71,7 +71,7 @@
   justify-content: space-between;
   padding: 0.5rem;
   border-bottom:solid;
-  border-color:rgba(0,0,0,0.07);
+  border-color:var(--nain-border-color);
 }
 
 .modal .modal-btn-toggle {

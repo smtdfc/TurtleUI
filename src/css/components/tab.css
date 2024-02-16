@@ -1,7 +1,7 @@
 .tab {
   --tab-color: var(--main-color);
   --tab-active-color: var(--primary-color);
-  --tab-hover-color: var(--secondary-color);
+  --tab-hover-color: var(--main-selection-color);
 }
 
 .tab-items {

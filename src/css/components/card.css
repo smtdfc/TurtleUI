@@ -32,7 +32,7 @@
 	 float: left;
 	 border: solid;
 	 border-width: 0.0625rem;
-	 border-color: rgba(0,0,0,0.3);
+	 border-color: var(--main-border-color);
 }
  .card .card-body {
 	 padding: 0.5rem;

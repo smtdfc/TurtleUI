@@ -7,7 +7,7 @@
   background-color: var(--sidebar-bg);
   min-height: 100vh;
   border-right: solid;
-  border-color: rgba(0, 0, 0, 0.1);
+  border-color: var(--main-border-color);
   border-width: 1px;
   z-index: 999;
 }
@@ -70,7 +70,7 @@
 }
 
 .sidebar-nav>li>a:hover {
-  background-color: rgba(0, 0, 0, 0.05);
+    background-color: var(--main-selection-color);
   color: var(--sidebar-nav-items-hover-color);
 }
 
@@ -96,7 +96,7 @@
 }
 
 .sidebar-nav>li>ul>li>a:hover {
-  background-color: rgba(0, 0, 0, 0.04);
+    background-color: var(--main-selection-color);
   color: var(--sidebar-nav-items-hover-color);
 }
 

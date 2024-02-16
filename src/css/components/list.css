@@ -1,7 +1,7 @@
 .list {
   --list-border-radius: 0.3125rem;
-  --list-border-color: rgba(0, 0, 0, 0.1);
-  --list-hover-bg: rgba(0, 0, 0, 0.1);
+  --list-border-color: var(--main-border-color);
+  --list-hover-bg: var(--main-selection-bg);
   --list-hover-color: currentColor;
   text-decoration: none;
   list-style: none;

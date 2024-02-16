@@ -5,7 +5,7 @@
   --navbar-menu-items-color: var(--main-color);
   --navbar-menu-items-hover-color: var(--primary-color);
   border: solid;
-  border-color: rgba(0, 0, 0, 0.07);
+  border-color: var(--main-border-color);
   border-width: 0.5px;
   display: flex;
   align-items: center;
@@ -143,7 +143,7 @@
 
   .navbar-menu>ul>li>ul>li>a:hover {
     color: var(--navbar-menu-items-hover-color);
-    background: rgba(0, 0, 0, 0.04);
+    background-color: var(--main-selection-color);
     transition: 0.5s;
   }
 }
@@ -195,7 +195,7 @@
   .navbar-menu>ul>li>a:hover {
     transition: 0.5s;
     color: var(--navbar-menu-items-hover-color);
-    background-color: rgba(0, 0, 0, 0.04);
+    background-color: var(--main-selection-color);
   }
 
 
@@ -229,7 +229,7 @@
   .navbar-menu>ul>li>ul>li>a:hover {
     transition: 0.5s;
     color: var(--navbar-menu-items-hover-color);
-    background-color: rgba(0, 0, 0, 0.04);
+    background-color: var(--main-selection-color);
   }
 
   .navbar-menu>.navbar-btn-toggle {
