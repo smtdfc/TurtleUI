@@ -266,3 +266,7 @@ input[type="checkbox"]:checked::before {
 .form-check .form-radio:checked {
   border-color: var(--form-check-checked-border-color);
 }
+
+.form-input{
+  background: transparent!important;
+}

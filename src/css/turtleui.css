@@ -59,6 +59,8 @@ body[data-theme="light"] {
   --on-success: white;
   --on-warn: black;
   --on-danger: white;
+  --main-border-color:rgba(0,0,0,0.07);
+  --main-selection-bg:rgba(0,0,0,0.05);
 
 }
 
