@@ -71,7 +71,7 @@
   justify-content: space-between;
   padding: 0.5rem;
   border-bottom:0.9px solid;
-  border-color:var(--nain-border-color);
+  border-color:var(--main-border-color-translucent);
 }
 
 .modal .modal-btn-toggle {

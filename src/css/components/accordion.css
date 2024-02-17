@@ -5,7 +5,7 @@
 	 --accordion-body-color: var(--body-color);
 	 --accordion-icon: "+";
 	 border-bottom: solid;
-	 border-color: var(--main-border-color);
+	 border-color: var( --main-border-color-translucent);
 }
  .accordion-body {
 	 display: none;

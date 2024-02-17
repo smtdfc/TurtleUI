@@ -32,7 +32,7 @@
 	 float: left;
 	 border: solid;
 	 border-width: 0.0625rem;
-	 border-color: var(--main-border-color);
+	 border-color: var(--main-border-color-translucent);
 }
  .card .card-body {
 	 padding: 0.5rem;

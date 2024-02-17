@@ -7,7 +7,7 @@
   background-color: var(--sidebar-bg);
   min-height: 100vh;
   border-right: solid;
-  border-color: var(--main-border-color);
+  border-color: var(--main-border-color-translucent);
   border-width: 1px;
   z-index: 999;
 }
