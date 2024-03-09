@@ -111,5 +111,13 @@ html,
 body {
   background-color: var(--main-bg);
   color: var(--main-color);
+}
 
+.link{
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.link:hover{
+  text-decoration: underline;
 }
