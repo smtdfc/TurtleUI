@@ -18,6 +18,7 @@
 @import "./components/bottomsheet.css";
 @import "./components/button.css";
 @import "./components/avatar.css";
+@import "./components/skeleton.css";
 
 @import "./helpers/animations.css";
 @import "./helpers/border.css";
