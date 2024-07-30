@@ -5,7 +5,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  z-index: 1005;
+  z-index: 1009;
 }
 
 .toasts-top {

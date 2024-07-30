@@ -1,6 +1,6 @@
 const main_toast = document.createElement("div")
 main_toast.className = "toasts toasts-bottom"
-main_toast.style.zIndex = 1000
+main_toast.style.zIndex = 1005
 document.body.appendChild(main_toast)
 
 export const MainToast = {
