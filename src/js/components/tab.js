@@ -3,7 +3,7 @@ export class TurtleUITab {
   constructor(element) {
     
     this._element = element
-    this.tabItems = this._element.querySelector(".tab-items") || createElement("ul", "tab-items")
+    this.tabItems = this._element.querySelector(".tab-items") || document.createElement("ul", "tab-items")
 
   }
 

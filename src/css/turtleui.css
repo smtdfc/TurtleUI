@@ -104,6 +104,7 @@ body[data-theme="dark"] {
   --on-danger: white;
 
 }
+
 html,
 * {
   font-family: Arial, Helvetica, sans-serif;
@@ -121,4 +122,25 @@ body {
 
 .link:hover{
   text-decoration: underline;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius:10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
 }
