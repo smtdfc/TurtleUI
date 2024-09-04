@@ -10,11 +10,11 @@
   display: none;
 }
 
-.action-list.active{
+.action-list.active {
   display: block;
 }
 
-.action-list.out > .action-list-content{
+.action-list.out>.action-list-content {
   -webkit-animation-name: fadeOutDown;
   -moz-animation-name: fadeOutDown;
   -o-animation-name: fadeOutDown;
@@ -51,7 +51,7 @@
 
 .action-list-title {
   font-weight: 400;
-  margin:0;
+  margin: 0;
 }
 
 .action-list-btn {
@@ -62,7 +62,7 @@
 .action-list-body {
   list-style: none;
   margin-top: 4rem;
-  margin-left: 0;
+  padding-left: 0;
 }
 
 .action-list-body li {
