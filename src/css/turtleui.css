@@ -19,6 +19,7 @@
 @import "./components/button.css";
 @import "./components/avatar.css";
 @import "./components/skeleton.css";
+@import "./components/actionlist.css";
 
 @import "./helpers/animations.css";
 @import "./helpers/border.css";
