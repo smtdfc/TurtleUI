@@ -16,7 +16,8 @@ const COMPONENTS = [
   components.TurtleUIModal,
   components.TurtleUIBottomSheet,
   components.TurtleUIAccordion,
-  components.TurtleUITab
+  components.TurtleUITab,
+  components.TurtleUIActionList,
 ]
 
 window.addEventListener("click", function(event) {
