@@ -8,6 +8,7 @@
   animation-name: fadeIn;
   animation-duration: 0.3s;
   display: none;
+  z-index: 1004;
 }
 
 .action-list.active {
