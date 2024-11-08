@@ -1,0 +1,43 @@
+.accordion {
+  --accordion-bg: var(--main-bg);
+  display: block;
+  box-sizing: border-box;
+}
+
+.accordion-item {}
+
+.accordion-header {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 1rem;
+}
+
+.accordion-title {
+  font-weight: 480;
+  font-size: 20px;
+  margin:0;
+}
+
+.accordion-toggle-btn {
+  margin-left: auto;
+  background: transparent;
+  font-size: 25px;
+  border: none;
+  transition: 0.1s;
+}
+
+.accordion-body {
+  max-height: 0;
+  overflow: hidden;
+  box-sizing: border-box ;
+  transition: max-height 0.3s ease;
+}
+
+.accordion-item.active .accordion-body {
+  max-height: 200px; /* Adjust height based on your content */
+}
+
+.accordion-item.active .accordion-toggle-btn{
+  transform: rotate(calc(145deg));
+}

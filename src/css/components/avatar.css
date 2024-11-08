@@ -1,0 +1,41 @@
+.avatar{
+  object-fit: cover;
+  position: static;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+}
+
+.avatar-xxs {
+  width: 20px;
+  height: 20px;
+}
+
+.avatar-xs {
+  width: 30px;
+  height: 30px;
+}
+
+.avatar-sm {
+  width: 35px;
+  height: 35px;
+}
+
+.avatar-md {
+  width: 45px;
+  height: 45px;
+}
+
+.avatar-lg {
+  width: 55px;
+  height: 55px;
+}
+
+.avatar-xl {
+  width: 65px;
+  height: 65px;
+}
+
+.avatar-xxl {
+  width: 80px;
+  height: 80px;
+}

@@ -1,2 +1,2 @@
-import "./css/turtleui.css"
+import "./css/main.css"
 export * from "./js/turtleui.js"
