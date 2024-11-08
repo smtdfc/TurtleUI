@@ -1,12 +1,12 @@
-@import "./css/components/navbar.css";
-@import "./css/components/avatar.css";
-@import "./css/components/accordion.css";
-@import "./css/components/button.css";
+@import "./components/navbar.css";
+@import "./components/avatar.css";
+@import "./components/accordion.css";
+@import "./components/button.css";
 
 
-@import "./css/helpers/effects.css";
-@import "./css/helpers/margin.css";
-@import "./css/helpers/padding.css";
+@import "./helpers/effects.css";
+@import "./helpers/margin.css";
+@import "./helpers/padding.css";
 
 
 :root {
