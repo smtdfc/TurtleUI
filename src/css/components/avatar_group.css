@@ -1,0 +1,38 @@
+.avatar-group {
+  display: flex;
+  align-items: center;
+  column-gap: 2px;
+}
+
+.avatar-list{
+  display: flex;
+  flex-direction: column;
+  gap:16px;
+}
+
+.avatar-list .list-item{
+  display: flex;
+  align-items: center;
+  padding: 0.8rem;
+  gap:10px;
+}
+
+.avatar-list .avatar-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.avatar-container{
+  display: flex;
+  align-items: center;
+  padding: 0.8rem;
+  gap:10px;
+}
+
+.avatar-container .avatar-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

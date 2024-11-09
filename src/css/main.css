@@ -2,12 +2,15 @@
 @import "./components/avatar.css";
 @import "./components/accordion.css";
 @import "./components/button.css";
-
+@import "./components/avatar_group.css";
+@import "./components/badge.css";
+@import "./components/breadcrumb.css";
+@import "./components/button.css";
 
 @import "./helpers/effects.css";
 @import "./helpers/margin.css";
 @import "./helpers/padding.css";
-
+@import "./helpers/text.css";
 
 :root {
   --query-sm: 480px;
@@ -49,24 +52,24 @@
   --color-primary: #3498DB;
   --color-primary-hover: #2980b9;
   --color-primary-text: white;
-  --color-primary-transparent: rgba(52, 152, 219, 0.5);
+  --color-primary-transparent: rgba(52, 152, 219, 0.2);
 
   --color-secondary: #2ECC71;
   --color-secondary-hover: #27ae60;
   --color-secondary-text: white;
-  --color-secondary-transparent: rgba(46, 204, 113, 0.5);
+  --color-secondary-transparent: rgba(46, 204, 113, 0.2);
 
   --color-tertiary: #e74c3c;
   --color-tertiary-hover: #c0392b;
   --color-tertiary-text: white;
-  --color-tertiary-transparent: rgba(231, 76, 60, 0.5);
+  --color-tertiary-transparent: rgba(231, 76, 60, 0.2);
 
   --color-text: #333333;
   --color-heading: #111111;
 
   --color-link: #2980b9;
   --color-link-hover: #1abc9c;
-  --color-link-transparent: rgba(41, 128, 185, 0.5);
+  --color-link-transparent: rgba(41, 128, 185, 0.2);
 
   --color-background: #f4f4f4;
   --color-light: #f8f9fa;
@@ -74,31 +77,31 @@
 
   --color-border: #DCDCDC;
   --color-border-hover: #B5B5B5;
-  --color-border-transparent: rgba(220, 220, 220, 0.5);
+  --color-border-transparent: rgba(220, 220, 220, 0.2);
 
   --color-success: #28A745;
   --color-success-hover: #218838;
   --color-success-text: white;
-  --color-success-transparent: rgba(40, 167, 69, 0.5);
+  --color-success-transparent: rgba(40, 167, 69, 0.2);
 
   --color-warning: #ffc107;
   --color-warning-hover: #E0A800;
   --color-warning-text: black;
-  --color-warning-transparent: rgba(255, 193, 7, 0.5);
+  --color-warning-transparent: rgba(255, 193, 7, 0.2);
 
   --color-danger: #dc3545;
   --color-danger-hover: #C82333;
   --color-danger-text: white;
-  --color-danger-transparent: rgba(220, 53, 69, 0.5);
+  --color-danger-transparent: rgba(220, 53, 69, 0.2);
 
   --color-info: #17a2b8;
   --color-info-hover: #138496;
   --color-info-text: white;
-  --color-info-transparent: rgba(23, 162, 184, 0.5);
+  --color-info-transparent: rgba(23, 162, 184, 0.2);
 
   --color-muted: #6c757d;
   --color-muted-text: white;
-  --color-muted-transparent: rgba(108, 117, 125, 0.5);
+  --color-muted-transparent: rgba(108, 117, 125, 0.2);
 
   --main-bg: white;
   --main-color: black;

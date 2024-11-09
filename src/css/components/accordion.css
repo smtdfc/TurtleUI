@@ -17,6 +17,7 @@
   font-weight: 480;
   font-size: 20px;
   margin:0;
+  z-index: -1;
 }
 
 .accordion-toggle-btn {
@@ -25,6 +26,7 @@
   font-size: 25px;
   border: none;
   transition: 0.1s;
+  z-index: -1;
 }
 
 .accordion-body {
@@ -39,5 +41,5 @@
 }
 
 .accordion-item.active .accordion-toggle-btn{
-  transform: rotate(calc(145deg));
+  transform: rotate(calc(90deg));
 }
