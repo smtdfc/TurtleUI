@@ -3,7 +3,7 @@
   --badge-color: var(--main-color);
   padding: 5px;
   border-radius: 10px;
-  font-size: 14px;
+  font-size: 10px;
   font-weight: bold;
   color: var(--badge-color);
   background-color: var(--badge-bg);

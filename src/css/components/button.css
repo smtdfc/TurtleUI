@@ -187,6 +187,18 @@
   border-radius: 20px;
 }
 
+.btn-square {
+  border-radius: 0px;
+}
+
 .btn-icon{
-  
+  padding:0.6rem;
+  background: transparent;
+  color:var(--main-color);
+  border:none;
+  transition: 0.5s;
+}
+
+.btn-icon:hover{
+  background: var(--main-hover-color);
 }
