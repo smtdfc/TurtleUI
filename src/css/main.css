@@ -7,6 +7,8 @@
 @import "./components/breadcrumb.css";
 @import "./components/button.css";
 @import "./components/card.css";
+@import "./components/carousel.css";
+
 
 @import "./helpers/effects.css";
 @import "./helpers/margin.css";
@@ -114,6 +116,8 @@
   --main-bg: white;
   --main-color: black;
   --main-hover-color:rgba(0,0,0,0.05);
+  --main-bg-transparent:#FDFDFF99;
+  
 }
 
 body {

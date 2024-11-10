@@ -1,0 +1,54 @@
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 600px; /* Tùy chỉnh kích thước của carousel */
+  margin: auto;
+  overflow: hidden; /* Ẩn những phần bên ngoài */
+}
+
+.carousel-images {
+  display: flex;
+  transition: transform 0.5s ease; /* Chuyển động mượt mà khi thay đổi hình ảnh */
+}
+
+.carousel-image {
+  width: 100%;
+  flex-shrink: 0; /* Ngăn không cho ảnh bị co lại */
+  position: relative; /* Để định vị văn bản trên hình ảnh */
+}
+
+.carousel-image img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px; 
+  color: var(--main-color);
+  background-color:var(--main-bg-transparent) ; 
+  padding: 10px;
+  max-width: 80%; 
+  border-radius: 10px;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--main-hover-color);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.carousel-control-prev {
+  left: 10px;
+}
+
+.carousel-control-next {
+  right: 10px;
+}
