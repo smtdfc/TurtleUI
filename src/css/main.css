@@ -6,11 +6,19 @@
 @import "./components/badge.css";
 @import "./components/breadcrumb.css";
 @import "./components/button.css";
+@import "./components/card.css";
 
 @import "./helpers/effects.css";
 @import "./helpers/margin.css";
 @import "./helpers/padding.css";
 @import "./helpers/text.css";
+@import "./helpers/size.css";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 :root {
   --query-sm: 480px;
@@ -109,6 +117,7 @@
 }
 
 body {
+  font-family: Arial, Helvetica, sans-serif;
   margin:0;
   background-color: var(--color-background);
   color: var(--color-text);
