@@ -19,6 +19,10 @@
 @import "./helpers/padding.css";
 @import "./helpers/text.css";
 @import "./helpers/size.css";
+@import "./helpers/animations.css";
+@import "./helpers/flex.css";
+
+
 
 *,
 *::before,
