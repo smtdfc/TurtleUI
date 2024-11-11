@@ -8,8 +8,12 @@
 @import "./components/button.css";
 @import "./components/card.css";
 @import "./components/carousel.css";
+@import "./components/container.css";
+@import "./components/link.css";
 
 
+@import "./helpers/font.css";
+@import "./helpers/display.css";
 @import "./helpers/effects.css";
 @import "./helpers/margin.css";
 @import "./helpers/padding.css";
@@ -77,7 +81,7 @@
   --color-text: #333333;
   --color-heading: #111111;
 
-  --color-link: #2980b9;
+  --color-link: #0d6efd;
   --color-link-hover: #1abc9c;
   --color-link-transparent: rgba(41, 128, 185, 0.2);
 
@@ -137,11 +141,8 @@ h6 {
 }
 
 a {
+  text-decoration: none;
   color: var(--color-link);
-}
-
-a:hover {
-  color: var(--color-link-hover);
 }
 
 a.transparent {
