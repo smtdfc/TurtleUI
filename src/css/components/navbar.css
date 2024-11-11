@@ -17,6 +17,11 @@
 
 .navbar-header{
   padding: 1rem;
+  display: flex;
+  align-items: center;
+  -webkit-column-gap: 10px;
+  -moz-column-gap: 10px;
+  column-gap: 10px;
 }
 
 .navbar-title{
