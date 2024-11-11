@@ -21,7 +21,7 @@
 @import "./helpers/size.css";
 @import "./helpers/animations.css";
 @import "./helpers/flex.css";
-
+@import "./components/form.css";
 @import "./lib/animate.min.css";
 
 
@@ -126,7 +126,7 @@
   --main-color: black;
   --main-hover-color:rgba(0,0,0,0.05);
   --main-bg-transparent:#FDFDFF99;
-  
+  --main-border-color:rgba(0,0,0,0.05);
 }
 
 body {
