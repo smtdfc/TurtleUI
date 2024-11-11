@@ -13,6 +13,11 @@
   transition: border-color 0.3s, color 0.3s;
 }
 
+.form-input::placeholder {
+  color:var(--form-input-color);
+  opacity: 0.5;
+}
+
 .form-input:focus {
   outline: none;
   border-color: var(--form-input-focus-border-color);
