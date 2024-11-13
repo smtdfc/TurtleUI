@@ -1,10 +1,14 @@
 .accordion {
-  --accordion-bg: var(--main-bg);
   display: block;
   box-sizing: border-box;
 }
 
-.accordion-item {}
+.accordion-item {
+  --accordion-bg: var(--main-bg);
+  --accordion-color: var(--main-color);
+  --accordion-title-color: var(--main-color);
+  --accordion-btn-color:var(--main-color);
+}
 
 .accordion-header {
   display: flex;
@@ -16,8 +20,9 @@
 .accordion-title {
   font-weight: 480;
   font-size: 20px;
-  margin:0;
+  margin: 0;
   z-index: -1;
+  color:var(--accordion-title-color);
 }
 
 .accordion-toggle-btn {
@@ -32,14 +37,15 @@
 .accordion-body {
   max-height: 0;
   overflow: hidden;
-  box-sizing: border-box ;
+  box-sizing: border-box;
   transition: max-height 0.3s ease;
 }
 
 .accordion-item.active .accordion-body {
-  max-height: 200px; /* Adjust height based on your content */
+  max-height: 200px;
+  /* Adjust height based on your content */
 }
 
-.accordion-item.active .accordion-toggle-btn{
+.accordion-item.active .accordion-toggle-btn {
   transform: rotate(calc(90deg));
 }

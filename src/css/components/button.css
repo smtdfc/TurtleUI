@@ -192,11 +192,12 @@
 }
 
 .btn-icon{
-  padding:0.6rem;
+  padding:0.5rem;
   background: transparent;
   color:var(--main-color);
   border:none;
   transition: 0.5s;
+  border-radius: 50%;
 }
 
 .btn-icon:hover{

@@ -1,5 +1,9 @@
 .navbar{
   --navbar-bg:var(--main-bg);
+  --navbar-title-color:var(--main-color);
+  --navbar-menu-item-color:var(--main-color);
+  --navbar-menu-item-hover-color:var(--color-primary);
+  --navbar-menu-item-hover-bg:var(--main-hover-color);
   position: fixed;
   top:0;
   left:0;
@@ -28,6 +32,7 @@
   margin:0;
   font-size: var(--size-font-xl);
   font-weight: normal;
+  color:var(--navbar-title-color);
 }
 
 .navbar-items{

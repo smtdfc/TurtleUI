@@ -2,7 +2,7 @@ export class TurtleUICarousel {
   constructor(element, configs = {}) {
     this.element = element
     this.configs = configs
-    this.imgaes
+    this.images = []
   }
 
   next() {

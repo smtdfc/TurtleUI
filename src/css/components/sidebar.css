@@ -1,0 +1,224 @@
+.sidebar-container {
+  display: flex;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+.sidebar {
+  --sidebar-bg: var(--main-bg);
+  --sidebar-menu-item-color: var(--main-color);
+  --sidebar-menu-item-hover-bg: var(--main-hover-color);
+  --sidebar-menu-item-hover-color: var(--color-primary);
+
+  flex: 30%;
+  box-sizing: border-box;
+  height: 100vh;
+  border-right: 0.3px solid var(--main-border-color);
+  max-height: 100vh;
+  overflow-y: scroll;
+  position: relative;
+  background-color: var(--sidebar-bg);
+}
+
+
+.contents {
+  flex: 70%;
+  box-sizing: border-box;
+  max-height: 100vh;
+  overflow-y: scroll;
+}
+
+.sidebar-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.4rem 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-btn {
+  margin-left: auto;
+}
+
+.sidebar-title {
+  margin: 0;
+  font-weight: 430;
+  font-size: 17px;
+}
+
+.sidebar-body {
+  margin-top: 4rem;
+  padding: 0.5rem;
+}
+
+.sidebar-menu {
+  padding: 0;
+}
+
+.sidebar-menu li {
+  list-style-type: none;
+}
+
+.sidebar-menu>li {
+  background: transparent;
+  box-sizing: border-box;
+  transition: 0.3s;
+  display: block;
+}
+
+.sidebar-menu>li>a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 0.8rem;
+  cursor: none;
+  transition: 0.5s;
+  font-size: 16px !important;
+  line-height: 24px;
+  border-radius: 10px;
+  color: var(--sidebar-menu-item-color);
+}
+
+.sidebar-menu>li.active>a {
+  color: var(--sidebar-menu-item-hover-color);
+  background: var(--sidebar-menu-item-hover-bg);
+}
+
+.sidebar-menu>li:hover>a {
+  color: var(--sidebar-menu-item-hover-color);
+  background: var(--sidebar-menu-item-hover-bg);
+}
+
+.sidebar-menu>li>ul {
+  display: none;
+  padding: 0.5rem 2rem;
+  margin: 0;
+  background: transparent;
+  -webkit-animation-name: fadeInLeft;
+  -moz-animation-name: fadeInLeft;
+  -o-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+  -webkit-animation-duration: 0.5s;
+  -moz-animation-duration: 0.5s;
+  -o-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+}
+
+.sidebar-menu>li:hover>ul {
+  display: block;
+}
+
+.sidebar-menu>li.active>ul {
+  display: block;
+}
+
+.sidebar-menu>li>ul>li {
+  background: transparent;
+  box-sizing: border-box;
+  transition: 0.3s;
+  display: block;
+}
+
+.sidebar-menu>li>ul>li>a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 0.8rem;
+  cursor: none;
+  transition: 0.5s;
+  font-size: 16px !important;
+  line-height: 24px;
+  border-radius: 10px;
+  color: var(--sidebar-menu-item-color);
+}
+
+.sidebar-menu>li>ul>li:hover>a {
+  color: var(--sidebar-menu-item-hover-color);
+}
+
+.sidebar-menu>li>ul>li>a>i {
+  display: inline-flex !important;
+  vertical-align: top !important;
+}
+
+.sidebar-icon {
+  transition: 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  max-width: 100%;
+}
+
+
+.sidebar.sidebar-icon:not(.active) .sidebar-menu>li>a>span {
+  display: none !important;
+}
+
+.sidebar.sidebar-icon:not(.active) .sidebar-menu>li>ul {
+  display: none !important;
+}
+
+.sidebar.sidebar-icon:not(.active) .sidebar-header {
+  justify-content: center;
+}
+
+.sidebar.sidebar-icon:not(.active) .sidebar-title {
+  display: none !important;
+}
+
+.sidebar.sidebar-icon:not(.active) .sidebar-btn.close-btn {
+  display: none !important;
+}
+
+.sidebar.sidebar-icon:not(.active) .sidebar-btn.open-btn {
+  display: block !important;
+  margin-left: unset;
+}
+
+.sidebar.sidebar-icon .sidebar-btn.open-btn {
+  display: none !important;
+  margin-left: unset;
+  -webkit-animation-name: fadeInDown;
+  -moz-animation-name: fadeInDown;
+  -o-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  -webkit-animation-duration: 0.5s;
+  -moz-animation-duration: 0.5s;
+  -o-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+}
+
+.sidebar.sidebar-icon:not(.active) {
+  max-width: 66px !important;
+}
+
+.sidebar.sidebar-icon:not(.active) .avatar-text {
+  display: none !important;
+}
+
+.sidebar.sidebar-icon:not(.active) .avatar-item {
+  justify-content: center;
+}
+
+.sidebar-separation {
+  border: 1px solid var(--main-hover-color);
+  border-radius: 10px;
+}
+
+@media (max-width:48rem) {
+  .sidebar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    transition: 0.5s cubic-bezier(0.215, 0.610, 0.355, 1);
+  }
+
+  .sidebar.active {
+    left: 0;
+  }
+}
+
+@media (min-width:48rem) {}
