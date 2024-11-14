@@ -20,7 +20,7 @@
 }
 
 .navbar-header{
-  padding: 1rem;
+  padding: 0.5rem 0.4rem;
   display: flex;
   align-items: center;
   -webkit-column-gap: 10px;
@@ -33,6 +33,7 @@
   font-size: var(--size-font-xl);
   font-weight: normal;
   color:var(--navbar-title-color);
+  font-size: 18px;
 }
 
 .navbar-items{
