@@ -39,6 +39,7 @@ window.addEventListener("click",function(event){
     let element= document.querySelector(info.id)
     for (let component in components) {
       if(components[component].name == info.component){
+        console.log(2)
         components[component].injector(element,info.action,info)
       }
     }

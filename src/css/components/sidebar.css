@@ -2,6 +2,7 @@
   display: flex;
   box-sizing: border-box;
   height: 100vh;
+  z-index: 1;
 }
 
 .sidebar {
@@ -26,6 +27,8 @@
   box-sizing: border-box;
   max-height: 100vh;
   overflow-y: scroll;
+  z-index: 1;
+  
 }
 
 .sidebar-header {
@@ -189,6 +192,7 @@
     top: 0;
     left: -100%;
     transition: 1s ease-in-out;
+    z-index: 1000;
   }
 
   .sidebar.active {

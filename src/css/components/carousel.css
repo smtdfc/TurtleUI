@@ -3,20 +3,21 @@
   --carousel-text-color:var(--color-light);
   position: relative;
   width: 100%;
-  max-width: 600px; /* Tùy chỉnh kích thước của carousel */
+  max-width: 600px; 
   margin: auto;
-  overflow: hidden; /* Ẩn những phần bên ngoài */
+  z-index:0;
+  overflow: hidden; 
 }
 
 .carousel-images {
   display: flex;
-  transition: transform 0.5s ease; /* Chuyển động mượt mà khi thay đổi hình ảnh */
+  transition: transform 0.5s ease;
 }
 
 .carousel-image {
   width: 100%;
-  flex-shrink: 0; /* Ngăn không cho ảnh bị co lại */
-  position: relative; /* Để định vị văn bản trên hình ảnh */
+  flex-shrink: 0; 
+  position: relative; 
 }
 
 .carousel-image img {
@@ -44,7 +45,7 @@
   border: none;
   padding: 10px;
   cursor: none;
-  z-index: 10;
+  z-index: 1;
 }
 
 .carousel-control-prev {
