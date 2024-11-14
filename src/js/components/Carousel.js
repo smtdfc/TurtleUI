@@ -16,7 +16,7 @@ export class TurtleUICarousel {
     } else {
       this.currentIndex = this.element._turtleui.carousel.currentIndex
     }
-    this.enableSwipe()
+    
   }
 
   enableSwipe() {
