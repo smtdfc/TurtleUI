@@ -34,6 +34,8 @@ window.addEventListener("click",function(event){
       index:parseInt(split_str[3] ?? "0")
     }
     
+    
+    
     let element= document.querySelector(info.id)
     for (let component in components) {
       if(components[component].name == info.component){
