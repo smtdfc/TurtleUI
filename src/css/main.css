@@ -13,6 +13,9 @@
 @import "./components/sidebar.css";
 @import "./components/combobox.css";
 @import "./components/modal.css";
+@import "./components/divider.css";
+
+
 
 @import "./helpers/font.css";
 @import "./helpers/display.css";
