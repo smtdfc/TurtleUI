@@ -11,6 +11,8 @@
 @import "./components/container.css";
 @import "./components/link.css";
 @import "./components/sidebar.css";
+@import "./components/combobox.css";
+@import "./components/modal.css";
 
 @import "./helpers/font.css";
 @import "./helpers/display.css";
@@ -129,7 +131,6 @@
   --main-hover-color: rgba(0, 0, 0, 0.05);
   --main-bg-transparent: #f8f9fa99;
   --main-border-color: rgba(0, 0, 0, 0.1);
-
   /* Text Colors */
   --color-text: #212529;
   --color-heading: #343a40;

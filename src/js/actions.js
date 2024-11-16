@@ -39,7 +39,7 @@ window.addEventListener("click",function(event){
     let element= document.querySelector(info.id)
     for (let component in components) {
       if(components[component].name == info.component){
-        components[component].injector(element,info.action,info)
+        components[component].injector(element,info.action,info,target)
       }
     }
   }

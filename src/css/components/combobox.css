@@ -1,0 +1,94 @@
+.combobox-container {
+  position: relative;
+}
+
+.combobox {
+  --combobox-item-color: var(--color-primary-text);
+  --combobox-item-bg: var(--color-primary);
+  --combobox-border-color: var(--main-border-color);
+  border: 1px solid var(--combobox-border-color);
+  margin: 5px;
+  border-radius: 10px;
+  padding: 0.4rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.combobox-items {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.combobox-item {
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--combobox-item-color);
+  background-color: var(--combobox-item-bg);
+}
+
+.combobox-item .combobox-close-btn {
+  padding: 0.1rem;
+  color: var(--combobox-item-color);
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.combobox-btn {
+  padding: 0.3rem;
+  border: 1px solid var(--combobox-border-color);
+  border-radius: 5px;
+  background-color: var(--combobox-item-bg);
+  color: var(--combobox-item-color);
+  cursor: pointer;
+}
+
+.combobox-btn:hover {
+  background-color: var(--combobox-item-color);
+  color: var(--combobox-item-bg);
+}
+
+.combobox-select-items {
+  --combobox-select-item-color: var(--main-color);
+  --combobox-select-item-hover-color: var(--main-color);
+  --combobox-select-item-hover-bg: var(--main-hover-color);
+  
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  margin:0 1rem 0 1rem;
+  border: 1px solid var(--combobox-border-color);
+  border-radius: 0px;
+  background: white;
+  max-height: 150px;
+  overflow-y: auto;
+  display: none;
+  box-sizing:border-box;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.combobox-select-items.active{
+  display: block;
+}
+
+.combobox-select-items>.combox-select-item {
+  padding: 0.6rem;
+  width: 100%;
+  box-sizing:border-box;
+  cursor: none;
+  color: green;
+  color: var(--combobox-select-item-color);
+}
+
+.combobox-select-items>.combox-select-item:hover {
+  background-color: var(--combobox-select-item-hover-bg);
+  color: var(--combobox-select-item-hover-color);
+}
