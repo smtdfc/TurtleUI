@@ -2,24 +2,49 @@
   box-sizing: content-box;
 }
 
-.form-group.form-check {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
+
 
 
 .form-label {
-  --form-label-color:var(--main-color);
+  --form-label-color: var(--main-color);
   font-size: 16px;
-  color:var(--form-label-color);
+  color: var(--form-label-color);
+}
+
+.form-text{
+  font-size: 12px;
+}
+.form-input {
+  --form-input-color: var(--main-color);
+  --form-input-border-color: var(--main-border-color);
+  --form-input-border-focus-color: var(--color-primary);
+
+  background: transparent;
+  color: var(--form-input-color);
+  border: 1.5px solid var(--form-input-border-color);
+  padding: 0.8rem;
+  outline: none;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+  box-sizing: border-box;
+}
+
+.form-input:focus {
+  border-color: var(--form-input-border-focus-color);
 }
 
 input[type="checkbox"].form-input {
   --form-check-border-color: var(--main-border-color);
   --form-check-color: var(--color-dark-text);
-  --form-check-bg:var(--color-dark);
+  --form-check-bg: var(--color-dark);
 }
+
+input[type="radio"].form-input {
+  --form-check-border-color: var(--main-border-color);
+  --form-check-color: var(--color-dark-text);
+  --form-check-bg: var(--color-dark);
+}
+
 
 input[type="checkbox"].form-input {
   appearance: none;
@@ -29,7 +54,7 @@ input[type="checkbox"].form-input {
   width: 20px;
   height: 20px;
   background-color: transparent;
-  border: 2px solid var(--form-check-border-color);
+  border: 1px solid var(--form-check-border-color);
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s ease, border-color 0.3s ease;
@@ -39,7 +64,10 @@ input[type="checkbox"].form-input {
   justify-content: center;
   align-items: center;
   cursor: none;
+  padding: 0.5rem !important;
 }
+
+
 
 input[type="checkbox"].form-input:checked {
   background-color: var(--form-check-bg);
@@ -54,4 +82,165 @@ input[type="checkbox"].form-input:checked::after {
 
 input[type="checkbox"].form-input:focus {
   outline: none;
+}
+
+input[type="color"].form-input {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 40px;
+  height: 40px;
+  border: 1.5px solid var(--form-input-border-color);
+  border-radius: 6px;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  background-color: var(--form-input-color);
+}
+
+input[type="color"].form-input:focus {
+  border-color: var(--form-input-border-focus-color);
+  box-shadow: 0 0 5px var(--form-input-border-focus-color);
+  outline: none;
+}
+
+input[type="color"].form-input::-webkit-color-swatch {
+  border: none;
+  border-radius: 6px;
+}
+
+input[type="color"].form-input::-webkit-color-swatch-wrapper {
+  padding: 0;
+  border-radius: 6px;
+}
+
+.form-input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 23px;
+  height: 23px;
+  padding: 0.55rem;
+  border: 1px solid var(--form-input-border-color);
+  border-radius: 50%;
+  position: relative;
+  cursor: none;
+  outline: none;
+  display: inline-block;
+  margin: 0;
+  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+.form-input[type="radio"]:checked {
+  background-color: var(--form-check-bg);
+}
+
+.form-input[type="radio"]:checked::before {
+  content: '';
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: white;
+  top: 4px;
+  left: 4px;
+}
+
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form-group.form-check {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.range-slider {
+  --form-range-thumb-size: 25px;
+  --form-range-thumb-color: var(--main-color);
+  --form-range-track-color:var(--main-border-color) ;
+  --form-range-track-height: 4px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+}
+
+.range-slider input[type="range"] {
+  -webkit-appearance: none;
+  background: transparent;
+}
+
+.range-slider input[type="range"]::-webkit-slider-runnable-track {
+  height: var(--form-range-track-height);
+  background: var(--form-range-track-color);
+  border-radius: var(--form-range-track-height);
+}
+
+.range-slider input[type="range"]::-moz-range-track {
+  height: var(--form-range-track-height);
+  background: var(--form-range-track-color);
+  border-radius: var(--form-range-track-height);
+}
+
+.range-slider input[type="range"]::-ms-track {
+  height: var(--form-range-track-height);
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+.range-slider input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: var(--form-range-thumb-size);
+  height: var(--form-range-thumb-size);
+  background: var(--form-range-thumb-color);
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #fff;
+}
+
+.range-slider input[type="range"]::-moz-range-thumb {
+  width: var(--form-range-thumb-size);
+  height: var(--form-range-thumb-size);
+  background: var(--form-range-thumb-color);
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #fff;
+}
+
+.range-slider input[type="range"]::-ms-thumb {
+  width: var(--form-range-thumb-size);
+  height: var(--form-range-thumb-size);
+  background: var(--form-range-thumb-color);
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #fff;
+}
+
+.range-slider input[type="range"]:focus {
+  outline: none;
+}
+
+.range-slider input[type="range"]:focus::-webkit-slider-thumb {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.range-slider input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  margin-top: calc((var(--form-range-track-height) - var(--form-range-thumb-size)) / 2); /* Căn chỉnh thumb với track */
+}
+
+.range-slider input[type="range"]::-moz-range-thumb {
+  margin-top: calc((var(--form-range-track-height) - var(--form-range-thumb-size)) / 2); /* Tương tự cho Firefox */
+}
+
+.range-slider input[type="range"]::-ms-thumb {
+  margin-top: calc((var(--form-range-track-height) - var(--form-range-thumb-size)) / 2); /* Tương tự cho IE/Edge */
 }

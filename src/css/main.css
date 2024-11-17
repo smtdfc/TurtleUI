@@ -37,6 +37,11 @@
   box-sizing: border-box;
 }
 
+:focus {
+  
+  -webkit-tap-highlight-color: transparent; /* Loại bỏ màu nhấn trên mobile */
+}
+
 :root {
   /* Bootstrap-inspired Breakpoints */
   --query-sm: 576px;
