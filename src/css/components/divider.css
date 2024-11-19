@@ -1,6 +1,6 @@
 .divider {
   --divider-color: rgba(0, 0, 0, 0.1);
-  --divider-text-color: #ddd;
+  --divider-text-color: var(--main-color);
 }
 
 .divider-normal {
