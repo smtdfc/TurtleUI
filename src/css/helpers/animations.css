@@ -32,11 +32,11 @@
   animation-duration: 0.4s;
 }
 
-.fade{
-  -webkit-animation-name: fadeIn;
-  -moz-animation-name: fadeIn;
-  -o-animation-name: fadeIn;
-  animation-name: fadeIn;
+.fade-in-up{
+  -webkit-animation-name: fadeInUp;
+  -moz-animation-name: fadeInUp;
+  -o-animation-name: fadeInUp;
+  animation-name: fadeInUp;
   -webkit-animation-duration: 0.4s;
   -moz-animation-duration: 0.4s;
   -o-animation-duration: 0.4s;
