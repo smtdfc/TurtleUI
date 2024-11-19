@@ -1,4 +1,62 @@
+.text-truncate{
+  text-overflow: ellipsis;
+}
+
+.text-align-center{
+  text-align: center;
+}
+
+.text-align-left {
+  text-align: left;
+}
+
+.text-align-right {
+  text-align: right;
+}
+
+.underline{
+  text-decoration: underline;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.italic{
+ font-style: italic;
+}
+
+.lowercase{
+  text-transform: lowercase;
+  
+}
+
+.uppercase{
+  text-transform: uppercase;
+}
+
+.capitalize{
+  text-transform: capitalize;
+}
+
+.text-break{
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
 .sub-text{
   font-size: 12px;
   color:gray;
+}
+
+.small-text{
+  font-size: 14px;
+}
+
+.text-ellipsis {
+  
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    max-width: 150px;
 }

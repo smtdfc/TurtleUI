@@ -88,6 +88,11 @@ a {
   .navbar-menu ul>li {}
 
   .navbar-menu>ul>li a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 1rem;
+    transition: ease 0.5s;
     cursor: none;
     color: var(--navbar-menu-item-color);
   }
