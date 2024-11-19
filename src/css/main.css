@@ -29,7 +29,7 @@
 @import "./helpers/flex.css";
 @import "./components/form.css";
 @import "./lib/animate.min.css";
-
+@import "./helpers/background.css";
 
 *,
 *::before,
