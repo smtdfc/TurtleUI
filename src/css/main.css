@@ -15,8 +15,8 @@
 @import "./components/modal.css";
 @import "./components/divider.css";
 @import "./components/offcanvas.css";
-
-
+@import "./components/loader.css";
+@import "./components/overlay.css";
 
 @import "./helpers/font.css";
 @import "./helpers/display.css";
