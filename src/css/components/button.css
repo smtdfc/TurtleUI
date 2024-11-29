@@ -6,7 +6,7 @@
   color:var(--btn-color);
   margin:0.5rem;
   border:solid 1px var(--btn-border-color);
-  padding: 0.7rem;
+  padding: 0.5rem;
   border-radius: 10px;
   transition: 0.3s;
 }
