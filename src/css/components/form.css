@@ -152,6 +152,7 @@ input[type="color"].form-input::-webkit-color-swatch-wrapper {
   display: flex;
   flex-direction: column;
   gap: 5px;
+  margin-top: 10px;
 }
 
 .form-group.form-check {
