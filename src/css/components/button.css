@@ -4,9 +4,9 @@
   --btn-border-color:var(--btn-bg);
   background: var(--btn-bg);
   color:var(--btn-color);
-  margin:0.5rem;
+  margin:0.3rem;
   border:solid 1px var(--btn-border-color);
-  padding: 0.5rem;
+  padding: 0.8rem;
   border-radius: 10px;
   transition: 0.3s;
 }
