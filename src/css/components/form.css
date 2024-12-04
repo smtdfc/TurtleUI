@@ -7,7 +7,7 @@
 
 .form-label {
   --form-label-color: var(--main-color);
-  font-size: 16px;
+  font-size: 14px;
   color: var(--form-label-color);
 }
 
