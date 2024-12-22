@@ -5,3 +5,4 @@ export * from "./Carousel.js"
 export * from './Combobox.js'
 export * from "./Modal.js"
 export * from "./Offcanvas.js"
+export * from "./ActionList.js"
