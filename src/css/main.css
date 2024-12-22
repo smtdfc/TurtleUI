@@ -20,6 +20,8 @@
 @import "./components/table.css";
 @import "./components/list.css";
 @import "./components/actionlist.css";
+@import "./components/progressionbar.css";
+
 
 @import "./helpers/font.css";
 @import "./helpers/display.css";

@@ -1,0 +1,25 @@
+.progress-bar-container {
+  width: 100%;
+  background-color: var(--main-bg);
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+}
+
+.progress-bar-sm{
+    height: 3px;
+}
+
+.progress-bar-md {
+  height: 5px;
+}
+
+.progress-bar-lg {
+  height: 10px;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0%;
+  background-color: black;
+  transition: width 0.1s linear;
+}
