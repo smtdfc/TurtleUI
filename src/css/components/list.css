@@ -1,0 +1,32 @@
+.list{
+  --list-item-hover-bg:rgba(0,0,0,0.05);
+  padding: 0;
+}
+
+.list li{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  padding: 0.6rem 0.5rem;
+  transition: 0.5s;
+  width: 100%;
+}
+
+.list-hover li:hover{
+  background: var(--list-item-hover-bg);
+}
+
+.list-img{
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.list-options-btn {
+  margin-left: auto;
+}
+
