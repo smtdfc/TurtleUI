@@ -17,6 +17,7 @@
 @import "./components/offcanvas.css";
 @import "./components/loader.css";
 @import "./components/overlay.css";
+@import "./components/table.css";
 
 @import "./helpers/font.css";
 @import "./helpers/display.css";
