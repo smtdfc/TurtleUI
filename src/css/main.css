@@ -43,36 +43,34 @@
 }
 
 :focus {
-  
-  -webkit-tap-highlight-color: transparent; /* Loại bỏ màu nhấn trên mobile */
+  -webkit-tap-highlight-color: transparent;
 }
 
 :root {
-  /* Bootstrap-inspired Breakpoints */
+
   --query-sm: 576px;
   --query-md: 768px;
   --query-lg: 992px;
   --query-xl: 1200px;
 
-  /* Size Variables */
+
   --size-sm: 0.5rem;
   --size-md: 1rem;
   --size-lg: 1.5rem;
   --size-xl: 2rem;
 
-  /* Font Size */
+
   --size-font-sm: 0.875rem;
   --size-font-md: 1rem;
   --size-font-lg: 1.25rem;
   --size-font-xl: 1.5rem;
 
-  /* Line Height */
+
   --size-line-height-sm: 1.2;
   --size-line-height-md: 1.5;
   --size-line-height-lg: 1.6;
   --size-line-height-xl: 1.7;
 
-  /* Padding and Margin */
   --size-padding-xxs: 0.25rem;
   --size-padding-xs: 0.5rem;
   --size-padding-sm: 0.75rem;
@@ -89,7 +87,6 @@
   --size-margin-xl: 2rem;
   --size-margin-xxl: 3rem;
 
-  /* Bootstrap-like Colors */
   --color-primary: #007bff;
   --color-primary-hover: #0056b3;
   --color-primary-text: white;
@@ -139,13 +136,12 @@
   --color-link-hover: #0056b3;
   --color-link-transparent: rgba(0, 123, 255, 0.2);
 
-  /* Background and Border Colors */
   --main-bg: #ffffff;
   --main-color: #212529;
   --main-hover-color: rgba(0, 0, 0, 0.05);
   --main-bg-transparent: #f8f9fa99;
   --main-border-color: rgba(0, 0, 0, 0.1);
-  /* Text Colors */
+
   --color-text: #212529;
   --color-heading: #343a40;
 }
