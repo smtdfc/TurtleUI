@@ -1,0 +1,108 @@
+/* Primary */
+.color-primary {
+  background-color: var(--color-primary);
+  color: var(--color-primary-text);
+}
+.color-primary-transparent {
+  background-color: var(--color-primary-transparent);
+}
+
+/* Secondary */
+.color-secondary {
+  background-color: var(--color-secondary);
+  color: var(--color-secondary-text);
+}
+.color-secondary-transparent {
+  background-color: var(--color-secondary-transparent);
+}
+
+/* Success */
+.color-success {
+  background-color: var(--color-success);
+  color: var(--color-success-text);
+}
+.color-success-transparent {
+  background-color: var(--color-success-transparent);
+}
+
+/* Info */
+.color-info {
+  background-color: var(--color-info);
+  color: var(--color-info-text);
+}
+.color-info-transparent {
+  background-color: var(--color-info-transparent);
+}
+
+/* Warning */
+.color-warning {
+  background-color: var(--color-warning);
+  color: var(--color-warning-text);
+}
+.color-warning-transparent {
+  background-color: var(--color-warning-transparent);
+}
+
+/* Danger */
+.color-danger {
+  background-color: var(--color-danger);
+  color: var(--color-danger-text);
+}
+.color-danger-transparent {
+  background-color: var(--color-danger-transparent);
+}
+
+/* Light */
+.color-light {
+  background-color: var(--color-light);
+  color: var(--color-light-text);
+}
+.color-light-transparent {
+  background-color: var(--color-light-transparent);
+}
+
+/* Dark */
+.color-dark {
+  background-color: var(--color-dark);
+  color: var(--color-dark-text);
+}
+.color-dark-transparent {
+  background-color: var(--color-dark-transparent);
+}
+
+/* Additional Colors */
+.color-muted {
+  background-color: var(--color-muted);
+  color: var(--color-muted-text);
+}
+.color-muted-transparent {
+  background-color: var(--color-muted-transparent);
+}
+
+/* Links */
+.color-link {
+  color: var(--color-link);
+}
+.color-link-transparent {
+  background-color: var(--color-link-transparent);
+}
+
+/* General Colors */
+.color-main-bg {
+  background-color: var(--main-bg);
+}
+.color-main {
+  color: var(--main-color);
+}
+.color-main-bg-transparent {
+  background-color: var(--main-bg-transparent);
+}
+.color-main-border {
+  border-color: var(--main-border-color);
+}
+.color-text {
+  color: var(--color-text);
+}
+.color-heading {
+  color: var(--color-heading);
+}

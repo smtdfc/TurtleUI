@@ -35,7 +35,7 @@
 @import "./components/form.css";
 @import "./lib/animate.min.css";
 @import "./helpers/background.css";
-
+@import "./helpers/color.css";
 *,
 *::before,
 *::after {
