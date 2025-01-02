@@ -27,7 +27,7 @@ export default {
     postcss({
       extensions: ['.css', '.less'],
       plugins: [postcssImport()],
-      extract: './dist/turtleui.min.css',
+      extract: 'turtleui.min.css',
       minimize: true, 
     }),
     terser(),
