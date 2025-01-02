@@ -28,115 +28,93 @@
   transform: translateY(0);
 }
 
+/* Base styles for each toast type */
+.toast-primary,
+.toast-secondary,
+.toast-success,
+.toast-info,
+.toast-warning,
+.toast-danger,
+.toast-light,
+.toast-dark,
+.toast-muted {
+  background-color: var(--color-transparent);
+  color: var(--color-text);
+}
+
 .toast-primary {
-  background-color: var(--color-primary);
   color: var(--color-primary-text);
+  background-color: var(--color-primary-transparent);
 }
 
 .toast-primary:hover {
   background-color: var(--color-primary-hover);
 }
 
-.toast-primary.transparent {
-  background-color: var(--color-primary-transparent);
-}
-
 .toast-secondary {
-  background-color: var(--color-secondary);
   color: var(--color-secondary-text);
+  background-color: var(--color-secondary-transparent);
 }
 
 .toast-secondary:hover {
   background-color: var(--color-secondary-hover);
 }
 
-.toast-secondary.transparent {
-  background-color: var(--color-secondary-transparent);
-}
-
 .toast-success {
-  background-color: var(--color-success);
   color: var(--color-success-text);
+  background-color: var(--color-success-transparent);
 }
 
 .toast-success:hover {
   background-color: var(--color-success-hover);
 }
 
-.toast-success.transparent {
-  background-color: var(--color-success-transparent);
-}
-
 .toast-info {
-  background-color: var(--color-info);
   color: var(--color-info-text);
+  background-color: var(--color-info-transparent);
 }
 
 .toast-info:hover {
   background-color: var(--color-info-hover);
 }
 
-.toast-info.transparent {
-  background-color: var(--color-info-transparent);
-}
-
 .toast-warning {
-  background-color: var(--color-warning);
   color: var(--color-warning-text);
+  background-color: var(--color-warning-transparent);
 }
 
 .toast-warning:hover {
   background-color: var(--color-warning-hover);
 }
 
-.toast-warning.transparent {
-  background-color: var(--color-warning-transparent);
-}
-
 .toast-danger {
-  background-color: var(--color-danger);
   color: var(--color-danger-text);
+  background-color: var(--color-danger-transparent);
 }
 
 .toast-danger:hover {
   background-color: var(--color-danger-hover);
 }
 
-.toast-danger.transparent {
-  background-color: var(--color-danger-transparent);
-}
-
 .toast-light {
-  background-color: var(--color-light);
   color: var(--color-light-text);
+  background-color: var(--color-light-transparent);
 }
 
 .toast-light:hover {
   background-color: var(--color-light-hover);
 }
 
-.toast-light.transparent {
-  background-color: var(--color-light-transparent);
-}
-
 .toast-dark {
-  background-color: var(--color-dark);
   color: var(--color-dark-text);
+  background-color: var(--color-dark-transparent);
 }
 
 .toast-dark:hover {
   background-color: var(--color-dark-hover);
 }
 
-.toast-dark.transparent {
-  background-color: var(--color-dark-transparent);
-}
-
 .toast-muted {
-  background-color: var(--color-muted);
   color: var(--color-muted-text);
-}
-
-.toast-muted.transparent {
   background-color: var(--color-muted-transparent);
 }
