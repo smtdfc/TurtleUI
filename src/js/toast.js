@@ -107,5 +107,5 @@ export const Toast = {
     }, duration);
   }
 };
-
+ 
 Toast.createToastContainer()
