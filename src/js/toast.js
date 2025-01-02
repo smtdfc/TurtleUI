@@ -1,4 +1,4 @@
-const Toast = {
+export const Toast = {
   containerId: 'toast-container',
   duration: 3000,
 
@@ -107,3 +107,5 @@ const Toast = {
     }, duration);
   }
 };
+
+Toast.createToastContainer()
