@@ -38,13 +38,13 @@
 .toast-light,
 .toast-dark,
 .toast-muted {
-  background-color: var(--color-transparent);
+  background-color: var(--color);
   color: var(--color-text);
 }
 
 .toast-primary {
   color: var(--color-primary-text);
-  background-color: var(--color-primary-transparent);
+  background-color: var(--color-primary);
 }
 
 .toast-primary:hover {
@@ -53,7 +53,7 @@
 
 .toast-secondary {
   color: var(--color-secondary-text);
-  background-color: var(--color-secondary-transparent);
+  background-color: var(--color-secondary);
 }
 
 .toast-secondary:hover {
@@ -62,7 +62,7 @@
 
 .toast-success {
   color: var(--color-success-text);
-  background-color: var(--color-success-transparent);
+  background-color: var(--color-success);
 }
 
 .toast-success:hover {
@@ -71,7 +71,7 @@
 
 .toast-info {
   color: var(--color-info-text);
-  background-color: var(--color-info-transparent);
+  background-color: var(--color-info);
 }
 
 .toast-info:hover {
@@ -80,7 +80,7 @@
 
 .toast-warning {
   color: var(--color-warning-text);
-  background-color: var(--color-warning-transparent);
+  background-color: var(--color-warning);
 }
 
 .toast-warning:hover {
@@ -89,7 +89,7 @@
 
 .toast-danger {
   color: var(--color-danger-text);
-  background-color: var(--color-danger-transparent);
+  background-color: var(--color-danger);
 }
 
 .toast-danger:hover {
@@ -98,7 +98,7 @@
 
 .toast-light {
   color: var(--color-light-text);
-  background-color: var(--color-light-transparent);
+  background-color: var(--color-light);
 }
 
 .toast-light:hover {
@@ -107,7 +107,7 @@
 
 .toast-dark {
   color: var(--color-dark-text);
-  background-color: var(--color-dark-transparent);
+  background-color: var(--color-dark);
 }
 
 .toast-dark:hover {
@@ -116,5 +116,5 @@
 
 .toast-muted {
   color: var(--color-muted-text);
-  background-color: var(--color-muted-transparent);
+  background-color: var(--color-muted);
 }
