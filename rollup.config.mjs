@@ -7,27 +7,29 @@ export default {
   output: [
     {
       file: './dist/turtleui.min.cjs',
-      format: 'cjs'
-      },
+      format: 'cjs',
+    },
     {
       file: './dist/turtleui.min.js',
       format: 'umd',
-      name: "TurtleUI"
-      },
+      name: "TurtleUI",
+    },
     {
       file: './dist/turtleui.min.mjs',
-      format: 'esm'
-      },
+      format: 'esm',
+    },
     {
       file: './dist/turtleui.min.ejs',
-      format: 'es'
-      }
-    ],
+      format: 'es',
+    },
+  ],
   plugins: [
     postcss({
       extensions: ['.css', '.less'],
-      plugins: [postcssImport()]
+      plugins: [postcssImport()],
+      extract: './dist/turtleui.min.css',
+      minimize: true, 
     }),
     terser(),
-  ]
+  ],
 };
