@@ -1,6 +1,6 @@
 .progress-bar-container {
   width: 100%;
-  background-color: var(--main-bg);
+  background-color: var(--main-color);
   overflow: hidden;
   transition: 0.5s ease-in-out;
 }
