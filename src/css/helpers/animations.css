@@ -54,7 +54,7 @@
   animation-duration: 0.4s;
 }
 
-.fade-in-down{
+.fade-in-right{
   -webkit-animation-name: fadeInRight;
   -moz-animation-name: fadeInRight;
   -o-animation-name: fadeInRight;
