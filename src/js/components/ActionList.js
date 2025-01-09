@@ -26,7 +26,7 @@ export class TurtleUIActionList {
     }
   }
 
-  static injection(event, data) {
+  static injector(event, data) {
     let target = new this(event.target)
     switch (event.name) {
       case 'toggle':
