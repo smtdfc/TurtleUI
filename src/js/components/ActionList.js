@@ -26,7 +26,7 @@ export class TurtleUIActionList {
     }
   }
 
-  static injector(event, action) {
+  static injector(element, action) {
     let component = new TurtleUIActionList(element);
     switch (action) {
       case "open":
