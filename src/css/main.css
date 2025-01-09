@@ -22,6 +22,7 @@
 @import "./components/actionlist.css";
 @import "./components/progressionbar.css";
 @import "./components/toast.css";
+@import "./components/divider.css";
 
 @import "./helpers/font.css";
 @import "./helpers/display.css";
