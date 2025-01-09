@@ -1,0 +1,22 @@
+.pos-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.pos-absolute {
+  position: absolute;
+}
+
+.pos-relative {
+  position: relative;
+}
+
+.center-absolute {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
