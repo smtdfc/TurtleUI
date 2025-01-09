@@ -26,14 +26,20 @@ export class TurtleUIActionList {
     }
   }
 
-  static injector(event, data) {
-    let target = new this(event.target)
-    switch (event.name) {
-      case 'toggle':
-        target.toggle()
+  static injector(event, action) {
+    let component = new TurtleUIActionList(element);
+    switch (action) {
+      case "open":
+        component.open();
         break;
-
+      case "close":
+        component.close();
+        break;
+      case "toggle":
+        component.toggle();
+        break;
       default:
+        break;
 
     }
   }
