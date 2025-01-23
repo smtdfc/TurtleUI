@@ -2,19 +2,16 @@ export class TurtleUIOffcanvas {
   constructor(element, configs = {}) {
     this.element = element;
     this.configs = configs;
-    this.overlay = this.element._turtleui ? this.element._turtleui.overlay : null;
+
+  }
+
+  open() {
     if (!this.overlay) {
       this.overlay = document.createElement("div");
       this.overlay.classList.add("offcanvas-overlay");
       document.body.appendChild(this.overlay);
-      if (!this.element._turtleui) {
-        this.element._turtleui = {};
-      }
-      this.element._turtleui.overlay = this.overlay;
     }
-  }
 
-  open() {
     this.element.classList.add("show");
     this.overlay.classList.add("show");
   }
@@ -23,6 +20,8 @@ export class TurtleUIOffcanvas {
     this.element.classList.remove("show");
     if (this.overlay) {
       this.overlay.classList.remove("show");
+      this.overlay.remove()
+      this.overlay = null
     }
   }
 
