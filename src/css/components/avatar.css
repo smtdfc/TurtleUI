@@ -10,7 +10,7 @@
   border-radius: 50%;
 }
 
-.overlay {
+.avatar-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -34,7 +34,7 @@
   transform: translate(-50%, -50%);
 }
 
-.avatar-container:hover .overlay,
+.avatar-container:hover .avatar-overlay,
 .avatar-container:hover .avatar-hover-contents {
   display: block;
 }
