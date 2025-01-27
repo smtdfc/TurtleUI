@@ -165,7 +165,6 @@
   display: none;
 }
 
-
 .sidebar.sidebar-icon .sidebar-btn.open-btn {
   display: none !important;
   margin-left: unset;
@@ -178,7 +177,6 @@
   -o-animation-duration: 0.5s;
   animation-duration: 0.5s;
 }
-
 
 .sidebar-separation {
   border: 1px solid var(--main-hover-color);

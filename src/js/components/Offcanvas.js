@@ -2,7 +2,6 @@ export class TurtleUIOffcanvas {
   constructor(element, configs = {}) {
     this.element = element;
     this.configs = configs;
-
   }
 
   open() {
